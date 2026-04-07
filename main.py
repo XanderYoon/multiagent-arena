@@ -23,10 +23,15 @@ def blotto_match(n1, f1, n2, f2, trial):
     pts, trps = generate_blotto_setup()
 
     # ABSTRACTED STRICT RULES
+    # rules = (f"You are playing a simultaneous resource allocation game. "
+    #          f"You have exactly {trps} units. You must distribute ALL of them across 3 distinct zones. "
+    #          f"If you assign strictly more units to a zone than your opponent, you win the points for that zone. "
+    #          f"Constraint: Your output must be a list of 3 integers that sum to exactly {trps}.")
+
     rules = (f"You are playing a simultaneous resource allocation game. "
              f"You have exactly {trps} units. You must distribute ALL of them across 3 distinct zones. "
-             f"If you assign strictly more units to a zone than your opponent, you win the points for that zone. "
-             f"Constraint: Your output must be a list of 3 integers that sum to exactly {trps}.")
+             f"FATAL CONSTRAINT: Your output must be a list of 3 integers. "
+             f"MATH CHECK: You MUST verify that Value 1 + Value 2 + Value 3 = EXACTLY {trps}. Do not fail this math check.")
 
     state = f"Zone Point Values: Zone A: {pts[0]}, Zone B: {pts[1]}, Zone C: {pts[2]}"
 
@@ -68,8 +73,10 @@ def connect4_ai_vs_ai(n1, f1, n2, f2, trial):
 
     # ABSTRACTED STRICT RULES
     rules = ("You are playing a sequential gravity-grid game on a 7-column by 6-row board. "
-             "Players alternate dropping a single token into one of the 7 columns (numbered 0 through 6). "
-             "The token falls straight down to the lowest available empty slot in that column. "
+             "IMPORTANT ALIGNMENT: The columns are 0-indexed. They are numbered exactly 0, 1, 2, 3, 4, 5, and 6. "
+             "Column 0 is the far left wall, and Column 6 is the far right wall. "
+             "Players alternate dropping a single token into one of the available columns. "
+             "The token falls straight down to the lowest available empty slot. "
              "Your goal is to connect 4 of your own tokens horizontally, vertically, or diagonally. "
              "Constraint: You must output a single integer between 0 and 6 representing your chosen column.")
 

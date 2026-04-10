@@ -1,0 +1,1 @@
+Draft an initial move, but legality must be checked before strategy.

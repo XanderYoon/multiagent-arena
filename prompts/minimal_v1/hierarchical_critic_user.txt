@@ -1,0 +1,4 @@
+Rules: {rules}
+State: {state}
+Reasoner suggested: {reasoner_output}
+Check legality and suggest a better move if needed.

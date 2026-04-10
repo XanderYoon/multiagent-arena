@@ -1,0 +1,4 @@
+Rules: {rules}
+State: {state}
+Reasoner suggested: {reasoner_output}
+Critique this move. Is it legal? Is the math correct? Suggest an improved move if needed.

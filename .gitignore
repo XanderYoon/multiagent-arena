@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+experiments/run_*/
+analysis/*
+!analysis/.gitkeep
+!experiments/.gitkeep

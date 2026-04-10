@@ -1,0 +1,22 @@
+{
+  "run_label": "difficulty_blotto_harder",
+  "run_type": "final",
+  "comparison_axis": "difficulty",
+  "num_trials": 10,
+  "minimum_trials_required": 10,
+  "global_seed": 8803,
+  "prompt_family": "structured_reasoning_v1",
+  "enabled_games": [
+    "blotto"
+  ],
+  "architectures": [
+    "single",
+    "parallel",
+    "hierarchical"
+  ],
+  "phases": {
+    "internal_ai_tournament": true,
+    "blotto_vs_bots": true,
+    "connect4_oracle_accuracy": false
+  }
+}

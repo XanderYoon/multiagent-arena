@@ -1,0 +1,19 @@
+{
+  "run_label": "prompt_legality_first_architecture_comparison",
+  "run_type": "final",
+  "comparison_axis": "prompt_family",
+  "num_trials": 10,
+  "minimum_trials_required": 10,
+  "global_seed": 8803,
+  "prompt_family": "legality_first_v1",
+  "architectures": [
+    "single",
+    "parallel",
+    "hierarchical"
+  ],
+  "phases": {
+    "internal_ai_tournament": true,
+    "blotto_vs_bots": true,
+    "connect4_oracle_accuracy": true
+  }
+}

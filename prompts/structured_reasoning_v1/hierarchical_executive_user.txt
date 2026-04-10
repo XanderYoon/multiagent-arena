@@ -1,0 +1,5 @@
+Rules: {rules}
+State: {state}
+Reasoner's proposal: {reasoner_output}
+Critic's feedback: {critic_output}
+Choose the final rule-compliant move. You may adopt, revise, or replace earlier proposals.

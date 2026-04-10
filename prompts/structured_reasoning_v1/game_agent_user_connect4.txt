@@ -1,0 +1,3 @@
+Rules: {rules}
+State: {state}
+Think about tactical threats, future connections, and legality before choosing the move.

@@ -1,0 +1,12 @@
+{
+  "backend": "ollama",
+  "model_name": "qwen2.5:7b",
+  "api_url": "http://localhost:11434/api/generate",
+  "timeout_seconds": 60,
+  "retry_attempts": 3,
+  "generation": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "max_tokens": 256
+  }
+}

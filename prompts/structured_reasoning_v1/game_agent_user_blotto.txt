@@ -1,0 +1,3 @@
+Rules: {rules}
+State: {state}
+Think about value tradeoffs, then ensure the final allocation is legal.

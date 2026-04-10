@@ -1,0 +1,3 @@
+Rules: {rules}
+State: {state}
+First ensure the chosen column is in the valid column list. Then optimize for threats and winning chances.

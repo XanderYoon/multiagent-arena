@@ -1,0 +1,19 @@
+{
+  "game_id": "blotto",
+  "display_name": "Simultaneous Resource Game",
+  "variant_name": "discrete_blotto_v1",
+  "battlefields": 3,
+  "troop_budget": 100,
+  "discrete": true,
+  "point_policy": "random_range",
+  "point_range": [
+    10,
+    50
+  ],
+  "baseline_bots": [
+    "uniform",
+    "random",
+    "high_value_targeting",
+    "nash_approx"
+  ]
+}

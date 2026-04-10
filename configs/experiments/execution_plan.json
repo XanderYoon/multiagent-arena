@@ -1,0 +1,69 @@
+{
+  "plan_id": "section13_execution_plan_v1",
+  "scope": "current_repository_state",
+  "implemented_games": [
+    "blotto",
+    "connect4"
+  ],
+  "implemented_architectures": [
+    "single",
+    "parallel",
+    "hierarchical"
+  ],
+  "default_prompt_family": "structured_reasoning_v1",
+  "minimum_trials": {
+    "pilot": 3,
+    "final": 10
+  },
+  "run_matrix": [
+    {
+      "run_id": "pilot_architecture_comparison",
+      "stage": "pilot",
+      "status": "planned",
+      "config_path": "configs/experiments/pilot_architecture_comparison.json",
+      "games": [
+        "blotto",
+        "connect4"
+      ],
+      "architectures": [
+        "single",
+        "parallel",
+        "hierarchical"
+      ],
+      "phases": {
+        "internal_ai_tournament": true,
+        "blotto_vs_bots": true,
+        "connect4_oracle_accuracy": true
+      },
+      "num_trials": 3,
+      "purpose": "Validate logging, metrics, seeds, and failure handling before longer runs."
+    },
+    {
+      "run_id": "final_architecture_comparison",
+      "stage": "final",
+      "status": "planned",
+      "config_path": "configs/experiments/final_architecture_comparison.json",
+      "games": [
+        "blotto",
+        "connect4"
+      ],
+      "architectures": [
+        "single",
+        "parallel",
+        "hierarchical"
+      ],
+      "phases": {
+        "internal_ai_tournament": true,
+        "blotto_vs_bots": true,
+        "connect4_oracle_accuracy": true
+      },
+      "num_trials": 10,
+      "purpose": "Main architecture comparison for the currently implemented benchmark scope."
+    }
+  ],
+  "acceptance_checks": [
+    "Every planned run must produce structured logs, metrics, and a run manifest.",
+    "Pilot runs must be manually inspected before final runs are treated as report-quality.",
+    "Final runs should use the same architecture set and prompt family as the accepted pilot unless an updated plan is written."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "plan_id": "section14_experiments_v1",
+  "benchmark_template": "configs/benchmark.json",
+  "runs": [
+    {
+      "run_id": "pilot_architecture_comparison",
+      "stage": "pilot",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/pilot_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "main_architecture_comparison",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/final_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "model_scaling_qwen2_5_3b",
+      "stage": "final",
+      "benchmark_overrides": {
+        "model_config": "configs/models/ollama_qwen2_5_3b.json",
+        "experiment_config": "configs/experiments/final_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "model_scaling_qwen2_5_7b",
+      "stage": "final",
+      "benchmark_overrides": {
+        "model_config": "configs/models/ollama_qwen2_5_7b.json",
+        "experiment_config": "configs/experiments/final_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "model_scaling_qwen2_5_14b",
+      "stage": "final",
+      "benchmark_overrides": {
+        "model_config": "configs/models/ollama_qwen2_5_14b.json",
+        "experiment_config": "configs/experiments/final_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "prompt_structured_reasoning",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/final_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "prompt_minimal",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/prompt_minimal_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "prompt_chain_of_thought",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/prompt_chain_of_thought_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "prompt_legality_first",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/prompt_legality_first_architecture_comparison.json"
+      }
+    },
+    {
+      "run_id": "difficulty_blotto_harder",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/difficulty_blotto_harder.json",
+        "game_configs": {
+          "blotto": "configs/games/blotto_harder.json"
+        }
+      }
+    },
+    {
+      "run_id": "difficulty_connect4_wide",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/difficulty_connect4_wide.json",
+        "game_configs": {
+          "connect4": "configs/games/connect4_wide.json"
+        }
+      }
+    },
+    {
+      "run_id": "adversary_and_baseline_validation",
+      "stage": "final",
+      "benchmark_overrides": {
+        "experiment_config": "configs/experiments/final_architecture_comparison.json"
+      }
+    }
+  ]
+}

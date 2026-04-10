@@ -1,0 +1,110 @@
+{
+  "architectures": [
+    {
+      "id": "single",
+      "type": "single",
+      "display_name": "Single Agent",
+      "agent_count": 1,
+      "aggregation_rule": "single_response",
+      "role_definitions": [
+        {
+          "role": "single_agent",
+          "prompt_template": "single_role"
+        }
+      ]
+    },
+    {
+      "id": "parallel_2",
+      "type": "parallel",
+      "display_name": "Parallel Team (2)",
+      "agent_count": 2,
+      "aggregation_rule": "majority_vote",
+      "tie_breaker": "first_valid",
+      "role_definitions": [
+        {
+          "role": "voter",
+          "prompt_template": "parallel_voter_role"
+        }
+      ]
+    },
+    {
+      "id": "parallel",
+      "type": "parallel",
+      "display_name": "Parallel Team",
+      "agent_count": 3,
+      "aggregation_rule": "majority_vote",
+      "tie_breaker": "first_valid",
+      "role_definitions": [
+        {
+          "role": "voter",
+          "prompt_template": "parallel_voter_role"
+        }
+      ]
+    },
+    {
+      "id": "hierarchical",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team",
+      "agent_count": 3,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "critic",
+          "prompt_template": "critic_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 1,
+      "include_critic": true
+    },
+    {
+      "id": "hierarchical_no_critic",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team (No Critic)",
+      "agent_count": 2,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 0,
+      "include_critic": false
+    },
+    {
+      "id": "hierarchical_multi_critic",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team (2 Critics)",
+      "agent_count": 4,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "critic",
+          "prompt_template": "critic_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 2,
+      "include_critic": true
+    }
+  ]
+}

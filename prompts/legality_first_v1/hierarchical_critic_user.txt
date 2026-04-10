@@ -1,0 +1,4 @@
+Rules: {rules}
+State: {state}
+Reasoner suggested: {reasoner_output}
+Check legality first. If the move is legal, assess strategy. Suggest a corrected move if needed.

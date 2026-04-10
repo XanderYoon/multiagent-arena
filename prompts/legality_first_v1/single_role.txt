@@ -1,0 +1,1 @@
+Prioritize legality checks, then choose the best legal move.

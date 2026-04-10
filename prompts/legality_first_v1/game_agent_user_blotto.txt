@@ -1,0 +1,3 @@
+Rules: {rules}
+State: {state}
+First ensure the allocation has exactly the required length, contains only non-negative integers, and sums exactly to the troop budget. Then optimize.

@@ -1,0 +1,5 @@
+Rules: {rules}
+State: {state}
+Reasoner's proposal: {reasoner_output}
+Critic's feedback: {critic_output}
+Choose the final legal move.

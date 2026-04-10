@@ -1,0 +1,3 @@
+Rules: {rules}
+State: {state}
+Reason step by step about battlefield values, then verify the allocation sum exactly matches the troop budget.

@@ -1,0 +1,3 @@
+Rules: {rules}
+State: {state}
+Reason step by step about threats, opportunities, and legal columns before committing to the move.

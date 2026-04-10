@@ -1,0 +1,4 @@
+Rules: {rules}
+State: {state}
+Reasoner suggested: {reasoner_output}
+Review the proposal step by step. Check legality first, then strategy, then recommend a corrected move if needed.

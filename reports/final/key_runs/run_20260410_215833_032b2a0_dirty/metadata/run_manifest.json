@@ -2,7 +2,7 @@
   "run_id": "run_20260410_215833_032b2a0_dirty",
   "started_at": "2026-04-11T01:58:33Z",
   "benchmark_name": "multi_agent_llm_game_benchmark_model_scale_subset",
-  "config_path": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/config/benchmark_model_scale_subset.json",
+  "config_path": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/configs/benchmark_model_scale_subset.json",
   "global_seed": 8803,
   "seed_policy": {
     "global_seed": 8803,

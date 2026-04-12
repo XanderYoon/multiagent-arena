@@ -6,9 +6,19 @@ This benchmark evaluates whether multi-agent LLM orchestration improves strategi
 
 ## Included Experimental Runs
 
+- `model_scale`: `run_20260410_215833_032b2a0_dirty` using `qwen2_5_param_count_subset` with prompt family `structured_reasoning_v1` on backend `ollama`.
+- `quantization`: `run_20260411_002628_032b2a0_dirty` using `qwen2_5_7b_quantization_subset` with prompt family `structured_reasoning_v1` on backend `ollama`.
 
 ## Final Results
 
+- `model_scale` / `blotto` / `blotto_vs_bots`: `parallel_lmh` led on `win_rate` with value `0.625`.
+- `model_scale` / `blotto` / `internal_ai_tournament`: `hierarchical_hhl` led on `win_rate` with value `0.800`.
+- `model_scale` / `connect4` / `connect4_oracle_accuracy`: `parallel_llh` led on `connect4_optimal_move_accuracy` with value `42.855`.
+- `model_scale` / `connect4` / `internal_ai_tournament`: `hierarchical_hhl` led on `win_rate` with value `0.800`.
+- `quantization` / `blotto` / `blotto_vs_bots`: `hierarchical_qmix` led on `win_rate` with value `0.750`.
+- `quantization` / `blotto` / `internal_ai_tournament`: `hierarchical_q4q4f16` led on `win_rate` with value `0.600`.
+- `quantization` / `connect4` / `connect4_oracle_accuracy`: `hierarchical_f16f16q4` led on `connect4_optimal_move_accuracy` with value `33.335`.
+- `quantization` / `connect4` / `internal_ai_tournament`: `parallel_f16f16q4` led on `win_rate` with value `0.700`.
 
 ## Interpretation
 

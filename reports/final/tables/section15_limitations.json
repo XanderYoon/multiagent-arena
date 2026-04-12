@@ -1,5 +1,7 @@
 {
-  "backends_observed": [],
+  "backends_observed": [
+    "ollama"
+  ],
   "items": [
     {
       "title": "Depth-limited oracle limitations",

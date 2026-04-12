@@ -9,6 +9,14 @@ SECTION14_3_AXES = {
     "model_size_and_mixed_team_composition": "model_scale",
     "quantization_and_mixed_team_composition": "quantization",
 }
+QUALITY_SCORE_BY_ALIAS = {
+    "low": 1.0,
+    "q4": 1.0,
+    "med": 2.0,
+    "q8": 2.0,
+    "high": 3.0,
+    "f16": 3.0,
+}
 
 
 def load_json(path):
@@ -29,10 +37,14 @@ def _architecture_signature(spec):
         for alias in sequence:
             counts[alias] += 1
         composition = ",".join(f"{alias}:{counts[alias]}" for alias in sorted(counts))
+        quality_values = [QUALITY_SCORE_BY_ALIAS.get(alias) for alias in sequence if QUALITY_SCORE_BY_ALIAS.get(alias) is not None]
         return {
             "architecture_type": architecture_type,
             "composition_label": "+".join(sequence),
             "composition_signature": composition,
+            "composition_aliases": list(sequence),
+            "composition_counts": dict(counts),
+            "composition_quality_score": (sum(quality_values) / len(quality_values)) if quality_values else None,
         }
 
     if architecture_type == "hierarchical":
@@ -49,16 +61,23 @@ def _architecture_signature(spec):
         counts = defaultdict(int)
         for alias in count_aliases:
             counts[alias] += 1
+        quality_values = [QUALITY_SCORE_BY_ALIAS.get(alias) for alias in count_aliases if QUALITY_SCORE_BY_ALIAS.get(alias) is not None]
         return {
             "architecture_type": architecture_type,
             "composition_label": " -> ".join(composition),
             "composition_signature": ",".join(f"{alias}:{counts[alias]}" for alias in sorted(counts)),
+            "composition_aliases": count_aliases,
+            "composition_counts": dict(counts),
+            "composition_quality_score": (sum(quality_values) / len(quality_values)) if quality_values else None,
         }
 
     return {
         "architecture_type": architecture_type,
         "composition_label": spec.get("display_name", spec.get("id")),
         "composition_signature": spec.get("id"),
+        "composition_aliases": [],
+        "composition_counts": {},
+        "composition_quality_score": None,
     }
 
 
@@ -124,15 +143,24 @@ def build_section14_3_rows(run_dirs):
                     "architecture_type": signature["architecture_type"],
                     "composition_label": signature["composition_label"],
                     "composition_signature": signature["composition_signature"],
+                    "composition_aliases": "|".join(signature["composition_aliases"]),
+                    "composition_counts": json.dumps(signature["composition_counts"], sort_keys=True),
+                    "composition_quality_score": signature["composition_quality_score"],
                     "matches": _numeric(row.get("matches")),
                     "win_rate": _numeric(row.get("win_rate")),
                     "hallucination_rate": _numeric(row.get("hallucination_rate")),
+                    "invalid_attempt_rate": _numeric(row.get("invalid_attempt_rate")),
+                    "legality_rate": _numeric(row.get("legality_rate")),
+                    "tie_rate": _numeric(row.get("tie_rate")),
                     "connect4_optimal_move_accuracy": _numeric(row.get("connect4_optimal_move_accuracy")),
                     "blotto_nash_distance": _numeric(row.get("blotto_nash_distance")),
                     "average_value_gap": _numeric(row.get("average_value_gap")),
                     "blunder_rate": _numeric(row.get("blunder_rate")),
                     "consistency_per_state_agreement": _numeric(row.get("consistency_per_state_agreement")),
                     "consistency_outcome_stability": _numeric(row.get("consistency_outcome_stability")),
+                    "consistency_variance_across_trials": _numeric(row.get("consistency_variance_across_trials")),
+                    "consistency_accuracy_variance": _numeric(row.get("consistency_accuracy_variance")),
+                    "consistency_nash_distance_variance": _numeric(row.get("consistency_nash_distance_variance")),
                 }
             )
     return rows

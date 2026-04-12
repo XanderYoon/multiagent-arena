@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<defs>
+  <linearGradient id="bgGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+    <stop offset="0%" stop-color="#f6f1e8" />
+    <stop offset="100%" stop-color="#fffdf9" />
+  </linearGradient>
+</defs>
+<style>
+  .title { font: 700 24px Georgia, serif; fill: #1f1b16; }
+  .subtitle { font: 12px Menlo, Consolas, monospace; fill: #6c6256; letter-spacing: 0.04em; text-transform: uppercase; }
+  .axis-label { font: 13px Menlo, Consolas, monospace; fill: #4d4439; }
+  .tick { font: 11px Menlo, Consolas, monospace; fill: #6c6256; }
+  .cell-label { font: 11px Menlo, Consolas, monospace; fill: #2f2a24; }
+  .note { font: 11px Menlo, Consolas, monospace; fill: #7e7467; }
+</style>
+<rect width="980" height="560" rx="24" fill="url(#bgGradient)" />
+<text class="title" x="36" y="42">Quantization Connect4 Quality Progression</text>
+<text class="subtitle" x="36" y="64">Research question: do better model mixes improve connect 4 oracle agreement (%)?</text>
+<line x1="86" y1="110" x2="86" y2="478" stroke="#53483c" stroke-width="1.4" />
+<line x1="86" y1="478" x2="938" y2="478" stroke="#53483c" stroke-width="1.4" />
+<text class="axis-label" x="512.0" y="536" text-anchor="middle">Mean team quality score (low/q4=1, med/q8=2, high/f16=3)</text>
+<text class="axis-label" x="26" y="294.0" text-anchor="middle" transform="rotate(-90 26 294.0)">Connect 4 oracle agreement (%)</text>
+<line x1="86.0" y1="110" x2="86.0" y2="478" stroke="#ddd2c4" stroke-width="1" />
+<line x1="86" y1="478.0" x2="938" y2="478.0" stroke="#ddd2c4" stroke-width="1" />
+<text class="tick" x="86.0" y="498" text-anchor="middle">1.52</text>
+<text class="tick" x="76" y="482.0" text-anchor="end">0.00</text>
+<line x1="299.00000000000006" y1="110" x2="299.00000000000006" y2="478" stroke="#ddd2c4" stroke-width="1" />
+<line x1="86" y1="386.0" x2="938" y2="386.0" stroke="#ddd2c4" stroke-width="1" />
+<text class="tick" x="299.00000000000006" y="498" text-anchor="middle">1.76</text>
+<text class="tick" x="76" y="390.0" text-anchor="end">9.00</text>
+<line x1="511.9999999999999" y1="110" x2="511.9999999999999" y2="478" stroke="#ddd2c4" stroke-width="1" />
+<line x1="86" y1="294.0" x2="938" y2="294.0" stroke="#ddd2c4" stroke-width="1" />
+<text class="tick" x="511.9999999999999" y="498" text-anchor="middle">2.00</text>
+<text class="tick" x="76" y="298.0" text-anchor="end">18.00</text>
+<line x1="724.9999999999999" y1="110" x2="724.9999999999999" y2="478" stroke="#ddd2c4" stroke-width="1" />
+<line x1="86" y1="202.0" x2="938" y2="202.0" stroke="#ddd2c4" stroke-width="1" />
+<text class="tick" x="724.9999999999999" y="498" text-anchor="middle">2.24</text>
+<text class="tick" x="76" y="206.0" text-anchor="end">27.00</text>
+<line x1="938.0" y1="110" x2="938.0" y2="478" stroke="#ddd2c4" stroke-width="1" />
+<line x1="86" y1="110.0" x2="938" y2="110.0" stroke="#ddd2c4" stroke-width="1" />
+<text class="tick" x="938.0" y="498" text-anchor="middle">2.48</text>
+<text class="tick" x="76" y="114.0" text-anchor="end">36.00</text>
+<path d="M 218.21 307.60 L 512.00 302.75 L 805.79 137.26" fill="none" stroke="#c25b32" stroke-width="3" stroke-linecap="round" />
+<circle cx="218.20689655172407" cy="307.60407535178797" r="7" fill="#c25b32" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="226.20689655172407" y="297.60407535178797">hierarchical_q4q4f16</text>
+<circle cx="511.9999999999999" cy="302.7487625618719" r="7" fill="#c25b32" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="519.9999999999999" y="292.7487625618719">hierarchical_qmix</text>
+<circle cx="805.7931034482759" cy="137.25925925925927" r="7" fill="#c25b32" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="813.7931034482759" y="127.25925925925927">hierarchical_f16f16q4</text>
+<path d="M 218.21 210.86 L 512.00 179.88 L 805.79 200.53" fill="none" stroke="#215f8b" stroke-width="3" stroke-linecap="round" />
+<circle cx="218.20689655172407" cy="210.85557944325012" r="7" fill="#215f8b" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="226.20689655172407" y="200.85557944325012">parallel_q4q4f16</text>
+<circle cx="511.9999999999999" cy="179.88379469915395" r="7" fill="#215f8b" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="519.9999999999999" y="169.88379469915395">parallel_qmix</text>
+<circle cx="805.7931034482759" cy="200.53165119521805" r="7" fill="#215f8b" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="813.7931034482759" y="190.53165119521805">parallel_f16f16q4</text>
+<line x1="86" y1="80" x2="114" y2="80" stroke="#c25b32" stroke-width="3" />
+<circle cx="100" cy="80" r="6" fill="#c25b32" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="124" y="84">hierarchical</text>
+<line x1="256" y1="80" x2="284" y2="80" stroke="#215f8b" stroke-width="3" />
+<circle cx="270" cy="80" r="6" fill="#215f8b" stroke="#fffaf2" stroke-width="2" />
+<text class="tick" x="294" y="84">parallel</text>
+</svg>

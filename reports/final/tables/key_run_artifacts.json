@@ -1,0 +1,44 @@
+[
+  {
+    "run_id": "run_20260410_215833_032b2a0_dirty",
+    "copied_artifacts": [
+      "config/benchmark.json",
+      "config/experiment.json",
+      "config/architectures.json",
+      "config/model.json",
+      "config/prompt.json",
+      "config/prompt_catalog.json",
+      "metadata/run_manifest.json",
+      "metadata/reproducibility.json",
+      "summaries/summary.json",
+      "summaries/metrics.json",
+      "summaries/architecture_summaries.csv",
+      "summaries/aggregate_tables.csv",
+      "summaries/model_summaries.csv",
+      "summaries/prompt_summaries.csv",
+      "summaries/game_outcomes.csv",
+      "logs/results.txt"
+    ]
+  },
+  {
+    "run_id": "run_20260411_002628_032b2a0_dirty",
+    "copied_artifacts": [
+      "config/benchmark.json",
+      "config/experiment.json",
+      "config/architectures.json",
+      "config/model.json",
+      "config/prompt.json",
+      "config/prompt_catalog.json",
+      "metadata/run_manifest.json",
+      "metadata/reproducibility.json",
+      "summaries/summary.json",
+      "summaries/metrics.json",
+      "summaries/architecture_summaries.csv",
+      "summaries/aggregate_tables.csv",
+      "summaries/model_summaries.csv",
+      "summaries/prompt_summaries.csv",
+      "summaries/game_outcomes.csv",
+      "logs/results.txt"
+    ]
+  }
+]

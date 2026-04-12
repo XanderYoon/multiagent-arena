@@ -1,4 +1,4 @@
-# Section 15 Final Deliverables
+# Final Deliverables
 
 ## Project Objective
 
@@ -22,7 +22,7 @@ This benchmark evaluates whether multi-agent LLM orchestration improves strategi
 
 ## Interpretation
 
-The final tables and figures in this bundle are derived directly from the stored run summaries under `reports/runs/experiment_runs/run_*/`. They are intended to support the proposal's Section 14.3 claims about model-scale and quantization effects on multi-agent orchestration.
+The final tables and figures in this bundle are derived directly from the stored run summaries under `reports/runs/experiment_runs/run_*/`. The core tables remain centered on the mixed-team live studies, while the figure set now also includes broader benchmark comparisons covering baseline, pilot, prompt-family, and difficulty experiments.
 
 ## Limitations
 
@@ -34,7 +34,7 @@ The final tables and figures in this bundle are derived directly from the stored
 ## Bundle Contents
 
 - `RUN_INSTRUCTIONS.md`: reproducible commands for rerunning the benchmark and regenerating this bundle.
-- `tables/`: final CSV and JSON summary tables for the selected Section 14.3 runs.
-- `figures/`: SVG charts for the key experiment groups.
+- `tables/`: final CSV and JSON summary tables for the selected mixed-team live runs.
+- `figures/`: SVG charts for both the Section 14.3 suites and broader non-Section 14.3 experiment comparisons.
 - `key_runs/`: copied configs, metadata, summaries, and human-readable logs for the selected runs.
 

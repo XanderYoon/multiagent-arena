@@ -401,7 +401,6 @@ This checklist is intended to track all work required to deliver the project des
 - [x] Run a small architecture-comparison pilot on Connect 4
 - [x] Verify that logs, metrics, and outputs are correct
 - [x] Inspect failure cases manually
-- [ ] Revise prompts and validation rules if pilot runs expose issues
 
 #### 14.2 Main Architecture Comparison
 
@@ -412,10 +411,10 @@ This checklist is intended to track all work required to deliver the project des
 
 #### 14.3 Model Scaling Experiments
 
-- [ ] Select the exact model variants to compare
-- [ ] Run the architecture comparison at multiple model sizes
-- [ ] Hold prompts and game settings constant
-- [ ] Determine whether orchestration gains persist across model scale
+- [x] Select the exact model variants to compare
+- [x] Run the architecture comparison at multiple model sizes
+- [x] Hold prompts and game settings constant
+- [x] Determine whether orchestration gains persist across model scale
 
 #### 14.4 Prompting Experiments
 

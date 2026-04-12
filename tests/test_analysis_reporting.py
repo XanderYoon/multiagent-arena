@@ -84,10 +84,19 @@ class AnalysisReportingTests(unittest.TestCase):
             write_report_bundle(output_dir, runs)
 
             self.assertTrue((output_dir / "combined_aggregate_tables.csv").exists())
+            self.assertTrue((output_dir / "non_section14_3_aggregate_tables.csv").exists())
             self.assertTrue((output_dir / "hallucination_patterns.csv").exists())
+            self.assertTrue((output_dir / "invalid_reason_summary.csv").exists())
+            self.assertTrue((output_dir / "experiment_run_index.csv").exists())
+            self.assertTrue((output_dir / "architecture_overview.csv").exists())
+            self.assertTrue((output_dir / "run_label_overview.csv").exists())
+            self.assertTrue((output_dir / "prompt_family_overview.csv").exists())
             self.assertTrue((output_dir / "claim_map.json").exists())
             self.assertTrue((output_dir / "report.md").exists())
-            self.assertTrue((output_dir / "plots" / "architecture_blotto.svg").exists())
+            self.assertTrue((output_dir / "plots" / "architecture_blotto_win_rate.svg").exists())
+            self.assertTrue((output_dir / "plots" / "run_label_coverage.svg").exists())
+            self.assertTrue((output_dir / "plots" / "comparison_axis_coverage.svg").exists())
+            self.assertTrue((output_dir / "plots" / "invalid_reason_counts.svg").exists())
 
 
 if __name__ == "__main__":

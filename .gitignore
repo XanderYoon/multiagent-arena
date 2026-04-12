@@ -3,4 +3,5 @@ __pycache__/
 *.pyc
 runs/experiment_runs/run_*/
 reports/latest/*
+reports/final/*
 !runs/.gitkeep

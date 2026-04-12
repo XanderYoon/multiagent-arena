@@ -8,19 +8,35 @@ from html import escape
 from pathlib import Path
 
 try:
+    from .matplotlib_figures import (
+        render_bar_chart_svg,
+        render_heatmap_svg,
+        render_placeholder_svg,
+        render_quality_progression_svg,
+        render_tradeoff_bubble_svg,
+    )
     from .report_section14_3 import (
         SECTION14_3_AXES,
         build_leaderboard,
         build_section14_3_rows,
         discover_section14_3_runs,
     )
+    from .reporting import build_combined_tables, collect_runs, is_section14_3_axis
 except ImportError:
+    from matplotlib_figures import (
+        render_bar_chart_svg,
+        render_heatmap_svg,
+        render_placeholder_svg,
+        render_quality_progression_svg,
+        render_tradeoff_bubble_svg,
+    )
     from report_section14_3 import (
         SECTION14_3_AXES,
         build_leaderboard,
         build_section14_3_rows,
         discover_section14_3_runs,
     )
+    from reporting import build_combined_tables, collect_runs, is_section14_3_axis
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -210,7 +226,7 @@ def build_final_report(selected_runs, rows, topline_rows, limitations):
         )
 
     lines = [
-        "# Section 15 Final Deliverables",
+        "# Final Deliverables",
         "",
         "## Project Objective",
         "",
@@ -248,10 +264,11 @@ def build_final_report(selected_runs, rows, topline_rows, limitations):
             "",
             "## Interpretation",
             "",
-            (
-                "The final tables and figures in this bundle are derived directly from the stored run summaries under `reports/runs/experiment_runs/run_*/`. "
-                "They are intended to support the proposal's Section 14.3 claims about model-scale and quantization effects on multi-agent orchestration."
-            ),
+        (
+            "The final tables and figures in this bundle are derived directly from the stored run summaries under `reports/runs/experiment_runs/run_*/`. "
+                "The core tables remain centered on the mixed-team live studies, while the figure set now also includes broader benchmark comparisons "
+            "covering baseline, pilot, prompt-family, and difficulty experiments."
+        ),
             "",
             "## Limitations",
             "",
@@ -267,8 +284,8 @@ def build_final_report(selected_runs, rows, topline_rows, limitations):
             "## Bundle Contents",
             "",
             "- `RUN_INSTRUCTIONS.md`: reproducible commands for rerunning the benchmark and regenerating this bundle.",
-            "- `tables/`: final CSV and JSON summary tables for the selected Section 14.3 runs.",
-            "- `figures/`: SVG charts for the key experiment groups.",
+            "- `tables/`: final CSV and JSON summary tables for the selected mixed-team live runs.",
+            "- `figures/`: SVG charts for both the Section 14.3 suites and broader non-Section 14.3 experiment comparisons.",
             "- `key_runs/`: copied configs, metadata, summaries, and human-readable logs for the selected runs.",
             "",
         ]
@@ -381,8 +398,6 @@ def _svg_style_block():
   </linearGradient>
 </defs>
 <style>
-  .title { font: 700 24px Georgia, serif; fill: #1f1b16; }
-  .subtitle { font: 12px Menlo, Consolas, monospace; fill: #6c6256; letter-spacing: 0.04em; text-transform: uppercase; }
   .axis-label { font: 13px Menlo, Consolas, monospace; fill: #4d4439; }
   .tick { font: 11px Menlo, Consolas, monospace; fill: #6c6256; }
   .cell-label { font: 11px Menlo, Consolas, monospace; fill: #2f2a24; }
@@ -391,27 +406,39 @@ def _svg_style_block():
 """.strip()
 
 
-def _svg_open(width, height, title, subtitle):
+def _svg_open(width, height):
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         _svg_style_block(),
         f'<rect width="{width}" height="{height}" rx="24" fill="url(#bgGradient)" />',
-        f'<text class="title" x="36" y="42">{_escape(title)}</text>',
-        f'<text class="subtitle" x="36" y="64">{_escape(subtitle)}</text>',
     ]
     return lines
 
 
 def _placeholder_svg(title, message, subtitle="Section 14.3 figure"):
-    lines = _svg_open(960, 260, title, subtitle)
+    rendered = render_placeholder_svg(title=title, message=message, subtitle=subtitle)
+    if rendered is not None:
+        return rendered
+
+    lines = _svg_open(960, 260)
     lines.extend(
         [
-            '<rect x="34" y="86" width="892" height="136" rx="18" fill="#f1ebe1" stroke="#d9cfbf" />',
+            '<rect x="34" y="62" width="892" height="136" rx="18" fill="#f1ebe1" stroke="#d9cfbf" />',
             f'<text class="axis-label" x="480" y="158" text-anchor="middle">{_escape(message)}</text>',
             "</svg>",
         ]
     )
     return "\n".join(lines)
+
+
+def _matplotlib_bar_svg(title, subtitle, values):
+    if not values:
+        return _placeholder_svg(title, "Insufficient aggregate data", subtitle)
+
+    rendered = render_bar_chart_svg(title=title, values=values, subtitle=subtitle)
+    if rendered is not None:
+        return rendered
+    return _placeholder_svg(title, "Matplotlib not available for bar chart rendering", subtitle)
 
 
 def _color_mix(start_hex, end_hex, fraction):
@@ -463,13 +490,40 @@ def _build_matchup_heatmap_svg(title, subtitle, architecture_rows, matchup_rows)
     if not totals:
         return _placeholder_svg(title, "No pairwise outcomes available", subtitle)
 
+    matrix = []
+    annotations = []
+    for row_label in labels:
+        matrix_row = []
+        annotation_row = []
+        for col_label in labels:
+            if row_label == col_label:
+                matrix_row.append(None)
+                annotation_row.append("self")
+                continue
+            total = totals.get((row_label, col_label), 0)
+            value = (scores[(row_label, col_label)] / total) if total else None
+            matrix_row.append(value)
+            annotation_row.append("n/a" if value is None else f"{value:.2f}")
+        matrix.append(matrix_row)
+        annotations.append(annotation_row)
+
+    rendered = render_heatmap_svg(
+        title=title,
+        subtitle=subtitle,
+        labels=labels,
+        matrix=matrix,
+        annotations=annotations,
+        note="cell value = expected head-to-head score",
+    )
+    if rendered is not None:
+        return rendered
+
     width = 1040
     height = 180 + (len(labels) * 64)
     margin_left = 260
     margin_top = 150
     cell = 64
-    lines = _svg_open(width, height, title, subtitle)
-    lines.append(f'<text class="note" x="{width - 36}" y="42" text-anchor="end">cell value = expected head-to-head score</text>')
+    lines = _svg_open(width, height)
 
     for index, label in enumerate(labels):
         x = margin_left + index * cell + cell / 2
@@ -513,6 +567,25 @@ def _build_quality_progression_svg(title, subtitle, rows, metric, y_label):
     if not filtered_rows:
         return _placeholder_svg(title, "Insufficient quality progression data", subtitle)
 
+    rendered = render_quality_progression_svg(
+        title=title,
+        subtitle=subtitle,
+        rows=[
+            {
+                "architecture_type": row["architecture_type"],
+                "composition_quality_score": row["composition_quality_score"],
+                "architecture_id": row["architecture_id"],
+                metric: _coerce_float(row.get(metric)),
+            }
+            for row in filtered_rows
+        ],
+        metric=metric,
+        y_label=y_label,
+        palette={"parallel": "#215f8b", "hierarchical": "#c25b32"},
+    )
+    if rendered is not None:
+        return rendered
+
     grouped = defaultdict(list)
     for row in filtered_rows:
         grouped[row["architecture_type"]].append(
@@ -548,7 +621,7 @@ def _build_quality_progression_svg(title, subtitle, rows, metric, y_label):
     def project_y(value):
         return margin_top + (1.0 - ((value - y_min) / (y_max - y_min))) * plot_height
 
-    lines = _svg_open(width, height, title, subtitle)
+    lines = _svg_open(width, height)
     lines.extend(
         [
             f'<line x1="{margin_left}" y1="{margin_top}" x2="{margin_left}" y2="{margin_top + plot_height}" stroke="#53483c" stroke-width="1.4" />',
@@ -616,6 +689,19 @@ def _build_tradeoff_bubble_svg(title, subtitle, rows, x_metric, y_metric, size_m
     if not points:
         return _placeholder_svg(title, "Insufficient tradeoff data", subtitle)
 
+    rendered = render_tradeoff_bubble_svg(
+        title=title,
+        subtitle=subtitle,
+        points=points,
+        x_label=x_label,
+        y_label=y_label,
+        size_label=size_metric,
+        invert_x=invert_x,
+        suite_palette={"model_scale": "#215f8b", "quantization": "#c25b32"},
+    )
+    if rendered is not None:
+        return rendered
+
     width = 980
     height = 560
     margin_left = 88
@@ -657,14 +743,13 @@ def _build_tradeoff_bubble_svg(title, subtitle, rows, x_metric, y_metric, size_m
     def project_y(value):
         return margin_top + (1.0 - ((value - y_min) / (y_max - y_min))) * plot_height
 
-    lines = _svg_open(width, height, title, subtitle)
+    lines = _svg_open(width, height)
     lines.extend(
         [
             f'<line x1="{margin_left}" y1="{margin_top}" x2="{margin_left}" y2="{margin_top + plot_height}" stroke="#53483c" stroke-width="1.4" />',
             f'<line x1="{margin_left}" y1="{margin_top + plot_height}" x2="{margin_left + plot_width}" y2="{margin_top + plot_height}" stroke="#53483c" stroke-width="1.4" />',
             f'<text class="axis-label" x="{margin_left + plot_width / 2}" y="{height - 24}" text-anchor="middle">{_escape(x_label)}</text>',
             f'<text class="axis-label" x="26" y="{margin_top + plot_height / 2}" text-anchor="middle" transform="rotate(-90 26 {margin_top + plot_height / 2})">{_escape(y_label)}</text>',
-            f'<text class="note" x="{width - 36}" y="42" text-anchor="end">bubble size = { _escape(size_metric) }</text>',
         ]
     )
 
@@ -757,6 +842,339 @@ def _load_matchup_rows(selected_runs, summary_rows):
     return matchup_rows
 
 
+def _build_general_architecture_figures(rows):
+    figures = {}
+    specs = [
+        (
+            "blotto",
+            "blotto_vs_bots",
+            "win_rate",
+            "all_experiments_blotto_architecture_win_rate_matplotlib.svg",
+            "All-Experiment Blotto Baseline Performance",
+            "Mean architecture win rate across non-Section 14.3 baseline matches",
+        ),
+        (
+            "connect4",
+            "connect4_oracle_accuracy",
+            "connect4_optimal_move_accuracy",
+            "all_experiments_connect4_architecture_oracle_accuracy_matplotlib.svg",
+            "All-Experiment Connect 4 Oracle Accuracy",
+            "Mean architecture oracle agreement across non-Section 14.3 runs",
+        ),
+        (
+            "connect4",
+            "internal_ai_tournament",
+            "win_rate",
+            "all_experiments_connect4_architecture_head_to_head_win_rate_matplotlib.svg",
+            "All-Experiment Connect 4 Tournament Win Rate",
+            "Mean architecture head-to-head win rate across non-Section 14.3 runs",
+        ),
+    ]
+
+    for game, experiment_group, metric, filename, title, subtitle in specs:
+        buckets = defaultdict(list)
+        for row in rows:
+            if (
+                row.get("scope_type") == "architecture"
+                and row.get("game") == game
+                and row.get("experiment_group") == experiment_group
+            ):
+                value = _coerce_float(row.get(metric))
+                if value is not None:
+                    buckets[row["scope_id"]].append(value)
+        values = {
+            architecture_id: _mean(measures)
+            for architecture_id, measures in sorted(buckets.items())
+            if measures
+        }
+        figures[filename] = _matplotlib_bar_svg(title, subtitle, values)
+    return figures
+
+
+def _build_general_prompt_figures(rows):
+    figures = {}
+    specs = [
+        (
+            "blotto",
+            "blotto_vs_bots",
+            "win_rate",
+            "all_experiments_blotto_prompt_family_win_rate_matplotlib.svg",
+            "Prompt Family Effects on Blotto",
+            "Mean architecture win rate by prompt family across non-Section 14.3 runs",
+        ),
+        (
+            "connect4",
+            "connect4_oracle_accuracy",
+            "connect4_optimal_move_accuracy",
+            "all_experiments_connect4_prompt_family_oracle_accuracy_matplotlib.svg",
+            "Prompt Family Effects on Connect 4 Oracle Accuracy",
+            "Mean architecture oracle agreement by prompt family across non-Section 14.3 runs",
+        ),
+    ]
+
+    for game, experiment_group, metric, filename, title, subtitle in specs:
+        buckets = defaultdict(list)
+        for row in rows:
+            if (
+                row.get("scope_type") == "architecture"
+                and row.get("game") == game
+                and row.get("experiment_group") == experiment_group
+            ):
+                prompt_family = row.get("prompt_family_id")
+                value = _coerce_float(row.get(metric))
+                if prompt_family and value is not None:
+                    buckets[prompt_family].append(value)
+        values = {
+            prompt_family: _mean(measures)
+            for prompt_family, measures in sorted(buckets.items())
+            if measures
+        }
+        figures[filename] = _matplotlib_bar_svg(title, subtitle, values)
+    return figures
+
+
+def _build_general_run_label_figure(rows):
+    buckets = defaultdict(list)
+    for row in rows:
+        if row.get("scope_type") != "architecture":
+            continue
+        metric = PRIMARY_METRICS.get((row.get("game"), row.get("experiment_group")), "win_rate")
+        value = _coerce_float(row.get(metric))
+        run_label = row.get("run_label")
+        if run_label and value is not None:
+            buckets[f"{run_label}:{row.get('game')}"].append(value)
+
+    values = dict(
+        sorted(
+            (
+                (label, _mean(measures))
+                for label, measures in buckets.items()
+                if measures
+            ),
+            key=lambda item: (-item[1], item[0]),
+        )[:10]
+    )
+    return {
+        "all_experiments_run_label_primary_metric_top10_matplotlib.svg": _matplotlib_bar_svg(
+            "Top Non-Section 14.3 Experiment Groups",
+            "Best average primary metrics across pilot, final, prompt, difficulty, and benchmark runs",
+            values,
+        )
+    }
+
+
+def _build_general_run_label_heatmaps(rows):
+    figures = {}
+    specs = [
+        (
+            "blotto",
+            "blotto_vs_bots",
+            "win_rate",
+            "all_experiments_blotto_run_label_heatmap_matplotlib.svg",
+            "Blotto Run-Label Performance Map",
+            "Mean baseline win rate by architecture and experiment group outside Section 14.3",
+        ),
+        (
+            "connect4",
+            "connect4_oracle_accuracy",
+            "connect4_optimal_move_accuracy",
+            "all_experiments_connect4_run_label_heatmap_matplotlib.svg",
+            "Connect 4 Run-Label Accuracy Map",
+            "Mean oracle agreement by architecture and experiment group outside Section 14.3",
+        ),
+    ]
+
+    for game, experiment_group, metric, filename, title, subtitle in specs:
+        filtered = [
+            row
+            for row in rows
+            if row.get("scope_type") == "architecture"
+            and row.get("game") == game
+            and row.get("experiment_group") == experiment_group
+            and row.get("run_label")
+        ]
+        architectures = sorted({row["scope_id"] for row in filtered})
+        run_labels = sorted({row["run_label"] for row in filtered})
+        if not architectures or not run_labels:
+            figures[filename] = _placeholder_svg(title, "Insufficient run-label comparison data", subtitle)
+            continue
+
+        matrix = []
+        annotations = []
+        for architecture in architectures:
+            matrix_row = []
+            annotation_row = []
+            for run_label in run_labels:
+                values = [
+                    _coerce_float(row.get(metric))
+                    for row in filtered
+                    if row["scope_id"] == architecture and row["run_label"] == run_label
+                ]
+                value = _mean(values)
+                matrix_row.append(value)
+                annotation_row.append("n/a" if value is None else f"{value:.2f}")
+            matrix.append(matrix_row)
+            annotations.append(annotation_row)
+
+        rendered = render_heatmap_svg(
+            title=title,
+            subtitle=subtitle,
+            labels=run_labels,
+            matrix=matrix,
+            annotations=annotations,
+            note="rows are architectures",
+            x_labels=run_labels,
+            y_labels=architectures,
+        )
+        if rendered is not None:
+            figures[filename] = rendered
+        else:
+            figures[filename] = _placeholder_svg(title, "Matplotlib not available for heatmap rendering", subtitle)
+    return figures
+
+
+def _build_same_model_architecture_heatmaps(rows):
+    figures = {}
+    canonical_architectures = ("single", "parallel", "hierarchical")
+    specs = [
+        (
+            "blotto",
+            "blotto_vs_bots",
+            "win_rate",
+            "all_experiments_same_model_blotto_architecture_win_rate_heatmap_matplotlib.svg",
+            "Same-Model Blotto Architecture Comparison",
+            "Single vs parallel vs hierarchical under matched model families outside Section 14.3",
+        ),
+        (
+            "blotto",
+            "internal_ai_tournament",
+            "win_rate",
+            "all_experiments_same_model_blotto_tournament_win_rate_heatmap_matplotlib.svg",
+            "Same-Model Blotto Tournament Comparison",
+            "Head-to-head tournament win rate for canonical architectures under matched models",
+        ),
+        (
+            "connect4",
+            "internal_ai_tournament",
+            "win_rate",
+            "all_experiments_same_model_connect4_tournament_win_rate_heatmap_matplotlib.svg",
+            "Same-Model Connect 4 Tournament Comparison",
+            "Head-to-head tournament win rate for canonical architectures under matched models",
+        ),
+        (
+            "connect4",
+            "connect4_oracle_accuracy",
+            "connect4_optimal_move_accuracy",
+            "all_experiments_same_model_connect4_oracle_accuracy_heatmap_matplotlib.svg",
+            "Same-Model Connect 4 Oracle Accuracy",
+            "Oracle agreement for single vs parallel vs hierarchical with the same underlying model",
+        ),
+    ]
+
+    for game, experiment_group, metric, filename, title, subtitle in specs:
+        filtered = [
+            row
+            for row in rows
+            if row.get("scope_type") == "architecture"
+            and row.get("game") == game
+            and row.get("experiment_group") == experiment_group
+            and row.get("scope_id") in canonical_architectures
+            and row.get("model")
+        ]
+        models = sorted({row["model"] for row in filtered})
+        if not models:
+            figures[filename] = _placeholder_svg(title, "Insufficient same-model architecture data", subtitle)
+            continue
+
+        matrix = []
+        annotations = []
+        for architecture in canonical_architectures:
+            matrix_row = []
+            annotation_row = []
+            for model in models:
+                values = [
+                    _coerce_float(row.get(metric))
+                    for row in filtered
+                    if row["scope_id"] == architecture and row["model"] == model
+                ]
+                value = _mean(values)
+                matrix_row.append(value)
+                annotation_row.append("n/a" if value is None else f"{value:.2f}")
+            matrix.append(matrix_row)
+            annotations.append(annotation_row)
+
+        rendered = render_heatmap_svg(
+            title=title,
+            subtitle=subtitle,
+            labels=models,
+            matrix=matrix,
+            annotations=annotations,
+            note="rows are canonical architectures",
+            x_labels=models,
+            y_labels=list(canonical_architectures),
+        )
+        if rendered is not None:
+            figures[filename] = rendered
+        else:
+            figures[filename] = _placeholder_svg(title, "Matplotlib not available for heatmap rendering", subtitle)
+    return figures
+
+
+def _build_same_model_architecture_summary_bars(rows):
+    figures = {}
+    canonical_architectures = ("single", "parallel", "hierarchical")
+    specs = [
+        (
+            "blotto",
+            "blotto_vs_bots",
+            "win_rate",
+            "all_experiments_same_model_blotto_architecture_summary_matplotlib.svg",
+            "Matched-Model Blotto Summary",
+            "Average baseline win rate across models for the canonical architecture trio",
+        ),
+        (
+            "connect4",
+            "connect4_oracle_accuracy",
+            "connect4_optimal_move_accuracy",
+            "all_experiments_same_model_connect4_architecture_summary_matplotlib.svg",
+            "Matched-Model Connect 4 Summary",
+            "Average oracle agreement across models for the canonical architecture trio",
+        ),
+    ]
+
+    for game, experiment_group, metric, filename, title, subtitle in specs:
+        values = {}
+        for architecture in canonical_architectures:
+            measures = [
+                _coerce_float(row.get(metric))
+                for row in rows
+                if row.get("scope_type") == "architecture"
+                and row.get("game") == game
+                and row.get("experiment_group") == experiment_group
+                and row.get("scope_id") == architecture
+                and row.get("model")
+            ]
+            value = _mean(measures)
+            if value is not None:
+                values[architecture] = value
+        figures[filename] = _matplotlib_bar_svg(title, subtitle, values)
+    return figures
+
+
+def build_general_figures(experiments_root):
+    runs = collect_runs(experiments_root)
+    combined_rows = build_combined_tables(runs)
+    non_section_rows = [row for row in combined_rows if not is_section14_3_axis(row.get("comparison_axis"))]
+    figures = {}
+    figures.update(_build_general_architecture_figures(non_section_rows))
+    figures.update(_build_general_prompt_figures(non_section_rows))
+    figures.update(_build_general_run_label_figure(non_section_rows))
+    figures.update(_build_general_run_label_heatmaps(non_section_rows))
+    figures.update(_build_same_model_architecture_heatmaps(non_section_rows))
+    figures.update(_build_same_model_architecture_summary_bars(non_section_rows))
+    return figures
+
+
 def build_figures(selected_runs, rows):
     figures = {}
     matchup_rows = _load_matchup_rows(selected_runs, rows)
@@ -772,7 +1190,7 @@ def build_figures(selected_runs, rows):
                     continue
                 seen_architecture_ids.add(row["architecture_id"])
                 architecture_rows.append(row)
-            figures[f"section14_3_{suite}_{game}_head_to_head_heatmap.svg"] = _build_matchup_heatmap_svg(
+            figures[f"{suite}_{game}_head_to_head_heatmap.svg"] = _build_matchup_heatmap_svg(
                 f"{suite.replace('_', ' ').title()} {game.title()} Matchup Heatmap",
                 "Research question: which ensemble compositions beat which alternatives in direct play?",
                 architecture_rows,
@@ -791,7 +1209,8 @@ def build_figures(selected_runs, rows):
             for row in rows
             if row["suite"] == suite and row["game"] == game and row["experiment_group"] == experiment_group
         ]
-        figures[f"section14_3_{suite}_{game}_{experiment_group}_quality_progression.svg"] = _build_quality_progression_svg(
+        metric_slug = "baseline_win_rate_progression" if experiment_group == "blotto_vs_bots" else "oracle_accuracy_progression"
+        figures[f"{suite}_{game}_{metric_slug}.svg"] = _build_quality_progression_svg(
             f"{suite.replace('_', ' ').title()} {game.title()} Quality Progression",
             f"Research question: do better model mixes improve {y_label.lower()}?",
             filtered_rows,
@@ -799,7 +1218,7 @@ def build_figures(selected_runs, rows):
             y_label,
         )
 
-    figures["section14_3_connect4_oracle_tradeoff_bubble.svg"] = _build_tradeoff_bubble_svg(
+    figures["connect4_oracle_tradeoff_map.svg"] = _build_tradeoff_bubble_svg(
         "Connect 4 Oracle Tradeoff Map",
         "Research question: which teams improve accuracy without increasing blunders?",
         [row for row in rows if row["game"] == "connect4" and row["experiment_group"] == "connect4_oracle_accuracy"],
@@ -810,7 +1229,7 @@ def build_figures(selected_runs, rows):
         "Oracle agreement (%)",
         invert_x=True,
     )
-    figures["section14_3_blotto_strategy_tradeoff_bubble.svg"] = _build_tradeoff_bubble_svg(
+    figures["blotto_strategy_tradeoff_map.svg"] = _build_tradeoff_bubble_svg(
         "Blotto Strategy Tradeoff Map",
         "Research question: which teams stay near equilibrium while still beating baselines?",
         [row for row in rows if row["game"] == "blotto" and row["experiment_group"] == "blotto_vs_bots"],
@@ -840,19 +1259,20 @@ def build_deliverables(experiments_root, output_dir):
 
     copied_artifacts = copy_key_run_artifacts(selected_runs, output_dir)
     figures = build_figures(selected_runs, rows)
+    figures.update(build_general_figures(experiments_root))
 
     write_json(
-        output_dir / "tables" / "section14_3_summary.json",
+        output_dir / "tables" / "mixed_team_live_study_summary.json",
         {
-            "section": "15",
+            "bundle": "final",
             "selected_runs": [run_dir.name for run_dir in selected_runs],
             "rows": rows,
         },
     )
-    write_csv_rows(output_dir / "tables" / "section14_3_summary.csv", rows)
-    write_csv_rows(output_dir / "tables" / "section14_3_leaderboard.csv", leaderboard)
-    write_csv_rows(output_dir / "tables" / "section15_topline_results.csv", topline_rows)
-    write_json(output_dir / "tables" / "section15_limitations.json", limitations)
+    write_csv_rows(output_dir / "tables" / "mixed_team_live_study_summary.csv", rows)
+    write_csv_rows(output_dir / "tables" / "mixed_team_live_study_leaderboard.csv", leaderboard)
+    write_csv_rows(output_dir / "tables" / "topline_results.csv", topline_rows)
+    write_json(output_dir / "tables" / "study_limitations.json", limitations)
     write_json(output_dir / "tables" / "key_run_artifacts.json", copied_artifacts)
 
     for filename, svg in figures.items():

@@ -67,7 +67,42 @@ class FinalDeliverablesTests(unittest.TestCase):
             json.dumps({"run_id": run_name, "model": model_group_id, "prompt_family": "structured_reasoning_v1"}),
             encoding="utf-8",
         )
-        (run_dir / "summaries" / "metrics.json").write_text(json.dumps({"aggregate_tables": []}), encoding="utf-8")
+        aggregate_rows = []
+        for row in rows:
+            aggregate_rows.append(
+                {
+                    "scope_type": "architecture",
+                    "scope_id": row["scope_id"],
+                    "experiment_group": row["experiment_group"],
+                    "game": row["game"],
+                    "model": model_group_id,
+                    "prompt_family_id": "structured_reasoning_v1",
+                    "matches": row.get("matches"),
+                    "wins": row.get("wins"),
+                    "ties": row.get("ties"),
+                    "losses": row.get("losses"),
+                    "win_rate": row.get("win_rate"),
+                    "tie_rate": row.get("tie_rate"),
+                    "hallucination_rate": row.get("hallucination_rate"),
+                    "invalid_attempt_rate": row.get("invalid_attempt_rate"),
+                    "legality_rate": row.get("legality_rate"),
+                    "connect4_optimal_move_accuracy": row.get("connect4_optimal_move_accuracy"),
+                    "average_value_gap": row.get("average_value_gap"),
+                    "blunder_rate": row.get("blunder_rate"),
+                    "blotto_nash_distance": row.get("blotto_nash_distance"),
+                    "consistency": {
+                        "variance_across_trials": row.get("consistency_variance_across_trials"),
+                        "per_state_agreement": row.get("consistency_per_state_agreement"),
+                        "outcome_stability": row.get("consistency_outcome_stability"),
+                        "accuracy_variance": row.get("consistency_accuracy_variance"),
+                        "nash_distance_variance": row.get("consistency_nash_distance_variance"),
+                    },
+                }
+            )
+        (run_dir / "summaries" / "metrics.json").write_text(
+            json.dumps({"aggregate_tables": aggregate_rows}),
+            encoding="utf-8",
+        )
         (run_dir / "summaries" / "aggregate_tables.csv").write_text("scope_id\n", encoding="utf-8")
         (run_dir / "summaries" / "model_summaries.csv").write_text("scope_id\n", encoding="utf-8")
         (run_dir / "summaries" / "prompt_summaries.csv").write_text("scope_id\n", encoding="utf-8")
@@ -84,6 +119,9 @@ class FinalDeliverablesTests(unittest.TestCase):
                     "matches",
                     "win_rate",
                     "hallucination_rate",
+                    "invalid_attempt_rate",
+                    "legality_rate",
+                    "tie_rate",
                     "connect4_optimal_move_accuracy",
                     "blotto_nash_distance",
                     "average_value_gap",
@@ -145,6 +183,9 @@ class FinalDeliverablesTests(unittest.TestCase):
                         "matches": 8,
                         "win_rate": 0.75,
                         "hallucination_rate": 0.0,
+                        "invalid_attempt_rate": 0.0,
+                        "legality_rate": 1.0,
+                        "tie_rate": 0.0,
                         "connect4_optimal_move_accuracy": "",
                         "blotto_nash_distance": 0.12,
                         "average_value_gap": "",
@@ -159,6 +200,9 @@ class FinalDeliverablesTests(unittest.TestCase):
                         "matches": 2,
                         "win_rate": 0.0,
                         "hallucination_rate": 0.05,
+                        "invalid_attempt_rate": 0.05,
+                        "legality_rate": 0.95,
+                        "tie_rate": 0.0,
                         "connect4_optimal_move_accuracy": 37.5,
                         "blotto_nash_distance": "",
                         "average_value_gap": 12.0,
@@ -182,6 +226,9 @@ class FinalDeliverablesTests(unittest.TestCase):
                         "matches": 10,
                         "win_rate": 0.6,
                         "hallucination_rate": 0.0,
+                        "invalid_attempt_rate": 0.0,
+                        "legality_rate": 1.0,
+                        "tie_rate": 0.1,
                         "connect4_optimal_move_accuracy": "",
                         "blotto_nash_distance": "",
                         "average_value_gap": "",
@@ -198,14 +245,19 @@ class FinalDeliverablesTests(unittest.TestCase):
             self.assertEqual(len(result["selected_runs"]), 2)
             self.assertTrue((output_dir / "FINAL_REPORT.md").exists())
             self.assertTrue((output_dir / "RUN_INSTRUCTIONS.md").exists())
-            self.assertTrue((output_dir / "tables" / "section15_topline_results.csv").exists())
-            self.assertTrue((output_dir / "tables" / "section15_limitations.json").exists())
+            self.assertTrue((output_dir / "tables" / "topline_results.csv").exists())
+            self.assertTrue((output_dir / "tables" / "study_limitations.json").exists())
             self.assertTrue((output_dir / "figures").exists())
             self.assertTrue((output_dir / "key_runs" / "run_20260410_200000_model" / "summaries" / "architecture_summaries.csv").exists())
+            self.assertTrue((output_dir / "figures" / "all_experiments_blotto_architecture_win_rate_matplotlib.svg").exists())
+            self.assertTrue((output_dir / "figures" / "all_experiments_run_label_primary_metric_top10_matplotlib.svg").exists())
+            self.assertTrue((output_dir / "figures" / "all_experiments_same_model_blotto_architecture_win_rate_heatmap_matplotlib.svg").exists())
+            self.assertTrue((output_dir / "figures" / "all_experiments_same_model_connect4_architecture_summary_matplotlib.svg").exists())
 
             report_text = (output_dir / "FINAL_REPORT.md").read_text(encoding="utf-8")
             self.assertIn("Depth-limited oracle limitations", report_text)
             self.assertIn("Prompt sensitivity", report_text)
+            self.assertIn("broader non-Section 14.3", report_text)
 
 
 if __name__ == "__main__":

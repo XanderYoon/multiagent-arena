@@ -1,0 +1,5 @@
+average_value_gap,blotto_nash_distance,blunder_rate,connect4_optimal_move_accuracy,consistency_accuracy_variance,consistency_nash_distance_variance,consistency_outcome_stability,consistency_per_state_agreement,consistency_variance_across_trials,experiment_group,game,hallucination_rate,invalid_attempt_rate,legality_rate,losses,matches,scope_id,scope_type,tie_rate,ties,win_rate,wins
+,0.13333333333333333,,,,0.003511111111111111,1.0,1.0,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,18,mock-deterministic,model,1.0,18,0.0,0
+,,,,,,0.5,1.0,0.25,internal_ai_tournament,connect4,0.0,0.0,1.0,9,18,mock-deterministic,model,0.0,0,0.5,9
+,0.15472222222222223,,,,0.005752700617283951,0.7222222222222222,,0.2006172839506173,blotto_vs_bots,blotto,0.0,0.0,1.0,26,36,mock-deterministic,model,0.0,0,0.2777777777777778,10
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,9,9,mock-deterministic,model,0.0,0,0.0,0

@@ -1,6 +1,6 @@
 import unittest
 
-from game_engine import (
+from benchmark.game_engine import (
     BlottoEnvironment,
     Connect4Environment,
     approximate_blotto_equilibrium,

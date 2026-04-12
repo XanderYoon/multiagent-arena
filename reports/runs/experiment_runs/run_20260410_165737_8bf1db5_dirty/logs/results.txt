@@ -1,0 +1,109 @@
+
+############################################################
+PHASE 3: GRAVITY GRID OPTIMAL ACCURACY
+############################################################
+
+==================================================
+=== ACCURACY TEST: Single Agent vs Minimax Oracle | TRIAL 1 | SEED 156875254 ===
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+>>> ORACLE WINS <<<
+[Single Agent Trial 1 Stats] Moves: 5 | Perfect: 1 | Blunders: 4 | Accuracy: 20.0% | Avg Value Gap: 20010.80
+
+==================================================
+=== ACCURACY TEST: Parallel Team vs Minimax Oracle | TRIAL 1 | SEED 2375324672 ===
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+>>> ORACLE WINS <<<
+[Parallel Team Trial 1 Stats] Moves: 5 | Perfect: 1 | Blunders: 4 | Accuracy: 20.0% | Avg Value Gap: 20010.80
+
+==================================================
+=== ACCURACY TEST: Hierarchical Team vs Minimax Oracle | TRIAL 1 | SEED 3483479214 ===
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+>>> ORACLE WINS <<<
+[Hierarchical Team Trial 1 Stats] Moves: 5 | Perfect: 1 | Blunders: 4 | Accuracy: 20.0% | Avg Value Gap: 20010.80

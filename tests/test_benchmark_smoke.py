@@ -26,11 +26,11 @@ class BenchmarkSmokeTests(unittest.TestCase):
                         "output_root": str(output_root),
                         "latest_results_path": str(latest_results),
                         "model_config": str(model_config),
-                        "prompt_config": str(repo_root / "configs/prompts/default_prompts.json"),
-                        "architecture_config": str(repo_root / "configs/architectures/default_architectures.json"),
+                        "prompt_config": str(repo_root / "config/prompts/default_prompts.json"),
+                        "architecture_config": str(repo_root / "config/architectures/default_architectures.json"),
                         "game_configs": {
-                            "blotto": str(repo_root / "configs/games/blotto.json"),
-                            "connect4": str(repo_root / "configs/games/connect4.json"),
+                            "blotto": str(repo_root / "config/games/blotto.json"),
+                            "connect4": str(repo_root / "config/games/connect4.json"),
                         },
                         "experiment_config": str(experiment_config),
                     }

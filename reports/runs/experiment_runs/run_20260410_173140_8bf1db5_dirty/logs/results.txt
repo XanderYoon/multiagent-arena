@@ -1,0 +1,2228 @@
+
+############################################################
+PHASE 1: INTERNAL AI vs AI TOURNAMENT
+############################################################
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 1 | SEED 3012726539 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [10, 39, 22, 20, 30]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1 | SEED 127378619 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [22, 54, 19, 39, 10]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1 | SEED 2312534961 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [28, 32, 56, 28, 40]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 2 | SEED 3120993731 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [55, 29, 12, 55, 25]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 2 | SEED 4116605794 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [15, 50, 42, 11, 58]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 2 | SEED 3294452490 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [52, 36, 31, 12, 17]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 3 | SEED 3420742709 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [18, 28, 54, 24, 27]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 3 | SEED 2505523783 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [15, 24, 29, 52, 49]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 3 | SEED 1600563192 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [21, 29, 36, 38, 59]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 4 | SEED 1402513426 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [55, 29, 23, 17, 13]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 4 | SEED 1213110655 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [34, 45, 55, 22, 13]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 4 | SEED 1808152779 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [30, 40, 39, 35, 31]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 5 | SEED 2714033253 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [37, 15, 38, 54, 29]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 5 | SEED 385903728 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [20, 29, 13, 48, 31]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 5 | SEED 1145698875 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [49, 49, 58, 55, 39]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 6 | SEED 2936194885 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [48, 59, 28, 24, 20]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 6 | SEED 3177079595 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [10, 22, 15, 60, 32]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 6 | SEED 1311333055 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [49, 36, 47, 21, 53]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 7 | SEED 2974801685 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [43, 55, 39, 59, 14]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 7 | SEED 1466134253 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [23, 19, 54, 42, 21]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 7 | SEED 2778855914 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [27, 14, 50, 60, 53]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 8 | SEED 2990719679 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [29, 56, 52, 17, 60]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 8 | SEED 1356429214 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [27, 53, 42, 18, 45]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 8 | SEED 1152471852 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [14, 21, 54, 34, 50]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 9 | SEED 1629347467 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [20, 26, 15, 47, 34]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 9 | SEED 3109713771 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [28, 48, 52, 19, 35]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 9 | SEED 3217677476 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [18, 10, 37, 31, 58]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 10 | SEED 3484898230 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [32, 54, 21, 45, 38]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Parallel Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 10 | SEED 1450960376 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [24, 54, 40, 37, 20]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 10 | SEED 2966324357 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [42, 57, 55, 31, 49]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+############################################################
+PHASE 2: AI vs STANDARD BOTS (RESOURCE ALLOCATION)
+############################################################
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 1035500011 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [26, 27, 23, 50, 33]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 669665955 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [25, 37, 54, 18, 27]
+Single Agent: [30, 30, 30, 30, 30] (Score: 89) | Random Bot: [8, 17, 54, 63, 8] (Score: 72)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 3542721982 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [47, 38, 13, 19, 31]
+Single Agent: [30, 30, 30, 30, 30] (Score: 63) | High-Value Targeting Bot: [64, 42, 5, 11, 28] (Score: 85)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 2085899233 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [52, 45, 42, 15, 40]
+Single Agent: [30, 30, 30, 30, 30] (Score: 15) | Nash-Approx Bot: [40, 35, 32, 12, 31] (Score: 179)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 203902267 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [11, 31, 53, 21, 16]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 1893750525 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [44, 48, 37, 52, 41]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 181) | Random Bot: [0, 9, 1, 1, 139] (Score: 41)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 2400187668 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [32, 11, 41, 40, 43]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 43) | High-Value Targeting Bot: [25, 3, 40, 38, 44] (Score: 124)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 2034881357 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [14, 41, 22, 13, 36]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 49) | Nash-Approx Bot: [17, 49, 26, 15, 43] (Score: 77)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 1317709115 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [15, 42, 14, 18, 22]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 1302101818 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [43, 44, 12, 19, 11]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 118) | Random Bot: [0, 0, 0, 17, 133] (Score: 11)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 3462858640 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [54, 44, 12, 15, 28]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 55) | High-Value Targeting Bot: [73, 48, 4, 6, 19] (Score: 98)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 1 | SEED 501079141 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [16, 12, 32, 59, 35]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 28) | Nash-Approx Bot: [16, 12, 31, 57, 34] (Score: 126)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 749227807 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [43, 50, 19, 55, 32]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 2100178901 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [37, 51, 13, 46, 49]
+Single Agent: [30, 30, 30, 30, 30] (Score: 108) | Random Bot: [108, 41, 0, 0, 1] (Score: 88)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 3641725192 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [15, 19, 48, 26, 20]
+Single Agent: [30, 30, 30, 30, 30] (Score: 80) | High-Value Targeting Bot: [8, 14, 87, 26, 15] (Score: 48)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 859606274 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [47, 41, 42, 48, 49]
+Single Agent: [30, 30, 30, 30, 30] (Score: 83) | Nash-Approx Bot: [31, 27, 28, 32, 32] (Score: 144)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 834364128 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [28, 23, 47, 48, 37]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 821704711 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [29, 17, 58, 58, 48]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 135) | Random Bot: [0, 48, 78, 15, 9] (Score: 75)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 2566849325 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [24, 44, 33, 19, 15]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 58) | High-Value Targeting Bot: [21, 69, 39, 13, 8] (Score: 77)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 227618516 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [12, 43, 50, 17, 15]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 44) | Nash-Approx Bot: [13, 47, 55, 19, 16] (Score: 93)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 2901033620 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [14, 48, 50, 33, 26]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 36801928 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [13, 39, 38, 50, 11]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 112) | Random Bot: [14, 116, 0, 5, 15] (Score: 39)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 2511366026 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [41, 32, 30, 48, 59]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 103) | High-Value Targeting Bot: [27, 16, 14, 37, 56] (Score: 107)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 2 | SEED 2553021305 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [57, 13, 34, 43, 52]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 47) | Nash-Approx Bot: [43, 10, 26, 32, 39] (Score: 152)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 454620876 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [39, 51, 15, 16, 44]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 1540214455 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [37, 46, 15, 38, 10]
+Single Agent: [30, 30, 30, 30, 30] (Score: 121) | Random Bot: [3, 3, 36, 0, 108] (Score: 25)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 1475696553 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [45, 34, 43, 10, 24]
+Single Agent: [30, 30, 30, 30, 30] (Score: 34) | High-Value Targeting Bot: [53, 30, 49, 3, 15] (Score: 88)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 157212888 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [29, 28, 31, 37, 28]
+Single Agent: [30, 30, 30, 30, 30] (Score: 85) | Nash-Approx Bot: [28, 28, 30, 36, 28] (Score: 37)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 2917746603 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [25, 13, 17, 30, 27]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 2610175986 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [30, 48, 11, 15, 34]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 56) | Random Bot: [2, 30, 24, 11, 83] (Score: 34)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 3486552839 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [12, 48, 23, 39, 53]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 35) | High-Value Targeting Bot: [3, 47, 11, 31, 58] (Score: 140)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 378368016 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [45, 38, 55, 29, 55]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 67) | Nash-Approx Bot: [30, 26, 37, 20, 37] (Score: 110)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 829870426 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [45, 43, 25, 33, 16]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 3074253615 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [18, 17, 36, 30, 27]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 84) | Random Bot: [20, 34, 29, 14, 53] (Score: 44)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 2585329007 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [39, 42, 42, 39, 30]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 30) | High-Value Targeting Bot: [31, 35, 35, 31, 18] (Score: 162)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 3 | SEED 2972948891 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [32, 39, 42, 60, 41]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 112) | Nash-Approx Bot: [22, 27, 30, 42, 29] (Score: 60)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 2309544344 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [28, 25, 54, 42, 26]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 121995322 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [24, 58, 60, 55, 38]
+Single Agent: [30, 30, 30, 30, 30] (Score: 122) | Random Bot: [1, 58, 0, 90, 1] (Score: 113)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 304068515 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [16, 59, 56, 39, 13]
+Single Agent: [30, 30, 30, 30, 30] (Score: 68) | High-Value Targeting Bot: [4, 61, 55, 27, 3] (Score: 115)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 3381930677 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [50, 58, 55, 55, 52]
+Single Agent: [30, 30, 30, 30, 30] (Score: 102) | Nash-Approx Bot: [28, 32, 31, 30, 29] (Score: 113)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 772208379 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [44, 30, 45, 44, 15]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 1861587334 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [20, 38, 45, 36, 49]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 69) | Random Bot: [13, 41, 57, 35, 4] (Score: 119)
+>>> WINNER: Random Bot <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 340175593 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [22, 44, 13, 47, 56]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 35) | High-Value Targeting Bot: [9, 37, 3, 42, 59] (Score: 147)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 1135281974 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [10, 29, 50, 15, 17]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 42) | Nash-Approx Bot: [12, 36, 62, 19, 21] (Score: 79)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 4144779394 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [17, 57, 25, 37, 60]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 1601012621 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [25, 41, 41, 38, 38]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 117) | Random Bot: [62, 4, 62, 15, 7] (Score: 66)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 3812484909 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [24, 54, 57, 42, 39]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 105) | High-Value Targeting Bot: [9, 44, 48, 26, 23] (Score: 111)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 4 | SEED 1867333781 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [25, 30, 57, 50, 54]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 55) | Nash-Approx Bot: [17, 21, 40, 35, 37] (Score: 161)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 745159619 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [25, 31, 22, 26, 46]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 917599703 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [28, 43, 21, 27, 11]
+Single Agent: [30, 30, 30, 30, 30] (Score: 92) | Random Bot: [2, 6, 4, 66, 72] (Score: 38)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 980784493 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [38, 60, 21, 60, 60]
+Single Agent: [30, 30, 30, 30, 30] (Score: 59) | High-Value Targeting Bot: [17, 43, 5, 43, 42] (Score: 180)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 2508329575 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [22, 55, 31, 38, 37]
+Single Agent: [30, 30, 30, 30, 30] (Score: 53) | Nash-Approx Bot: [18, 45, 26, 31, 30] (Score: 93)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 1658478076 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [36, 43, 57, 57, 24]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 3297000202 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [52, 24, 40, 54, 55]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 130) | Random Bot: [3, 11, 56, 19, 61] (Score: 95)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 2889095162 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [55, 54, 42, 30, 16]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 46) | High-Value Targeting Bot: [51, 50, 30, 15, 4] (Score: 109)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 1372162777 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [12, 25, 55, 16, 30]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 53) | Nash-Approx Bot: [13, 27, 60, 17, 33] (Score: 85)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 836671366 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [58, 40, 51, 29, 31]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 316867206 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [57, 40, 39, 11, 40]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 176) | Random Bot: [1, 26, 0, 123, 0] (Score: 11)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 3278124497 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [13, 44, 44, 29, 27]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 69) | High-Value Targeting Bot: [5, 52, 52, 22, 19] (Score: 88)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 5 | SEED 344951817 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [24, 58, 10, 29, 13]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 47) | Nash-Approx Bot: [27, 65, 11, 32, 15] (Score: 87)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 94699217 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [34, 53, 13, 21, 36]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 294259323 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [10, 39, 27, 17, 29]
+Single Agent: [30, 30, 30, 30, 30] (Score: 105) | Random Bot: [19, 2, 3, 118, 8] (Score: 17)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 2978692868 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [31, 42, 51, 53, 33]
+Single Agent: [30, 30, 30, 30, 30] (Score: 106) | High-Value Targeting Bot: [15, 29, 42, 46, 18] (Score: 104)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 4103606647 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [28, 50, 52, 55, 11]
+Single Agent: [30, 30, 30, 30, 30] (Score: 39) | Nash-Approx Bot: [22, 38, 40, 42, 8] (Score: 157)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 3076540492 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [27, 16, 54, 45, 42]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 3328151246 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [30, 33, 13, 39, 58]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 101) | Random Bot: [14, 46, 1, 82, 7] (Score: 72)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 1477248814 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [22, 31, 50, 15, 21]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 58) | High-Value Targeting Bot: [16, 31, 81, 7, 15] (Score: 81)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 3487345271 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [10, 25, 44, 56, 44]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 35) | Nash-Approx Bot: [8, 21, 37, 47, 37] (Score: 144)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 2375493921 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [46, 20, 11, 17, 37]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 2509958992 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [39, 21, 44, 31, 35]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 139) | Random Bot: [11, 17, 2, 118, 2] (Score: 31)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 3334481740 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [53, 26, 56, 28, 41]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 95) | High-Value Targeting Bot: [46, 11, 52, 13, 28] (Score: 109)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 6 | SEED 2171197319 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [13, 32, 27, 16, 35]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 29) | Nash-Approx Bot: [16, 39, 33, 19, 43] (Score: 94)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 277338279 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [51, 55, 59, 53, 34]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 2746130908 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [58, 19, 42, 58, 29]
+Single Agent: [30, 30, 30, 30, 30] (Score: 77) | Random Bot: [1, 1, 64, 36, 48] (Score: 129)
+>>> WINNER: Random Bot <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 1502768661 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [55, 53, 10, 24, 19]
+Single Agent: [30, 30, 30, 30, 30] (Score: 53) | High-Value Targeting Bot: [66, 61, 2, 13, 8] (Score: 108)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 1020159619 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [57, 42, 46, 35, 57]
+Single Agent: [30, 30, 30, 30, 30] (Score: 123) | Nash-Approx Bot: [36, 27, 29, 22, 36] (Score: 114)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 2130354981 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [34, 50, 40, 59, 48]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 1196455391 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [27, 39, 14, 22, 42]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 91) | Random Bot: [2, 59, 71, 6, 12] (Score: 53)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 560929618 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [21, 49, 31, 49, 30]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 82) | High-Value Targeting Bot: [9, 51, 20, 51, 19] (Score: 98)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 3315789610 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [19, 36, 10, 43, 29]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 29) | Nash-Approx Bot: [21, 39, 11, 47, 32] (Score: 108)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 2173901063 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [52, 58, 48, 44, 60]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 2075638872 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [15, 41, 16, 14, 30]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 102) | Random Bot: [22, 2, 0, 126, 0] (Score: 14)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 2170624848 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [43, 13, 55, 13, 40]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 26) | High-Value Targeting Bot: [41, 4, 66, 4, 35] (Score: 138)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 7 | SEED 287179672 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [10, 48, 24, 41, 20]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 54) | Nash-Approx Bot: [11, 50, 25, 43, 21] (Score: 89)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 2186073174 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [25, 41, 44, 23, 43]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 689776400 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [23, 45, 22, 27, 47]
+Single Agent: [30, 30, 30, 30, 30] (Score: 114) | Random Bot: [70, 6, 8, 52, 14] (Score: 50)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 1565897716 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [40, 26, 13, 37, 51]
+Single Agent: [30, 30, 30, 30, 30] (Score: 39) | High-Value Targeting Bot: [37, 16, 4, 32, 61] (Score: 128)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3129375009 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [56, 59, 23, 34, 31]
+Single Agent: [30, 30, 30, 30, 30] (Score: 88) | Nash-Approx Bot: [41, 44, 17, 25, 23] (Score: 115)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3303338617 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [17, 51, 42, 50, 26]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3748650348 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [26, 37, 41, 43, 55]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 80) | Random Bot: [54, 1, 31, 0, 64] (Score: 122)
+>>> WINNER: Random Bot <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 581476565 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [44, 31, 50, 45, 44]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 31) | High-Value Targeting Bot: [31, 15, 40, 33, 31] (Score: 183)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3911493381 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [55, 49, 27, 32, 12]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 71) | Nash-Approx Bot: [47, 42, 23, 28, 10] (Score: 104)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3861222227 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [58, 41, 16, 21, 60]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 4207859253 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [36, 59, 47, 32, 27]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 127) | Random Bot: [5, 2, 104, 2, 37] (Score: 74)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3524521625 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [58, 14, 32, 13, 57]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 59) | High-Value Targeting Bot: [63, 4, 19, 3, 61] (Score: 115)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 8 | SEED 3675963029 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [53, 17, 57, 57, 33]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 50) | Nash-Approx Bot: [37, 12, 39, 39, 23] (Score: 167)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 398581525 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [49, 28, 54, 17, 57]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 1051758202 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [47, 40, 57, 41, 41]
+Single Agent: [30, 30, 30, 30, 30] (Score: 185) | Random Bot: [0, 1, 0, 1, 148] (Score: 41)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 493008108 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [27, 11, 16, 10, 18]
+Single Agent: [30, 30, 30, 30, 30] (Score: 37) | High-Value Targeting Bot: [71, 12, 25, 10, 32] (Score: 45)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 1406649410 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [37, 43, 42, 41, 15]
+Single Agent: [30, 30, 30, 30, 30] (Score: 15) | Nash-Approx Bot: [31, 36, 35, 35, 13] (Score: 163)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 380387267 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [12, 50, 18, 30, 23]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 1367748786 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [17, 49, 21, 31, 58]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 145) | Random Bot: [21, 11, 10, 79, 29] (Score: 31)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 2040845401 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [20, 14, 10, 33, 33]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 44) | High-Value Targeting Bot: [21, 10, 5, 57, 57] (Score: 66)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 1573535981 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [27, 33, 21, 11, 18]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 50) | Nash-Approx Bot: [37, 45, 29, 15, 24] (Score: 60)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 1877633753 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [42, 21, 32, 29, 41]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 2138347648 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [34, 16, 14, 54, 23]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 84) | Random Bot: [30, 13, 6, 4, 97] (Score: 23)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 2454322338 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [12, 30, 59, 36, 50]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 78) | High-Value Targeting Bot: [3, 16, 63, 23, 45] (Score: 109)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 9 | SEED 3387594084 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [27, 28, 27, 23, 25]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 48) | Nash-Approx Bot: [31, 32, 31, 27, 29] (Score: 82)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 3567992504 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [56, 30, 45, 18, 34]
+Single Agent: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 318003078 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [14, 60, 49, 26, 10]
+Single Agent: [30, 30, 30, 30, 30] (Score: 89) | Random Bot: [0, 65, 19, 10, 56] (Score: 70)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 2060335772 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [58, 26, 49, 52, 15]
+Single Agent: [30, 30, 30, 30, 30] (Score: 41) | High-Value Targeting Bot: [54, 11, 38, 43, 4] (Score: 159)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Single Agent vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 624695796 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [60, 50, 18, 50, 46]
+Single Agent: [30, 30, 30, 30, 30] (Score: 18) | Nash-Approx Bot: [40, 34, 12, 33, 31] (Score: 206)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 2904765008 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [11, 17, 49, 49, 41]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 545790752 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [46, 34, 36, 44, 29]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 145) | Random Bot: [0, 3, 3, 144, 0] (Score: 44)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 3363680870 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [51, 37, 12, 51, 41]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 49) | High-Value Targeting Bot: [47, 24, 3, 46, 30] (Score: 102)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Parallel Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 1191377334 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[30, 30, 30, 30, 30], [30, 30, 30, 30, 30], [30, 30, 30, 30, 30]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [42, 51, 33, 48, 48]
+Parallel Team: [30, 30, 30, 30, 30] (Score: 75) | Nash-Approx Bot: [28, 35, 22, 33, 32] (Score: 147)
+>>> WINNER: Nash-Approx Bot <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 1596400115 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [54, 38, 58, 41, 45]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 0) | Uniform Bot: [30, 30, 30, 30, 30] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 2583627847 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [28, 10, 58, 29, 22]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 109) | Random Bot: [38, 74, 12, 1, 25] (Score: 38)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs High-Value Targeting Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 1395733069 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR High-Value Targeting Bot ]
+  -> Heuristic allocation emphasizing high-value battlefields.
+----------------------------------------
+Board Points: [11, 24, 56, 37, 15]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 50) | High-Value Targeting Bot: [3, 16, 87, 38, 6] (Score: 93)
+>>> WINNER: High-Value Targeting Bot <<<
+
+==================================================
+--- Hierarchical Team vs Nash-Approx Bot (Simultaneous Resource Game) | TRIAL 10 | SEED 864323971 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Nash-Approx Bot ]
+  -> Allocation proportional to battlefield values as an equilibrium approximation.
+----------------------------------------
+Board Points: [22, 44, 28, 56, 52]
+Hierarchical Team: [30, 30, 30, 30, 30] (Score: 50) | Nash-Approx Bot: [16, 33, 21, 41, 39] (Score: 152)
+>>> WINNER: Nash-Approx Bot <<<

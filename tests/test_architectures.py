@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from architectures import run_architecture
+from benchmark.architectures import run_architecture
 
 
 class ArchitectureBehaviorTests(unittest.TestCase):
@@ -40,7 +40,7 @@ class ArchitectureBehaviorTests(unittest.TestCase):
                 "prompt_version": "v1",
             },
         ]
-        with patch("architectures._invoke_role", side_effect=side_effect):
+        with patch("benchmark.architectures._invoke_role", side_effect=side_effect):
             result = run_architecture(task, spec)
 
         self.assertEqual(result["output"]["move"], 1)
@@ -67,7 +67,10 @@ class ArchitectureBehaviorTests(unittest.TestCase):
             "valid": False,
             "prompt_version": "v1",
         }
-        with patch("architectures._invoke_role", side_effect=[invalid_result, dict(invalid_result, call_index=2)]):
+        with patch(
+            "benchmark.architectures._invoke_role",
+            side_effect=[invalid_result, dict(invalid_result, call_index=2)],
+        ):
             result = run_architecture({"game": "connect4"}, spec)
 
         self.assertIsNone(result["output"]["move"])
@@ -132,7 +135,7 @@ class ArchitectureBehaviorTests(unittest.TestCase):
             "state": "board",
             "state_snapshot": {"board": []},
         }
-        with patch("architectures._invoke_role", side_effect=invoke_side_effect):
+        with patch("benchmark.architectures._invoke_role", side_effect=invoke_side_effect):
             result = run_architecture(task, spec)
 
         self.assertEqual(result["output"]["move"], 4)

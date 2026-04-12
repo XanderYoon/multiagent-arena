@@ -1,0 +1,13 @@
+average_value_gap,blotto_nash_distance,blunder_rate,connect4_optimal_move_accuracy,consistency_accuracy_variance,consistency_nash_distance_variance,consistency_outcome_stability,consistency_per_state_agreement,consistency_variance_across_trials,experiment_group,game,hallucination_rate,invalid_attempt_rate,legality_rate,losses,matches,model,prompt_family_id,scope_id,scope_type,tie_rate,ties,win_rate,wins
+,0.14150000000000001,,,,0.00142275,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,20,mock-deterministic,chain_of_thought_v1,single,architecture,1.0,20,0.0,0
+,0.128,,,,0.003506,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,20,mock-deterministic,chain_of_thought_v1,parallel,architecture,1.0,20,0.0,0
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,connect4,0.0,0.0,1.0,0,20,mock-deterministic,chain_of_thought_v1,single,architecture,0.0,0,1.0,20
+,,,,,,0.5,1.0,0.25,internal_ai_tournament,connect4,0.0,0.0,1.0,10,20,mock-deterministic,chain_of_thought_v1,parallel,architecture,0.0,0,0.5,10
+,0.1295,,,,0.00296475,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,20,mock-deterministic,chain_of_thought_v1,hierarchical,architecture,1.0,20,0.0,0
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,connect4,0.0,0.0,1.0,20,20,mock-deterministic,chain_of_thought_v1,hierarchical,architecture,0.0,0,0.0,0
+,0.13925,,,,0.0044769375,0.675,,0.1975,blotto_vs_bots,blotto,0.0,0.0,1.0,27,40,mock-deterministic,chain_of_thought_v1,single,architecture,0.05,2,0.275,11
+,0.15575,,,,0.0041794375,0.525,,0.249375,blotto_vs_bots,blotto,0.0,0.0,1.0,19,40,mock-deterministic,chain_of_thought_v1,parallel,architecture,0.0,0,0.525,21
+,0.15625,,,,0.0054984375,0.65,,0.2275,blotto_vs_bots,blotto,0.0,0.0,1.0,26,40,mock-deterministic,chain_of_thought_v1,hierarchical,architecture,0.0,0,0.35,14
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,10,10,mock-deterministic,chain_of_thought_v1,single,architecture,0.0,0,0.0,0
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,10,10,mock-deterministic,chain_of_thought_v1,parallel,architecture,0.0,0,0.0,0
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,10,10,mock-deterministic,chain_of_thought_v1,hierarchical,architecture,0.0,0,0.0,0

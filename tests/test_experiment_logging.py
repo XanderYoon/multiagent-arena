@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from experiment_logging import (
+from benchmark.experiment_logging import (
     build_game_outcome_records,
     build_trial_metadata_records,
     build_turn_records,

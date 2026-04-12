@@ -1,0 +1,5 @@
+from reports.scripts.report_runs import main
+
+
+if __name__ == "__main__":
+    main()

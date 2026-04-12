@@ -1,4 +1,0 @@
-I'm trying to determine how many architectures to consider. If there are 9 architectures, that leads to 216 games when factoring in
-  pairings and trials—plus additional elements like baselines and oracles, which could really add up. I want to keep a core set
-  including low, medium, and high configurations. Maybe I'll stick with 2 trials since real models are pricey. I need to establish
-  clear benchmark configurations for model mapping and parameter counts too.

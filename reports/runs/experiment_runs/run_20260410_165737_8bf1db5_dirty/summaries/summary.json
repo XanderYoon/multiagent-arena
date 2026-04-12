@@ -1,0 +1,2441 @@
+{
+  "run_id": "run_20260410_165737_8bf1db5_dirty",
+  "benchmark_name": "prompt_section8_smoke",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family_id": "legality_first_v1",
+  "prompt_family": "legality_first",
+  "prompt_version": "legality_first_v1",
+  "internal_reasoning_storage": {
+    "mode": "full",
+    "notes": "Store internal reasoning text in full in runtime logs and summaries when the model provides it."
+  },
+  "phases": {
+    "internal_ai_tournament": [],
+    "blotto_vs_bots": [],
+    "connect4_oracle_accuracy": [
+      {
+        "trial": 1,
+        "seed": 156875254,
+        "game": "connect4",
+        "variant_name": "gravity_grid_standard_v1",
+        "agent": "Single Agent",
+        "architecture_metadata": {
+          "id": "single",
+          "type": "single",
+          "display_name": "Single Agent",
+          "agent_count": 1,
+          "aggregation_rule": "single_response",
+          "role_definitions": [
+            {
+              "role": "single_agent",
+              "prompt_template": "single_role"
+            }
+          ]
+        },
+        "intermediate_outputs": [
+          {
+            "role": "single_agent",
+            "prompt_template": "single_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0,
+              "prompt_version": "legality_first_v1",
+              "architecture_metadata": {
+                "architecture_id": "single",
+                "architecture_name": "Single Agent",
+                "architecture_type": "single",
+                "agent_count": 1,
+                "role_definitions": [
+                  {
+                    "role": "single_agent",
+                    "prompt_template": "single_role"
+                  }
+                ],
+                "aggregation_rule": "single_response"
+              }
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.017,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0,
+                  "prompt_version": "legality_first_v1",
+                  "architecture_metadata": {
+                    "architecture_id": "single",
+                    "architecture_name": "Single Agent",
+                    "architecture_type": "single",
+                    "agent_count": 1,
+                    "role_definitions": [
+                      {
+                        "role": "single_agent",
+                        "prompt_template": "single_role"
+                      }
+                    ],
+                    "aggregation_rule": "single_response"
+                  }
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          }
+        ],
+        "state_snapshot": {
+          "board": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              2,
+              2,
+              2,
+              0,
+              0
+            ]
+          ],
+          "rows": 6,
+          "columns": 7,
+          "connect_length": 4,
+          "current_player": 2,
+          "valid_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rendered_board": "Col: 0 1 2 3 4 5 6\n     X . . . . . .\n     X . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X O O O O . .",
+          "winner": 2,
+          "turn_history": [
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 3
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 0
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 4
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 2
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 1
+            }
+          ],
+          "invalid_actions": []
+        },
+        "metrics_context": {
+          "invalid_actions": [],
+          "turn_count": 10,
+          "valid_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "oracle_metric": {
+          "type": "any_optimal_move_plus_value_gap",
+          "description": "Count a move as accurate if it matches any oracle-equivalent best move, and also record the oracle value gap."
+        },
+        "oracle_records": [
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .",
+              "winner": null,
+              "turn_history": [],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              2,
+              3,
+              4
+            ],
+            "best_score": -4,
+            "move_scores": {
+              "0": -20,
+              "1": -18,
+              "2": -4,
+              "3": -4,
+              "4": -4,
+              "5": -18,
+              "6": -20
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -20,
+            "matched_any_optimal_move": false,
+            "value_gap": 16
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     X . . O . . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              1,
+              5
+            ],
+            "best_score": -32,
+            "move_scores": {
+              "0": -114,
+              "1": -32,
+              "2": -50,
+              "3": -108,
+              "4": -50,
+              "5": -32,
+              "6": -38
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -114,
+            "matched_any_optimal_move": false,
+            "value_gap": 82
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . . O . . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              5
+            ],
+            "best_score": -32,
+            "move_scores": {
+              "0": -124,
+              "1": -40,
+              "2": -104,
+              "3": -98,
+              "4": -50,
+              "5": -32,
+              "6": -40
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -124,
+            "matched_any_optimal_move": false,
+            "value_gap": 92
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . . O O . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 4
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              5
+            ],
+            "best_score": -136,
+            "move_scores": {
+              "0": -100000,
+              "1": -100000,
+              "2": -138,
+              "3": -100000,
+              "4": -100000,
+              "5": -136,
+              "6": -100000
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -100000,
+            "matched_any_optimal_move": false,
+            "value_gap": 99864
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     X . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . O O O . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 4
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 2
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "best_score": -100000,
+            "move_scores": {
+              "0": -100000,
+              "1": -100000,
+              "2": -100000,
+              "3": -100000,
+              "4": -100000,
+              "5": -100000,
+              "6": -100000
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -100000,
+            "matched_any_optimal_move": true,
+            "value_gap": 0
+          }
+        ],
+        "moves": 5,
+        "perfect_moves": 1,
+        "blunders": 4,
+        "accuracy_pct": 20.0,
+        "average_value_gap": 20010.8,
+        "outcome": "oracle_win"
+      },
+      {
+        "trial": 1,
+        "seed": 2375324672,
+        "game": "connect4",
+        "variant_name": "gravity_grid_standard_v1",
+        "agent": "Parallel Team",
+        "architecture_metadata": {
+          "id": "parallel",
+          "type": "parallel",
+          "display_name": "Parallel Team",
+          "agent_count": 3,
+          "aggregation_rule": "majority_vote",
+          "tie_breaker": "first_valid",
+          "role_definitions": [
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role"
+            }
+          ]
+        },
+        "intermediate_outputs": [
+          {
+            "role": "voter",
+            "prompt_template": "parallel_voter_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.017,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          },
+          {
+            "role": "voter",
+            "prompt_template": "parallel_voter_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.007,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          },
+          {
+            "role": "voter",
+            "prompt_template": "parallel_voter_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.005,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          }
+        ],
+        "state_snapshot": {
+          "board": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              2,
+              2,
+              2,
+              0,
+              0
+            ]
+          ],
+          "rows": 6,
+          "columns": 7,
+          "connect_length": 4,
+          "current_player": 2,
+          "valid_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rendered_board": "Col: 0 1 2 3 4 5 6\n     X . . . . . .\n     X . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X O O O O . .",
+          "winner": 2,
+          "turn_history": [
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 3
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 0
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 4
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 2
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 1
+            }
+          ],
+          "invalid_actions": []
+        },
+        "metrics_context": {
+          "invalid_actions": [],
+          "turn_count": 10,
+          "valid_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "oracle_metric": {
+          "type": "any_optimal_move_plus_value_gap",
+          "description": "Count a move as accurate if it matches any oracle-equivalent best move, and also record the oracle value gap."
+        },
+        "oracle_records": [
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .",
+              "winner": null,
+              "turn_history": [],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              2,
+              3,
+              4
+            ],
+            "best_score": -4,
+            "move_scores": {
+              "0": -20,
+              "1": -18,
+              "2": -4,
+              "3": -4,
+              "4": -4,
+              "5": -18,
+              "6": -20
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -20,
+            "matched_any_optimal_move": false,
+            "value_gap": 16
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     X . . O . . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              1,
+              5
+            ],
+            "best_score": -32,
+            "move_scores": {
+              "0": -114,
+              "1": -32,
+              "2": -50,
+              "3": -108,
+              "4": -50,
+              "5": -32,
+              "6": -38
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -114,
+            "matched_any_optimal_move": false,
+            "value_gap": 82
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . . O . . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              5
+            ],
+            "best_score": -32,
+            "move_scores": {
+              "0": -124,
+              "1": -40,
+              "2": -104,
+              "3": -98,
+              "4": -50,
+              "5": -32,
+              "6": -40
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -124,
+            "matched_any_optimal_move": false,
+            "value_gap": 92
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . . O O . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 4
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              5
+            ],
+            "best_score": -136,
+            "move_scores": {
+              "0": -100000,
+              "1": -100000,
+              "2": -138,
+              "3": -100000,
+              "4": -100000,
+              "5": -136,
+              "6": -100000
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -100000,
+            "matched_any_optimal_move": false,
+            "value_gap": 99864
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     X . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . O O O . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 4
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 2
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "best_score": -100000,
+            "move_scores": {
+              "0": -100000,
+              "1": -100000,
+              "2": -100000,
+              "3": -100000,
+              "4": -100000,
+              "5": -100000,
+              "6": -100000
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -100000,
+            "matched_any_optimal_move": true,
+            "value_gap": 0
+          }
+        ],
+        "moves": 5,
+        "perfect_moves": 1,
+        "blunders": 4,
+        "accuracy_pct": 20.0,
+        "average_value_gap": 20010.8,
+        "outcome": "oracle_win"
+      },
+      {
+        "trial": 1,
+        "seed": 3483479214,
+        "game": "connect4",
+        "variant_name": "gravity_grid_standard_v1",
+        "agent": "Hierarchical Team",
+        "architecture_metadata": {
+          "id": "hierarchical",
+          "type": "hierarchical",
+          "display_name": "Hierarchical Team",
+          "agent_count": 3,
+          "aggregation_rule": "executive_audit",
+          "role_definitions": [
+            {
+              "role": "reasoner",
+              "prompt_template": "reasoner_role"
+            },
+            {
+              "role": "critic",
+              "prompt_template": "critic_role"
+            },
+            {
+              "role": "executive",
+              "prompt_template": "executive_role"
+            }
+          ],
+          "critic_count": 1,
+          "include_critic": true
+        },
+        "intermediate_outputs": [
+          {
+            "role": "reasoner",
+            "prompt_template": "reasoner_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.016,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          },
+          {
+            "role": "critic",
+            "prompt_template": "critic_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.007,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          },
+          {
+            "role": "executive",
+            "prompt_template": "executive_role",
+            "trace": "Deterministic mock response for local validation.",
+            "parsed_response": {
+              "reasoning": "Deterministic mock response for local validation.",
+              "move": 0
+            },
+            "parse_failure_reason": null,
+            "attempts": [
+              {
+                "attempt": 1,
+                "latency_ms": 0.005,
+                "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": 0}",
+                "parsed_response": {
+                  "reasoning": "Deterministic mock response for local validation.",
+                  "move": 0
+                },
+                "parse_failure_reason": null,
+                "request_error": null,
+                "backend_details": {
+                  "provider_response": {
+                    "mock_backend": true
+                  }
+                }
+              }
+            ],
+            "valid": true,
+            "prompt_version": "legality_first_v1"
+          }
+        ],
+        "state_snapshot": {
+          "board": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              2,
+              2,
+              2,
+              0,
+              0
+            ]
+          ],
+          "rows": 6,
+          "columns": 7,
+          "connect_length": 4,
+          "current_player": 2,
+          "valid_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rendered_board": "Col: 0 1 2 3 4 5 6\n     X . . . . . .\n     X . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X O O O O . .",
+          "winner": 2,
+          "turn_history": [
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 3
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 0
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 4
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 2
+            },
+            {
+              "player": 1,
+              "action": 0
+            },
+            {
+              "player": 2,
+              "action": 1
+            }
+          ],
+          "invalid_actions": []
+        },
+        "metrics_context": {
+          "invalid_actions": [],
+          "turn_count": 10,
+          "valid_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "oracle_metric": {
+          "type": "any_optimal_move_plus_value_gap",
+          "description": "Count a move as accurate if it matches any oracle-equivalent best move, and also record the oracle value gap."
+        },
+        "oracle_records": [
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .",
+              "winner": null,
+              "turn_history": [],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              2,
+              3,
+              4
+            ],
+            "best_score": -4,
+            "move_scores": {
+              "0": -20,
+              "1": -18,
+              "2": -4,
+              "3": -4,
+              "4": -4,
+              "5": -18,
+              "6": -20
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -20,
+            "matched_any_optimal_move": false,
+            "value_gap": 16
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     X . . O . . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              1,
+              5
+            ],
+            "best_score": -32,
+            "move_scores": {
+              "0": -114,
+              "1": -32,
+              "2": -50,
+              "3": -108,
+              "4": -50,
+              "5": -32,
+              "6": -38
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -114,
+            "matched_any_optimal_move": false,
+            "value_gap": 82
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     . . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . . O . . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              5
+            ],
+            "best_score": -32,
+            "move_scores": {
+              "0": -124,
+              "1": -40,
+              "2": -104,
+              "3": -98,
+              "4": -50,
+              "5": -32,
+              "6": -40
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -124,
+            "matched_any_optimal_move": false,
+            "value_gap": 92
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     . . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . . O O . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 4
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              5
+            ],
+            "best_score": -136,
+            "move_scores": {
+              "0": -100000,
+              "1": -100000,
+              "2": -138,
+              "3": -100000,
+              "4": -100000,
+              "5": -136,
+              "6": -100000
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -100000,
+            "matched_any_optimal_move": false,
+            "value_gap": 99864
+          },
+          {
+            "state_snapshot": {
+              "board": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "rows": 6,
+              "columns": 7,
+              "connect_length": 4,
+              "current_player": 1,
+              "valid_columns": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "rendered_board": "Col: 0 1 2 3 4 5 6\n     . . . . . . .\n     X . . . . . .\n     X . . . . . .\n     O . . . . . .\n     X . . . . . .\n     X . O O O . .",
+              "winner": null,
+              "turn_history": [
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 3
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 0
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 4
+                },
+                {
+                  "player": 1,
+                  "action": 0
+                },
+                {
+                  "player": 2,
+                  "action": 2
+                }
+              ],
+              "invalid_actions": []
+            },
+            "best_moves": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "best_score": -100000,
+            "move_scores": {
+              "0": -100000,
+              "1": -100000,
+              "2": -100000,
+              "3": -100000,
+              "4": -100000,
+              "5": -100000,
+              "6": -100000
+            },
+            "chosen_move": 0,
+            "chosen_move_score": -100000,
+            "matched_any_optimal_move": true,
+            "value_gap": 0
+          }
+        ],
+        "moves": 5,
+        "perfect_moves": 1,
+        "blunders": 4,
+        "accuracy_pct": 20.0,
+        "average_value_gap": 20010.8,
+        "outcome": "oracle_win"
+      }
+    ]
+  },
+  "completed_at": "2026-04-10T16:57:39.826778"
+}

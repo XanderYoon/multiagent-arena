@@ -1,0 +1,13 @@
+{
+  "game_id": "connect4",
+  "display_name": "Gravity Grid Game",
+  "variant_name": "gravity_grid_wide_v1",
+  "rows": 6,
+  "columns": 8,
+  "connect_length": 4,
+  "oracle_depth": 4,
+  "oracle_metric": {
+    "type": "any_optimal_move_plus_value_gap",
+    "description": "Count a move as accurate if it matches any oracle-equivalent best move, and also record the oracle value gap."
+  }
+}

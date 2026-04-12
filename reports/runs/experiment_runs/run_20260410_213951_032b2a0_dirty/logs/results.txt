@@ -1,0 +1,7 @@
+
+############################################################
+PHASE 1: INTERNAL AI vs AI TOURNAMENT
+############################################################
+
+==================================================
+--- Parallel Team (Low+Med+High) vs Parallel Team (High+High+Low) (Simultaneous Resource Game) | TRIAL 1 | SEED 743602015 ---

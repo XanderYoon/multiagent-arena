@@ -1,0 +1,101 @@
+{
+  "default_family": "structured_reasoning_v1",
+  "internal_reasoning_storage": {
+    "mode": "full",
+    "notes": "Store internal reasoning text in full in runtime logs and summaries when the model provides it."
+  },
+  "families": {
+    "minimal_v1": {
+      "family": "minimal",
+      "version": "minimal_v1",
+      "template_root": "config/prompts/templates/minimal_v1",
+      "reasoning_trace_policy": {
+        "decision": "full",
+        "stored_model_visible_text": true,
+        "stored_metadata": true,
+        "notes": "Minimal zero-shot prompts still store full model-visible reasoning text and runtime metadata."
+      },
+      "templates": {
+        "game_agent_system": "game_agent_system.txt",
+        "game_agent_user_blotto": "game_agent_user_blotto.txt",
+        "game_agent_user_connect4": "game_agent_user_connect4.txt",
+        "single_role": "single_role.txt",
+        "parallel_voter_role": "parallel_voter_role.txt",
+        "reasoner_role": "reasoner_role.txt",
+        "critic_role": "critic_role.txt",
+        "executive_role": "executive_role.txt",
+        "hierarchical_critic_user": "hierarchical_critic_user.txt",
+        "hierarchical_executive_user": "hierarchical_executive_user.txt"
+      }
+    },
+    "structured_reasoning_v1": {
+      "family": "structured_reasoning",
+      "version": "structured_reasoning_v1",
+      "template_root": "config/prompts/templates/structured_reasoning_v1",
+      "reasoning_trace_policy": {
+        "decision": "full",
+        "stored_model_visible_text": true,
+        "stored_metadata": true,
+        "notes": "Structured reasoning prompts store full model-visible reasoning text and runtime metadata."
+      },
+      "templates": {
+        "game_agent_system": "game_agent_system.txt",
+        "game_agent_user_blotto": "game_agent_user_blotto.txt",
+        "game_agent_user_connect4": "game_agent_user_connect4.txt",
+        "single_role": "single_role.txt",
+        "parallel_voter_role": "parallel_voter_role.txt",
+        "reasoner_role": "reasoner_role.txt",
+        "critic_role": "critic_role.txt",
+        "executive_role": "executive_role.txt",
+        "hierarchical_critic_user": "hierarchical_critic_user.txt",
+        "hierarchical_executive_user": "hierarchical_executive_user.txt"
+      }
+    },
+    "chain_of_thought_v1": {
+      "family": "chain_of_thought",
+      "version": "chain_of_thought_v1",
+      "template_root": "config/prompts/templates/chain_of_thought_v1",
+      "reasoning_trace_policy": {
+        "decision": "full",
+        "stored_model_visible_text": true,
+        "stored_metadata": true,
+        "notes": "Chain-of-thought style prompts store full reasoning text because reasoning traces are part of the experimental variable."
+      },
+      "templates": {
+        "game_agent_system": "game_agent_system.txt",
+        "game_agent_user_blotto": "game_agent_user_blotto.txt",
+        "game_agent_user_connect4": "game_agent_user_connect4.txt",
+        "single_role": "single_role.txt",
+        "parallel_voter_role": "parallel_voter_role.txt",
+        "reasoner_role": "reasoner_role.txt",
+        "critic_role": "critic_role.txt",
+        "executive_role": "executive_role.txt",
+        "hierarchical_critic_user": "hierarchical_critic_user.txt",
+        "hierarchical_executive_user": "hierarchical_executive_user.txt"
+      }
+    },
+    "legality_first_v1": {
+      "family": "legality_first",
+      "version": "legality_first_v1",
+      "template_root": "config/prompts/templates/legality_first_v1",
+      "reasoning_trace_policy": {
+        "decision": "full",
+        "stored_model_visible_text": true,
+        "stored_metadata": true,
+        "notes": "Legality-first prompts store full reasoning text and runtime metadata to analyze hallucination-reduction behavior."
+      },
+      "templates": {
+        "game_agent_system": "game_agent_system.txt",
+        "game_agent_user_blotto": "game_agent_user_blotto.txt",
+        "game_agent_user_connect4": "game_agent_user_connect4.txt",
+        "single_role": "single_role.txt",
+        "parallel_voter_role": "parallel_voter_role.txt",
+        "reasoner_role": "reasoner_role.txt",
+        "critic_role": "critic_role.txt",
+        "executive_role": "executive_role.txt",
+        "hierarchical_critic_user": "hierarchical_critic_user.txt",
+        "hierarchical_executive_user": "hierarchical_executive_user.txt"
+      }
+    }
+  }
+}

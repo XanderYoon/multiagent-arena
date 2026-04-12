@@ -1,0 +1,8 @@
+{
+  "game_id": "connect4",
+  "display_name": "Gravity Grid Game",
+  "rows": 6,
+  "columns": 7,
+  "connect_length": 4,
+  "oracle_depth": 4
+}

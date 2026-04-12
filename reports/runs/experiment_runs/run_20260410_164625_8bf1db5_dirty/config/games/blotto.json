@@ -1,0 +1,14 @@
+{
+  "game_id": "blotto",
+  "display_name": "Simultaneous Resource Game",
+  "battlefields": 3,
+  "troop_budget": 100,
+  "point_range": [
+    10,
+    50
+  ],
+  "baseline_bots": [
+    "uniform",
+    "random"
+  ]
+}

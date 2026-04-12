@@ -1,0 +1,16 @@
+{
+  "run_id": "run_20260410_165737_8bf1db5_dirty",
+  "started_at": "2026-04-10T16:57:37.184221",
+  "benchmark_name": "prompt_section8_smoke",
+  "config_path": "/tmp/prompt_section8_smoke.json",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family_id": "legality_first_v1",
+  "prompt_family": "legality_first",
+  "prompt_version": "legality_first_v1",
+  "internal_reasoning_storage": {
+    "mode": "full",
+    "notes": "Store internal reasoning text in full in runtime logs and summaries when the model provides it."
+  },
+  "output_dir": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/experiments/run_20260410_165737_8bf1db5_dirty"
+}

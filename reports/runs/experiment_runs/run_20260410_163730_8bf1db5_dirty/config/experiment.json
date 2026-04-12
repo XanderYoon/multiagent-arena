@@ -1,0 +1,15 @@
+{
+  "run_label": "runtime_smoke",
+  "num_trials": 1,
+  "global_seed": 8803,
+  "architectures": [
+    "single",
+    "parallel",
+    "hierarchical"
+  ],
+  "phases": {
+    "internal_ai_tournament": true,
+    "blotto_vs_bots": false,
+    "connect4_oracle_accuracy": false
+  }
+}

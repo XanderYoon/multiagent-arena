@@ -1,0 +1,7 @@
+average_value_gap,blotto_nash_distance,blunder_rate,connect4_optimal_move_accuracy,consistency_accuracy_variance,consistency_nash_distance_variance,consistency_outcome_stability,consistency_per_state_agreement,consistency_variance_across_trials,experiment_group,game,hallucination_rate,invalid_attempt_rate,legality_rate,losses,matches,model,prompt_family_id,scope_id,scope_type,tie_rate,ties,win_rate,wins
+,0.18466666666666667,,,,0.0015071111111111114,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,20,mock-deterministic,structured_reasoning_v1,single,architecture,1.0,20,0.0,0
+,0.15533333333333332,,,,0.0026271111111111113,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,20,mock-deterministic,structured_reasoning_v1,parallel,architecture,1.0,20,0.0,0
+,0.16733333333333333,,,,0.003577333333333334,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,20,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,1.0,20,0.0,0
+,0.149,,,,0.003447888888888889,0.425,,0.185,blotto_vs_bots,blotto,0.0,0.0,1.0,17,40,mock-deterministic,structured_reasoning_v1,single,architecture,0.25,10,0.325,13
+,0.1605,,,,0.0031230833333333336,0.55,,0.156875,blotto_vs_bots,blotto,0.0,0.0,1.0,22,40,mock-deterministic,structured_reasoning_v1,parallel,architecture,0.25,10,0.2,8
+,0.16233333333333333,,,,0.0041856666666666665,0.475,,0.1775,blotto_vs_bots,blotto,0.0,0.0,1.0,19,40,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,0.25,10,0.275,11

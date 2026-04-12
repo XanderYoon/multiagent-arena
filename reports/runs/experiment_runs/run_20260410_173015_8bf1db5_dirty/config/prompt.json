@@ -1,0 +1,30 @@
+{
+  "selected_family_id": "minimal_v1",
+  "internal_reasoning_storage": {
+    "mode": "full",
+    "notes": "Store internal reasoning text in full in runtime logs and summaries when the model provides it."
+  },
+  "family_config": {
+    "family": "minimal",
+    "version": "minimal_v1",
+    "template_root": "prompts/minimal_v1",
+    "reasoning_trace_policy": {
+      "decision": "full",
+      "stored_model_visible_text": true,
+      "stored_metadata": true,
+      "notes": "Minimal zero-shot prompts still store full model-visible reasoning text and runtime metadata."
+    },
+    "templates": {
+      "game_agent_system": "game_agent_system.txt",
+      "game_agent_user_blotto": "game_agent_user_blotto.txt",
+      "game_agent_user_connect4": "game_agent_user_connect4.txt",
+      "single_role": "single_role.txt",
+      "parallel_voter_role": "parallel_voter_role.txt",
+      "reasoner_role": "reasoner_role.txt",
+      "critic_role": "critic_role.txt",
+      "executive_role": "executive_role.txt",
+      "hierarchical_critic_user": "hierarchical_critic_user.txt",
+      "hierarchical_executive_user": "hierarchical_executive_user.txt"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "benchmark_name": "multi_agent_llm_game_benchmark_quantization_subset",
+  "output_root": "experiments",
+  "latest_results_path": "results.txt",
+  "default_model_alias": "q4",
+  "model_configs": {
+    "q4": "configs/models/qwen2_5_7b_q4.json",
+    "q8": "configs/models/qwen2_5_7b_q8.json",
+    "f16": "configs/models/qwen2_5_7b_f16.json"
+  },
+  "prompt_config": "configs/prompts/default_prompts.json",
+  "architecture_config": "configs/architectures/quantization_architectures.json",
+  "game_configs": {
+    "blotto": "configs/games/blotto.json",
+    "connect4": "configs/games/connect4.json"
+  },
+  "experiment_config": "configs/experiments/quantization_subset.json"
+}

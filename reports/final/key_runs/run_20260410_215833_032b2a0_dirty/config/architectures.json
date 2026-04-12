@@ -1,0 +1,242 @@
+{
+  "architectures": [
+    {
+      "id": "single_low",
+      "type": "single",
+      "display_name": "Single Agent (Low Params)",
+      "model_alias": "low",
+      "agent_count": 1,
+      "aggregation_rule": "single_response",
+      "role_definitions": [
+        {
+          "role": "single_agent",
+          "prompt_template": "single_role"
+        }
+      ]
+    },
+    {
+      "id": "single_med",
+      "type": "single",
+      "display_name": "Single Agent (Medium Params)",
+      "model_alias": "med",
+      "agent_count": 1,
+      "aggregation_rule": "single_response",
+      "role_definitions": [
+        {
+          "role": "single_agent",
+          "prompt_template": "single_role"
+        }
+      ]
+    },
+    {
+      "id": "single_high",
+      "type": "single",
+      "display_name": "Single Agent (High Params)",
+      "model_alias": "high",
+      "agent_count": 1,
+      "aggregation_rule": "single_response",
+      "role_definitions": [
+        {
+          "role": "single_agent",
+          "prompt_template": "single_role"
+        }
+      ]
+    },
+    {
+      "id": "parallel_lmh",
+      "type": "parallel",
+      "display_name": "Parallel Team (Low+Med+High)",
+      "model_sequence": [
+        "low",
+        "med",
+        "high"
+      ],
+      "agent_count": 3,
+      "aggregation_rule": "majority_vote",
+      "tie_breaker": "lowest_move",
+      "role_definitions": [
+        {
+          "role": "voter",
+          "prompt_template": "parallel_voter_role"
+        }
+      ]
+    },
+    {
+      "id": "parallel_hhl",
+      "type": "parallel",
+      "display_name": "Parallel Team (High+High+Low)",
+      "model_sequence": [
+        "high",
+        "high",
+        "low"
+      ],
+      "agent_count": 3,
+      "aggregation_rule": "majority_vote",
+      "tie_breaker": "lowest_move",
+      "role_definitions": [
+        {
+          "role": "voter",
+          "prompt_template": "parallel_voter_role"
+        }
+      ]
+    },
+    {
+      "id": "parallel_mmh",
+      "type": "parallel",
+      "display_name": "Parallel Team (Med+Med+High)",
+      "model_sequence": [
+        "med",
+        "med",
+        "high"
+      ],
+      "agent_count": 3,
+      "aggregation_rule": "majority_vote",
+      "tie_breaker": "lowest_move",
+      "role_definitions": [
+        {
+          "role": "voter",
+          "prompt_template": "parallel_voter_role"
+        }
+      ]
+    },
+    {
+      "id": "parallel_llh",
+      "type": "parallel",
+      "display_name": "Parallel Team (Low+Low+High)",
+      "model_sequence": [
+        "low",
+        "low",
+        "high"
+      ],
+      "agent_count": 3,
+      "aggregation_rule": "majority_vote",
+      "tie_breaker": "lowest_move",
+      "role_definitions": [
+        {
+          "role": "voter",
+          "prompt_template": "parallel_voter_role"
+        }
+      ]
+    },
+    {
+      "id": "hierarchical_lmh",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team (Low->Med->High)",
+      "role_model_aliases": {
+        "reasoner": "low",
+        "critic": [
+          "med"
+        ],
+        "executive": "high"
+      },
+      "agent_count": 3,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "critic",
+          "prompt_template": "critic_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 1,
+      "include_critic": true
+    },
+    {
+      "id": "hierarchical_hhl",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team (Low->High->High)",
+      "role_model_aliases": {
+        "reasoner": "low",
+        "critic": [
+          "high"
+        ],
+        "executive": "high"
+      },
+      "agent_count": 3,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "critic",
+          "prompt_template": "critic_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 1,
+      "include_critic": true
+    },
+    {
+      "id": "hierarchical_mmh",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team (Med->Med->High)",
+      "role_model_aliases": {
+        "reasoner": "med",
+        "critic": [
+          "med"
+        ],
+        "executive": "high"
+      },
+      "agent_count": 3,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "critic",
+          "prompt_template": "critic_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 1,
+      "include_critic": true
+    },
+    {
+      "id": "hierarchical_llh",
+      "type": "hierarchical",
+      "display_name": "Hierarchical Team (Low->Low->High)",
+      "role_model_aliases": {
+        "reasoner": "low",
+        "critic": [
+          "low"
+        ],
+        "executive": "high"
+      },
+      "agent_count": 3,
+      "aggregation_rule": "executive_audit",
+      "role_definitions": [
+        {
+          "role": "reasoner",
+          "prompt_template": "reasoner_role"
+        },
+        {
+          "role": "critic",
+          "prompt_template": "critic_role"
+        },
+        {
+          "role": "executive",
+          "prompt_template": "executive_role"
+        }
+      ],
+      "critic_count": 1,
+      "include_critic": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "run_id": "run_20260410_165258_8bf1db5_dirty",
+  "started_at": "2026-04-10T16:52:58.570779",
+  "benchmark_name": "connect4_section7_smoke",
+  "config_path": "/tmp/connect4_section7_smoke.json",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family": "structured_reasoning",
+  "prompt_version": "structured_reasoning_v1",
+  "output_dir": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/experiments/run_20260410_165258_8bf1db5_dirty"
+}

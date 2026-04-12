@@ -1,6 +1,6 @@
 import unittest
 
-from metrics import aggregate_run_metrics, write_metrics_csv
+from benchmark.metrics import aggregate_run_metrics, write_metrics_csv
 
 
 class MetricsAggregationTests(unittest.TestCase):

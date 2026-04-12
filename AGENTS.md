@@ -16,7 +16,7 @@ The current implementation covers:
   - Connect 4 / "gravity-grid" game
 - A depth-limited minimax oracle for Connect 4
 - Repeated-trial experiment execution
-- Logging of game outcomes and reasoning traces to `results.txt`
+- Logging of game outcomes and reasoning traces to `runs/latest/results.txt`
 
 The current implementation does not yet cover the full desired scope. Model sweeps, structured experiment storage, formal summary metrics, and containerized orchestration are still missing.
 
@@ -83,7 +83,7 @@ Current role:
 
 Implemented:
 
-- Logging helper that writes to `results.txt`
+- Logging helper that writes to `runs/latest/results.txt`
 - Reasoning trace formatting
 - Blotto head-to-head matches between architectures
 - Connect 4 head-to-head matches between architectures
@@ -107,7 +107,7 @@ Current metrics/output behavior:
 - Logs reasoning traces for analysis
 - Tracks Connect 4 oracle-match accuracy and blunders during the oracle test
 
-### `results.txt`
+### `runs/latest/results.txt`
 
 Observed:
 
@@ -141,7 +141,7 @@ Not yet implemented:
 - Non-standard board sizes for Connect 4
 - Nash distance for Blotto
 - Formal experiment config system
-- Structured output folders such as `experiments/run_{id}/...`
+- Structured output folders such as `runs/experiment_runs/run_{id}/...`
 - Batch analysis and result aggregation
 - Visualization and plots
 - Multiple model comparisons
@@ -154,7 +154,7 @@ Not yet implemented:
 - The `requests` package must be available
 - Ollama must be running locally
 - The model `qwen2.5:7b` must be installed in Ollama
-- Running `python3 main.py` clears and rewrites `results.txt`
+- Running `python3 main.py` clears and rewrites `runs/latest/results.txt`
 
 ## Recommended Interpretation
 
@@ -182,7 +182,7 @@ If development continues toward the original proposal, the highest-value missing
 
 ## Comprehensive Implementation Checklist
 
-This checklist is intended to track all work required to deliver the project described in `CSE_Project_Proposal.pdf`. It includes both engineering work to build the benchmark testbed and research workflow steps to run and analyze experiments.
+This checklist is intended to track all work required to deliver the project described in `docs/proposal/CSE_Project_Proposal.pdf`. It includes both engineering work to build the benchmark testbed and research workflow steps to run and analyze experiments.
 
 ### 1. Project Framing and Experimental Spec
 
@@ -209,7 +209,7 @@ This checklist is intended to track all work required to deliver the project des
   - [x] Per-game config
   - [x] Per-model config
   - [x] Per-experiment config
-- [x] Add a consistent experiment output layout such as `experiments/run_{id}/`
+- [x] Add a consistent experiment output layout such as `runs/experiment_runs/run_{id}/`
 - [x] Add environment setup documentation
 - [x] Add run instructions for local execution
 - [x] Add dependency declaration and installation steps
@@ -348,7 +348,7 @@ This checklist is intended to track all work required to deliver the project des
 
 ### 10. Logging, Persistence, and Outputs
 
-- [x] Replace or supplement `results.txt` with structured experiment logging
+- [x] Replace or supplement `runs/latest/results.txt` with structured experiment logging
 - [x] Log run configuration for every experiment
 - [x] Log per-trial metadata
   - [x] Seed
@@ -450,13 +450,13 @@ This checklist is intended to track all work required to deliver the project des
 
 ### 15. Final Deliverables
 
-- [ ] Clean benchmark codebase
-- [ ] Reproducible run instructions
-- [ ] Stored configs and outputs for key experiments
-- [ ] Final result tables and figures
-- [ ] Proposal-aligned writeup or presentation
-- [ ] Discussion of limitations
-  - [ ] Depth-limited oracle limitations
-  - [ ] Single-model backend limitations
-  - [ ] Prompt sensitivity
-  - [ ] Cost and runtime constraints
+- [x] Clean benchmark codebase
+- [x] Reproducible run instructions
+- [x] Stored configs and outputs for key experiments
+- [x] Final result tables and figures
+- [x] Proposal-aligned writeup or presentation
+- [x] Discussion of limitations
+  - [x] Depth-limited oracle limitations
+  - [x] Single-model backend limitations
+  - [x] Prompt sensitivity
+  - [x] Cost and runtime constraints

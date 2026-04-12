@@ -1,0 +1,435 @@
+{
+  "run_id": "run_20260410_163730_8bf1db5_dirty",
+  "benchmark_name": "runtime_smoke",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family": "structured_reasoning",
+  "prompt_version": "structured_reasoning_v1",
+  "phases": {
+    "internal_ai_tournament": [
+      {
+        "trial": 1,
+        "seed": 3012726539,
+        "game": "blotto",
+        "players": [
+          "Single Agent",
+          "Parallel Team"
+        ],
+        "points": [
+          10,
+          39,
+          22
+        ],
+        "moves": {
+          "Single Agent": [
+            33,
+            33,
+            34
+          ],
+          "Parallel Team": [
+            33,
+            33,
+            34
+          ]
+        },
+        "scores": {
+          "Single Agent": 0,
+          "Parallel Team": 0
+        },
+        "winner": "TIE",
+        "invalid_players": []
+      },
+      {
+        "trial": 1,
+        "seed": 2171897193,
+        "game": "connect4",
+        "players": [
+          "Single Agent",
+          "Parallel Team"
+        ],
+        "winner": "Single Agent",
+        "invalid_moves": [],
+        "turns": [
+          {
+            "player": "Single Agent",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 3,
+            "applied_move": 3
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "seed": 127378619,
+        "game": "blotto",
+        "players": [
+          "Single Agent",
+          "Hierarchical Team"
+        ],
+        "points": [
+          22,
+          19,
+          39
+        ],
+        "moves": {
+          "Single Agent": [
+            33,
+            33,
+            34
+          ],
+          "Hierarchical Team": [
+            33,
+            33,
+            34
+          ]
+        },
+        "scores": {
+          "Single Agent": 0,
+          "Hierarchical Team": 0
+        },
+        "winner": "TIE",
+        "invalid_players": []
+      },
+      {
+        "trial": 1,
+        "seed": 3963249113,
+        "game": "connect4",
+        "players": [
+          "Single Agent",
+          "Hierarchical Team"
+        ],
+        "winner": "Single Agent",
+        "invalid_moves": [],
+        "turns": [
+          {
+            "player": "Single Agent",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Single Agent",
+            "requested_move": 3,
+            "applied_move": 3
+          }
+        ]
+      },
+      {
+        "trial": 1,
+        "seed": 2312534961,
+        "game": "blotto",
+        "players": [
+          "Parallel Team",
+          "Hierarchical Team"
+        ],
+        "points": [
+          28,
+          32,
+          28
+        ],
+        "moves": {
+          "Parallel Team": [
+            33,
+            33,
+            34
+          ],
+          "Hierarchical Team": [
+            33,
+            33,
+            34
+          ]
+        },
+        "scores": {
+          "Parallel Team": 0,
+          "Hierarchical Team": 0
+        },
+        "winner": "TIE",
+        "invalid_players": []
+      },
+      {
+        "trial": 1,
+        "seed": 1951057160,
+        "game": "connect4",
+        "players": [
+          "Parallel Team",
+          "Hierarchical Team"
+        ],
+        "winner": "Parallel Team",
+        "invalid_moves": [],
+        "turns": [
+          {
+            "player": "Parallel Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 0,
+            "applied_move": 0
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 1,
+            "applied_move": 1
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Hierarchical Team",
+            "requested_move": 2,
+            "applied_move": 2
+          },
+          {
+            "player": "Parallel Team",
+            "requested_move": 3,
+            "applied_move": 3
+          }
+        ]
+      }
+    ],
+    "blotto_vs_bots": [],
+    "connect4_oracle_accuracy": []
+  },
+  "completed_at": "2026-04-10T16:37:31.028304"
+}

@@ -1,0 +1,2811 @@
+{
+  "run_id": "run_20260410_164934_8bf1db5_dirty",
+  "benchmark_name": "blotto_section6_smoke",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family": "structured_reasoning",
+  "prompt_version": "structured_reasoning_v1",
+  "phases": {
+    "internal_ai_tournament": [],
+    "blotto_vs_bots": [
+      {
+        "trial": 1,
+        "seed": 1035500011,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Single Agent",
+          "Uniform Bot"
+        ],
+        "player_architectures": {
+          "Single Agent": {
+            "architecture_id": "single",
+            "architecture_name": "Single Agent",
+            "architecture_type": "single",
+            "agent_count": 1,
+            "role_definitions": [
+              {
+                "role": "single_agent",
+                "prompt_template": "single_role"
+              }
+            ],
+            "aggregation_rule": "single_response"
+          },
+          "Uniform Bot": {
+            "architecture_id": "uniform_bot",
+            "architecture_name": "Uniform Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "fixed_move"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            26,
+            27,
+            23
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Single Agent": [
+            {
+              "role": "single_agent",
+              "prompt_template": "single_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ],
+                "prompt_version": "structured_reasoning_v1",
+                "architecture_metadata": {
+                  "architecture_id": "single",
+                  "architecture_name": "Single Agent",
+                  "architecture_type": "single",
+                  "agent_count": 1,
+                  "role_definitions": [
+                    {
+                      "role": "single_agent",
+                      "prompt_template": "single_role"
+                    }
+                  ],
+                  "aggregation_rule": "single_response"
+                }
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.022,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ],
+                    "prompt_version": "structured_reasoning_v1",
+                    "architecture_metadata": {
+                      "architecture_id": "single",
+                      "architecture_name": "Single Agent",
+                      "architecture_type": "single",
+                      "agent_count": 1,
+                      "role_definitions": [
+                        {
+                          "role": "single_agent",
+                          "prompt_template": "single_role"
+                        }
+                      ],
+                      "aggregation_rule": "single_response"
+                    }
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Uniform Bot": []
+        },
+        "points": [
+          26,
+          27,
+          23
+        ],
+        "moves": {
+          "Single Agent": [
+            33,
+            33,
+            34
+          ],
+          "Uniform Bot": [
+            34,
+            33,
+            33
+          ]
+        },
+        "nash_distance": {
+          "Single Agent": {
+            "equilibrium_allocation": [
+              34,
+              36,
+              30
+            ],
+            "l1_distance": 8,
+            "normalized_l1_distance": 0.04
+          },
+          "Uniform Bot": {
+            "equilibrium_allocation": [
+              34,
+              36,
+              30
+            ],
+            "l1_distance": 6,
+            "normalized_l1_distance": 0.03
+          }
+        },
+        "scores": {
+          "Single Agent": 23,
+          "Uniform Bot": 26
+        },
+        "winner": "Uniform Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            26,
+            27,
+            23
+          ],
+          "scores": [
+            23,
+            26
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            34,
+            36,
+            30
+          ],
+          "nash_distance": {
+            "Single Agent": {
+              "equilibrium_allocation": [
+                34,
+                36,
+                30
+              ],
+              "l1_distance": 8,
+              "normalized_l1_distance": 0.04
+            },
+            "Uniform Bot": {
+              "equilibrium_allocation": [
+                34,
+                36,
+                30
+              ],
+              "l1_distance": 6,
+              "normalized_l1_distance": 0.03
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 669665955,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Single Agent",
+          "Random Bot"
+        ],
+        "player_architectures": {
+          "Single Agent": {
+            "architecture_id": "single",
+            "architecture_name": "Single Agent",
+            "architecture_type": "single",
+            "agent_count": 1,
+            "role_definitions": [
+              {
+                "role": "single_agent",
+                "prompt_template": "single_role"
+              }
+            ],
+            "aggregation_rule": "single_response"
+          },
+          "Random Bot": {
+            "architecture_id": "random_bot",
+            "architecture_name": "Random Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "random_move"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            25,
+            37,
+            18
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Single Agent": [
+            {
+              "role": "single_agent",
+              "prompt_template": "single_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ],
+                "prompt_version": "structured_reasoning_v1",
+                "architecture_metadata": {
+                  "architecture_id": "single",
+                  "architecture_name": "Single Agent",
+                  "architecture_type": "single",
+                  "agent_count": 1,
+                  "role_definitions": [
+                    {
+                      "role": "single_agent",
+                      "prompt_template": "single_role"
+                    }
+                  ],
+                  "aggregation_rule": "single_response"
+                }
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.011,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ],
+                    "prompt_version": "structured_reasoning_v1",
+                    "architecture_metadata": {
+                      "architecture_id": "single",
+                      "architecture_name": "Single Agent",
+                      "architecture_type": "single",
+                      "agent_count": 1,
+                      "role_definitions": [
+                        {
+                          "role": "single_agent",
+                          "prompt_template": "single_role"
+                        }
+                      ],
+                      "aggregation_rule": "single_response"
+                    }
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Random Bot": []
+        },
+        "points": [
+          25,
+          37,
+          18
+        ],
+        "moves": {
+          "Single Agent": [
+            33,
+            33,
+            34
+          ],
+          "Random Bot": [
+            7,
+            26,
+            67
+          ]
+        },
+        "nash_distance": {
+          "Single Agent": {
+            "equilibrium_allocation": [
+              31,
+              46,
+              23
+            ],
+            "l1_distance": 26,
+            "normalized_l1_distance": 0.13
+          },
+          "Random Bot": {
+            "equilibrium_allocation": [
+              31,
+              46,
+              23
+            ],
+            "l1_distance": 88,
+            "normalized_l1_distance": 0.44
+          }
+        },
+        "scores": {
+          "Single Agent": 62,
+          "Random Bot": 18
+        },
+        "winner": "Single Agent",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            25,
+            37,
+            18
+          ],
+          "scores": [
+            62,
+            18
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            31,
+            46,
+            23
+          ],
+          "nash_distance": {
+            "Single Agent": {
+              "equilibrium_allocation": [
+                31,
+                46,
+                23
+              ],
+              "l1_distance": 26,
+              "normalized_l1_distance": 0.13
+            },
+            "Random Bot": {
+              "equilibrium_allocation": [
+                31,
+                46,
+                23
+              ],
+              "l1_distance": 88,
+              "normalized_l1_distance": 0.44
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 3542721982,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Single Agent",
+          "High-Value Targeting Bot"
+        ],
+        "player_architectures": {
+          "Single Agent": {
+            "architecture_id": "single",
+            "architecture_name": "Single Agent",
+            "architecture_type": "single",
+            "agent_count": 1,
+            "role_definitions": [
+              {
+                "role": "single_agent",
+                "prompt_template": "single_role"
+              }
+            ],
+            "aggregation_rule": "single_response"
+          },
+          "High-Value Targeting Bot": {
+            "architecture_id": "high_value_targeting_bot",
+            "architecture_name": "High-Value Targeting Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "heuristic_high_value_targeting"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            47,
+            38,
+            13
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Single Agent": [
+            {
+              "role": "single_agent",
+              "prompt_template": "single_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ],
+                "prompt_version": "structured_reasoning_v1",
+                "architecture_metadata": {
+                  "architecture_id": "single",
+                  "architecture_name": "Single Agent",
+                  "architecture_type": "single",
+                  "agent_count": 1,
+                  "role_definitions": [
+                    {
+                      "role": "single_agent",
+                      "prompt_template": "single_role"
+                    }
+                  ],
+                  "aggregation_rule": "single_response"
+                }
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.02,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ],
+                    "prompt_version": "structured_reasoning_v1",
+                    "architecture_metadata": {
+                      "architecture_id": "single",
+                      "architecture_name": "Single Agent",
+                      "architecture_type": "single",
+                      "agent_count": 1,
+                      "role_definitions": [
+                        {
+                          "role": "single_agent",
+                          "prompt_template": "single_role"
+                        }
+                      ],
+                      "aggregation_rule": "single_response"
+                    }
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "High-Value Targeting Bot": []
+        },
+        "points": [
+          47,
+          38,
+          13
+        ],
+        "moves": {
+          "Single Agent": [
+            33,
+            33,
+            34
+          ],
+          "High-Value Targeting Bot": [
+            58,
+            38,
+            4
+          ]
+        },
+        "nash_distance": {
+          "Single Agent": {
+            "equilibrium_allocation": [
+              48,
+              39,
+              13
+            ],
+            "l1_distance": 42,
+            "normalized_l1_distance": 0.21
+          },
+          "High-Value Targeting Bot": {
+            "equilibrium_allocation": [
+              48,
+              39,
+              13
+            ],
+            "l1_distance": 20,
+            "normalized_l1_distance": 0.1
+          }
+        },
+        "scores": {
+          "Single Agent": 13,
+          "High-Value Targeting Bot": 85
+        },
+        "winner": "High-Value Targeting Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            47,
+            38,
+            13
+          ],
+          "scores": [
+            13,
+            85
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            48,
+            39,
+            13
+          ],
+          "nash_distance": {
+            "Single Agent": {
+              "equilibrium_allocation": [
+                48,
+                39,
+                13
+              ],
+              "l1_distance": 42,
+              "normalized_l1_distance": 0.21
+            },
+            "High-Value Targeting Bot": {
+              "equilibrium_allocation": [
+                48,
+                39,
+                13
+              ],
+              "l1_distance": 20,
+              "normalized_l1_distance": 0.1
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 2085899233,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Single Agent",
+          "Nash-Approx Bot"
+        ],
+        "player_architectures": {
+          "Single Agent": {
+            "architecture_id": "single",
+            "architecture_name": "Single Agent",
+            "architecture_type": "single",
+            "agent_count": 1,
+            "role_definitions": [
+              {
+                "role": "single_agent",
+                "prompt_template": "single_role"
+              }
+            ],
+            "aggregation_rule": "single_response"
+          },
+          "Nash-Approx Bot": {
+            "architecture_id": "nash_approx_bot",
+            "architecture_name": "Nash-Approx Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "equilibrium_approximation"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            45,
+            42,
+            15
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Single Agent": [
+            {
+              "role": "single_agent",
+              "prompt_template": "single_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ],
+                "prompt_version": "structured_reasoning_v1",
+                "architecture_metadata": {
+                  "architecture_id": "single",
+                  "architecture_name": "Single Agent",
+                  "architecture_type": "single",
+                  "agent_count": 1,
+                  "role_definitions": [
+                    {
+                      "role": "single_agent",
+                      "prompt_template": "single_role"
+                    }
+                  ],
+                  "aggregation_rule": "single_response"
+                }
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.011,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ],
+                    "prompt_version": "structured_reasoning_v1",
+                    "architecture_metadata": {
+                      "architecture_id": "single",
+                      "architecture_name": "Single Agent",
+                      "architecture_type": "single",
+                      "agent_count": 1,
+                      "role_definitions": [
+                        {
+                          "role": "single_agent",
+                          "prompt_template": "single_role"
+                        }
+                      ],
+                      "aggregation_rule": "single_response"
+                    }
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Nash-Approx Bot": []
+        },
+        "points": [
+          45,
+          42,
+          15
+        ],
+        "moves": {
+          "Single Agent": [
+            33,
+            33,
+            34
+          ],
+          "Nash-Approx Bot": [
+            44,
+            41,
+            15
+          ]
+        },
+        "nash_distance": {
+          "Single Agent": {
+            "equilibrium_allocation": [
+              44,
+              41,
+              15
+            ],
+            "l1_distance": 38,
+            "normalized_l1_distance": 0.19
+          },
+          "Nash-Approx Bot": {
+            "equilibrium_allocation": [
+              44,
+              41,
+              15
+            ],
+            "l1_distance": 0,
+            "normalized_l1_distance": 0.0
+          }
+        },
+        "scores": {
+          "Single Agent": 15,
+          "Nash-Approx Bot": 87
+        },
+        "winner": "Nash-Approx Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            45,
+            42,
+            15
+          ],
+          "scores": [
+            15,
+            87
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            44,
+            41,
+            15
+          ],
+          "nash_distance": {
+            "Single Agent": {
+              "equilibrium_allocation": [
+                44,
+                41,
+                15
+              ],
+              "l1_distance": 38,
+              "normalized_l1_distance": 0.19
+            },
+            "Nash-Approx Bot": {
+              "equilibrium_allocation": [
+                44,
+                41,
+                15
+              ],
+              "l1_distance": 0,
+              "normalized_l1_distance": 0.0
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 203902267,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Parallel Team",
+          "Uniform Bot"
+        ],
+        "player_architectures": {
+          "Parallel Team": {
+            "architecture_id": "parallel",
+            "architecture_name": "Parallel Team",
+            "architecture_type": "parallel",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "voter",
+                "prompt_template": "parallel_voter_role"
+              }
+            ],
+            "aggregation_rule": "majority_vote",
+            "tie_breaker": "first_valid"
+          },
+          "Uniform Bot": {
+            "architecture_id": "uniform_bot",
+            "architecture_name": "Uniform Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "fixed_move"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            11,
+            31,
+            21
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Parallel Team": [
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.015,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.011,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.01,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Uniform Bot": []
+        },
+        "points": [
+          11,
+          31,
+          21
+        ],
+        "moves": {
+          "Parallel Team": [
+            33,
+            33,
+            34
+          ],
+          "Uniform Bot": [
+            34,
+            33,
+            33
+          ]
+        },
+        "nash_distance": {
+          "Parallel Team": {
+            "equilibrium_allocation": [
+              18,
+              49,
+              33
+            ],
+            "l1_distance": 32,
+            "normalized_l1_distance": 0.16
+          },
+          "Uniform Bot": {
+            "equilibrium_allocation": [
+              18,
+              49,
+              33
+            ],
+            "l1_distance": 32,
+            "normalized_l1_distance": 0.16
+          }
+        },
+        "scores": {
+          "Parallel Team": 21,
+          "Uniform Bot": 11
+        },
+        "winner": "Parallel Team",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            11,
+            31,
+            21
+          ],
+          "scores": [
+            21,
+            11
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            18,
+            49,
+            33
+          ],
+          "nash_distance": {
+            "Parallel Team": {
+              "equilibrium_allocation": [
+                18,
+                49,
+                33
+              ],
+              "l1_distance": 32,
+              "normalized_l1_distance": 0.16
+            },
+            "Uniform Bot": {
+              "equilibrium_allocation": [
+                18,
+                49,
+                33
+              ],
+              "l1_distance": 32,
+              "normalized_l1_distance": 0.16
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 1893750525,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Parallel Team",
+          "Random Bot"
+        ],
+        "player_architectures": {
+          "Parallel Team": {
+            "architecture_id": "parallel",
+            "architecture_name": "Parallel Team",
+            "architecture_type": "parallel",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "voter",
+                "prompt_template": "parallel_voter_role"
+              }
+            ],
+            "aggregation_rule": "majority_vote",
+            "tie_breaker": "first_valid"
+          },
+          "Random Bot": {
+            "architecture_id": "random_bot",
+            "architecture_name": "Random Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "random_move"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            44,
+            48,
+            37
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Parallel Team": [
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.014,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.008,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Random Bot": []
+        },
+        "points": [
+          44,
+          48,
+          37
+        ],
+        "moves": {
+          "Parallel Team": [
+            33,
+            33,
+            34
+          ],
+          "Random Bot": [
+            22,
+            38,
+            40
+          ]
+        },
+        "nash_distance": {
+          "Parallel Team": {
+            "equilibrium_allocation": [
+              34,
+              37,
+              29
+            ],
+            "l1_distance": 10,
+            "normalized_l1_distance": 0.05
+          },
+          "Random Bot": {
+            "equilibrium_allocation": [
+              34,
+              37,
+              29
+            ],
+            "l1_distance": 24,
+            "normalized_l1_distance": 0.12
+          }
+        },
+        "scores": {
+          "Parallel Team": 44,
+          "Random Bot": 85
+        },
+        "winner": "Random Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            44,
+            48,
+            37
+          ],
+          "scores": [
+            44,
+            85
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            34,
+            37,
+            29
+          ],
+          "nash_distance": {
+            "Parallel Team": {
+              "equilibrium_allocation": [
+                34,
+                37,
+                29
+              ],
+              "l1_distance": 10,
+              "normalized_l1_distance": 0.05
+            },
+            "Random Bot": {
+              "equilibrium_allocation": [
+                34,
+                37,
+                29
+              ],
+              "l1_distance": 24,
+              "normalized_l1_distance": 0.12
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 2400187668,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Parallel Team",
+          "High-Value Targeting Bot"
+        ],
+        "player_architectures": {
+          "Parallel Team": {
+            "architecture_id": "parallel",
+            "architecture_name": "Parallel Team",
+            "architecture_type": "parallel",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "voter",
+                "prompt_template": "parallel_voter_role"
+              }
+            ],
+            "aggregation_rule": "majority_vote",
+            "tie_breaker": "first_valid"
+          },
+          "High-Value Targeting Bot": {
+            "architecture_id": "high_value_targeting_bot",
+            "architecture_name": "High-Value Targeting Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "heuristic_high_value_targeting"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            32,
+            11,
+            41
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Parallel Team": [
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.01,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "High-Value Targeting Bot": []
+        },
+        "points": [
+          32,
+          11,
+          41
+        ],
+        "moves": {
+          "Parallel Team": [
+            33,
+            33,
+            34
+          ],
+          "High-Value Targeting Bot": [
+            36,
+            4,
+            60
+          ]
+        },
+        "nash_distance": {
+          "Parallel Team": {
+            "equilibrium_allocation": [
+              38,
+              13,
+              49
+            ],
+            "l1_distance": 40,
+            "normalized_l1_distance": 0.2
+          },
+          "High-Value Targeting Bot": {
+            "equilibrium_allocation": [
+              38,
+              13,
+              49
+            ],
+            "l1_distance": 22,
+            "normalized_l1_distance": 0.11
+          }
+        },
+        "scores": {
+          "Parallel Team": 11,
+          "High-Value Targeting Bot": 73
+        },
+        "winner": "High-Value Targeting Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            32,
+            11,
+            41
+          ],
+          "scores": [
+            11,
+            73
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            38,
+            13,
+            49
+          ],
+          "nash_distance": {
+            "Parallel Team": {
+              "equilibrium_allocation": [
+                38,
+                13,
+                49
+              ],
+              "l1_distance": 40,
+              "normalized_l1_distance": 0.2
+            },
+            "High-Value Targeting Bot": {
+              "equilibrium_allocation": [
+                38,
+                13,
+                49
+              ],
+              "l1_distance": 22,
+              "normalized_l1_distance": 0.11
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 2034881357,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Parallel Team",
+          "Nash-Approx Bot"
+        ],
+        "player_architectures": {
+          "Parallel Team": {
+            "architecture_id": "parallel",
+            "architecture_name": "Parallel Team",
+            "architecture_type": "parallel",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "voter",
+                "prompt_template": "parallel_voter_role"
+              }
+            ],
+            "aggregation_rule": "majority_vote",
+            "tie_breaker": "first_valid"
+          },
+          "Nash-Approx Bot": {
+            "architecture_id": "nash_approx_bot",
+            "architecture_name": "Nash-Approx Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "equilibrium_approximation"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            14,
+            41,
+            22
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Parallel Team": [
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.014,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.008,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "voter",
+              "prompt_template": "parallel_voter_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Nash-Approx Bot": []
+        },
+        "points": [
+          14,
+          41,
+          22
+        ],
+        "moves": {
+          "Parallel Team": [
+            33,
+            33,
+            34
+          ],
+          "Nash-Approx Bot": [
+            18,
+            53,
+            29
+          ]
+        },
+        "nash_distance": {
+          "Parallel Team": {
+            "equilibrium_allocation": [
+              18,
+              53,
+              29
+            ],
+            "l1_distance": 40,
+            "normalized_l1_distance": 0.2
+          },
+          "Nash-Approx Bot": {
+            "equilibrium_allocation": [
+              18,
+              53,
+              29
+            ],
+            "l1_distance": 0,
+            "normalized_l1_distance": 0.0
+          }
+        },
+        "scores": {
+          "Parallel Team": 36,
+          "Nash-Approx Bot": 41
+        },
+        "winner": "Nash-Approx Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            14,
+            41,
+            22
+          ],
+          "scores": [
+            36,
+            41
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            18,
+            53,
+            29
+          ],
+          "nash_distance": {
+            "Parallel Team": {
+              "equilibrium_allocation": [
+                18,
+                53,
+                29
+              ],
+              "l1_distance": 40,
+              "normalized_l1_distance": 0.2
+            },
+            "Nash-Approx Bot": {
+              "equilibrium_allocation": [
+                18,
+                53,
+                29
+              ],
+              "l1_distance": 0,
+              "normalized_l1_distance": 0.0
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 1317709115,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Hierarchical Team",
+          "Uniform Bot"
+        ],
+        "player_architectures": {
+          "Hierarchical Team": {
+            "architecture_id": "hierarchical",
+            "architecture_name": "Hierarchical Team",
+            "architecture_type": "hierarchical",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "reasoner",
+                "prompt_template": "reasoner_role"
+              },
+              {
+                "role": "critic",
+                "prompt_template": "critic_role"
+              },
+              {
+                "role": "executive",
+                "prompt_template": "executive_role"
+              }
+            ],
+            "aggregation_rule": "executive_audit",
+            "critic_count": 1,
+            "include_critic": true,
+            "fallback_source": null
+          },
+          "Uniform Bot": {
+            "architecture_id": "uniform_bot",
+            "architecture_name": "Uniform Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "fixed_move"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            15,
+            42,
+            14
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Hierarchical Team": [
+            {
+              "role": "reasoner",
+              "prompt_template": "reasoner_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.015,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "critic",
+              "prompt_template": "critic_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "executive",
+              "prompt_template": "executive_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Uniform Bot": []
+        },
+        "points": [
+          15,
+          42,
+          14
+        ],
+        "moves": {
+          "Hierarchical Team": [
+            33,
+            33,
+            34
+          ],
+          "Uniform Bot": [
+            34,
+            33,
+            33
+          ]
+        },
+        "nash_distance": {
+          "Hierarchical Team": {
+            "equilibrium_allocation": [
+              21,
+              59,
+              20
+            ],
+            "l1_distance": 52,
+            "normalized_l1_distance": 0.26
+          },
+          "Uniform Bot": {
+            "equilibrium_allocation": [
+              21,
+              59,
+              20
+            ],
+            "l1_distance": 52,
+            "normalized_l1_distance": 0.26
+          }
+        },
+        "scores": {
+          "Hierarchical Team": 14,
+          "Uniform Bot": 15
+        },
+        "winner": "Uniform Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            15,
+            42,
+            14
+          ],
+          "scores": [
+            14,
+            15
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            21,
+            59,
+            20
+          ],
+          "nash_distance": {
+            "Hierarchical Team": {
+              "equilibrium_allocation": [
+                21,
+                59,
+                20
+              ],
+              "l1_distance": 52,
+              "normalized_l1_distance": 0.26
+            },
+            "Uniform Bot": {
+              "equilibrium_allocation": [
+                21,
+                59,
+                20
+              ],
+              "l1_distance": 52,
+              "normalized_l1_distance": 0.26
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 1302101818,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Hierarchical Team",
+          "Random Bot"
+        ],
+        "player_architectures": {
+          "Hierarchical Team": {
+            "architecture_id": "hierarchical",
+            "architecture_name": "Hierarchical Team",
+            "architecture_type": "hierarchical",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "reasoner",
+                "prompt_template": "reasoner_role"
+              },
+              {
+                "role": "critic",
+                "prompt_template": "critic_role"
+              },
+              {
+                "role": "executive",
+                "prompt_template": "executive_role"
+              }
+            ],
+            "aggregation_rule": "executive_audit",
+            "critic_count": 1,
+            "include_critic": true,
+            "fallback_source": null
+          },
+          "Random Bot": {
+            "architecture_id": "random_bot",
+            "architecture_name": "Random Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "random_move"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            43,
+            44,
+            12
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Hierarchical Team": [
+            {
+              "role": "reasoner",
+              "prompt_template": "reasoner_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.01,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "critic",
+              "prompt_template": "critic_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "executive",
+              "prompt_template": "executive_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Random Bot": []
+        },
+        "points": [
+          43,
+          44,
+          12
+        ],
+        "moves": {
+          "Hierarchical Team": [
+            33,
+            33,
+            34
+          ],
+          "Random Bot": [
+            78,
+            12,
+            10
+          ]
+        },
+        "nash_distance": {
+          "Hierarchical Team": {
+            "equilibrium_allocation": [
+              43,
+              45,
+              12
+            ],
+            "l1_distance": 44,
+            "normalized_l1_distance": 0.22
+          },
+          "Random Bot": {
+            "equilibrium_allocation": [
+              43,
+              45,
+              12
+            ],
+            "l1_distance": 70,
+            "normalized_l1_distance": 0.35
+          }
+        },
+        "scores": {
+          "Hierarchical Team": 56,
+          "Random Bot": 43
+        },
+        "winner": "Hierarchical Team",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            43,
+            44,
+            12
+          ],
+          "scores": [
+            56,
+            43
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            43,
+            45,
+            12
+          ],
+          "nash_distance": {
+            "Hierarchical Team": {
+              "equilibrium_allocation": [
+                43,
+                45,
+                12
+              ],
+              "l1_distance": 44,
+              "normalized_l1_distance": 0.22
+            },
+            "Random Bot": {
+              "equilibrium_allocation": [
+                43,
+                45,
+                12
+              ],
+              "l1_distance": 70,
+              "normalized_l1_distance": 0.35
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 3462858640,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Hierarchical Team",
+          "High-Value Targeting Bot"
+        ],
+        "player_architectures": {
+          "Hierarchical Team": {
+            "architecture_id": "hierarchical",
+            "architecture_name": "Hierarchical Team",
+            "architecture_type": "hierarchical",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "reasoner",
+                "prompt_template": "reasoner_role"
+              },
+              {
+                "role": "critic",
+                "prompt_template": "critic_role"
+              },
+              {
+                "role": "executive",
+                "prompt_template": "executive_role"
+              }
+            ],
+            "aggregation_rule": "executive_audit",
+            "critic_count": 1,
+            "include_critic": true,
+            "fallback_source": null
+          },
+          "High-Value Targeting Bot": {
+            "architecture_id": "high_value_targeting_bot",
+            "architecture_name": "High-Value Targeting Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "heuristic_high_value_targeting"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            44,
+            12,
+            15
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Hierarchical Team": [
+            {
+              "role": "reasoner",
+              "prompt_template": "reasoner_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.01,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "critic",
+              "prompt_template": "critic_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "executive",
+              "prompt_template": "executive_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "High-Value Targeting Bot": []
+        },
+        "points": [
+          44,
+          12,
+          15
+        ],
+        "moves": {
+          "Hierarchical Team": [
+            33,
+            33,
+            34
+          ],
+          "High-Value Targeting Bot": [
+            84,
+            6,
+            10
+          ]
+        },
+        "nash_distance": {
+          "Hierarchical Team": {
+            "equilibrium_allocation": [
+              62,
+              17,
+              21
+            ],
+            "l1_distance": 58,
+            "normalized_l1_distance": 0.29
+          },
+          "High-Value Targeting Bot": {
+            "equilibrium_allocation": [
+              62,
+              17,
+              21
+            ],
+            "l1_distance": 44,
+            "normalized_l1_distance": 0.22
+          }
+        },
+        "scores": {
+          "Hierarchical Team": 27,
+          "High-Value Targeting Bot": 44
+        },
+        "winner": "High-Value Targeting Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            44,
+            12,
+            15
+          ],
+          "scores": [
+            27,
+            44
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            62,
+            17,
+            21
+          ],
+          "nash_distance": {
+            "Hierarchical Team": {
+              "equilibrium_allocation": [
+                62,
+                17,
+                21
+              ],
+              "l1_distance": 58,
+              "normalized_l1_distance": 0.29
+            },
+            "High-Value Targeting Bot": {
+              "equilibrium_allocation": [
+                62,
+                17,
+                21
+              ],
+              "l1_distance": 44,
+              "normalized_l1_distance": 0.22
+            }
+          }
+        }
+      },
+      {
+        "trial": 1,
+        "seed": 501079141,
+        "game": "blotto",
+        "variant_name": "discrete_blotto_v1",
+        "players": [
+          "Hierarchical Team",
+          "Nash-Approx Bot"
+        ],
+        "player_architectures": {
+          "Hierarchical Team": {
+            "architecture_id": "hierarchical",
+            "architecture_name": "Hierarchical Team",
+            "architecture_type": "hierarchical",
+            "agent_count": 3,
+            "role_definitions": [
+              {
+                "role": "reasoner",
+                "prompt_template": "reasoner_role"
+              },
+              {
+                "role": "critic",
+                "prompt_template": "critic_role"
+              },
+              {
+                "role": "executive",
+                "prompt_template": "executive_role"
+              }
+            ],
+            "aggregation_rule": "executive_audit",
+            "critic_count": 1,
+            "include_critic": true,
+            "fallback_source": null
+          },
+          "Nash-Approx Bot": {
+            "architecture_id": "nash_approx_bot",
+            "architecture_name": "Nash-Approx Bot",
+            "architecture_type": "baseline_bot",
+            "agent_count": 0,
+            "role_definitions": [],
+            "aggregation_rule": "equilibrium_approximation"
+          }
+        },
+        "state_snapshot": {
+          "points": [
+            16,
+            12,
+            32
+          ],
+          "point_policy": "random_range",
+          "troop_budget": 100,
+          "battlefields": 3,
+          "discrete": true,
+          "submitted_actions": {},
+          "invalid_actions": {}
+        },
+        "intermediate_outputs": {
+          "Hierarchical Team": [
+            {
+              "role": "reasoner",
+              "prompt_template": "reasoner_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.012,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "critic",
+              "prompt_template": "critic_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.008,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            },
+            {
+              "role": "executive",
+              "prompt_template": "executive_role",
+              "trace": "Deterministic mock response for local validation.",
+              "parsed_response": {
+                "reasoning": "Deterministic mock response for local validation.",
+                "move": [
+                  33,
+                  33,
+                  34
+                ]
+              },
+              "parse_failure_reason": null,
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "latency_ms": 0.007,
+                  "raw_response": "{\"reasoning\": \"Deterministic mock response for local validation.\", \"move\": [33, 33, 34]}",
+                  "parsed_response": {
+                    "reasoning": "Deterministic mock response for local validation.",
+                    "move": [
+                      33,
+                      33,
+                      34
+                    ]
+                  },
+                  "parse_failure_reason": null,
+                  "request_error": null,
+                  "backend_details": {
+                    "provider_response": {
+                      "mock_backend": true
+                    }
+                  }
+                }
+              ],
+              "valid": true,
+              "prompt_version": "structured_reasoning_v1"
+            }
+          ],
+          "Nash-Approx Bot": []
+        },
+        "points": [
+          16,
+          12,
+          32
+        ],
+        "moves": {
+          "Hierarchical Team": [
+            33,
+            33,
+            34
+          ],
+          "Nash-Approx Bot": [
+            27,
+            20,
+            53
+          ]
+        },
+        "nash_distance": {
+          "Hierarchical Team": {
+            "equilibrium_allocation": [
+              27,
+              20,
+              53
+            ],
+            "l1_distance": 38,
+            "normalized_l1_distance": 0.19
+          },
+          "Nash-Approx Bot": {
+            "equilibrium_allocation": [
+              27,
+              20,
+              53
+            ],
+            "l1_distance": 0,
+            "normalized_l1_distance": 0.0
+          }
+        },
+        "scores": {
+          "Hierarchical Team": 28,
+          "Nash-Approx Bot": 32
+        },
+        "winner": "Nash-Approx Bot",
+        "invalid_players": [],
+        "metrics_context": {
+          "points": [
+            16,
+            12,
+            32
+          ],
+          "scores": [
+            28,
+            32
+          ],
+          "invalid_actions": {},
+          "equilibrium_allocation": [
+            27,
+            20,
+            53
+          ],
+          "nash_distance": {
+            "Hierarchical Team": {
+              "equilibrium_allocation": [
+                27,
+                20,
+                53
+              ],
+              "l1_distance": 38,
+              "normalized_l1_distance": 0.19
+            },
+            "Nash-Approx Bot": {
+              "equilibrium_allocation": [
+                27,
+                20,
+                53
+              ],
+              "l1_distance": 0,
+              "normalized_l1_distance": 0.0
+            }
+          }
+        }
+      }
+    ],
+    "connect4_oracle_accuracy": []
+  },
+  "completed_at": "2026-04-10T16:49:34.402261"
+}

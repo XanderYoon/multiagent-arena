@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from agents import extract_json, validate_agent_response, LLMRuntime
+from benchmark.agents import extract_json, validate_agent_response, LLMRuntime
 
 
 PROMPT_CATALOG = {
@@ -13,7 +13,7 @@ PROMPT_CATALOG = {
         "structured_reasoning_v1": {
             "family": "structured_reasoning",
             "version": "structured_reasoning_v1",
-            "template_root": "prompts/structured_reasoning_v1",
+            "template_root": "config/prompts/templates/structured_reasoning_v1",
             "reasoning_trace_policy": {"decision": "full"},
             "templates": {
                 "game_agent_system": "game_agent_system.txt",

@@ -1,0 +1,11 @@
+{
+  "run_id": "run_20260410_163635_8bf1db5_dirty",
+  "started_at": "2026-04-10T16:36:35.187964",
+  "benchmark_name": "multi_agent_llm_game_benchmark_mock",
+  "config_path": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/configs/benchmark_mock.json",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family": "structured_reasoning",
+  "prompt_version": "structured_reasoning_v1",
+  "output_dir": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/experiments/run_20260410_163635_8bf1db5_dirty"
+}

@@ -3,8 +3,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from analysis.reporting import collect_runs, write_report_bundle
-from reproducibility import build_trial_schedule
+from reports.scripts.reporting import collect_runs, write_report_bundle
+from benchmark.reproducibility import build_trial_schedule
 
 
 class AnalysisReportingTests(unittest.TestCase):
@@ -28,7 +28,7 @@ class AnalysisReportingTests(unittest.TestCase):
     def test_report_bundle_is_generated_from_completed_runs(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
             tmp_path = Path(tmp_dir)
-            run_dir = tmp_path / "experiments" / "run_test"
+            run_dir = tmp_path / "runs" / "run_test"
             (run_dir / "metadata").mkdir(parents=True)
             (run_dir / "summaries").mkdir(parents=True)
             (run_dir / "logs").mkdir(parents=True)
@@ -77,7 +77,7 @@ class AnalysisReportingTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            runs = collect_runs(tmp_path / "experiments")
+            runs = collect_runs(tmp_path / "runs")
             self.assertEqual(len(runs), 1)
 
             output_dir = tmp_path / "analysis"

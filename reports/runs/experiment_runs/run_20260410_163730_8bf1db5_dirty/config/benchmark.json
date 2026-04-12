@@ -1,0 +1,12 @@
+{
+  "benchmark_name": "runtime_smoke",
+  "output_root": "experiments",
+  "latest_results_path": "results.txt",
+  "model_config": "configs/models/mock_deterministic.json",
+  "prompt_config": "configs/prompts/default_prompts.json",
+  "game_configs": {
+    "blotto": "configs/games/blotto.json",
+    "connect4": "configs/games/connect4.json"
+  },
+  "experiment_config": "/tmp/benchmark_mock_experiment.json"
+}

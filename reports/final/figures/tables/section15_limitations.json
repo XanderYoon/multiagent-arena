@@ -1,0 +1,21 @@
+{
+  "backends_observed": [],
+  "items": [
+    {
+      "title": "Depth-limited oracle limitations",
+      "detail": "Connect 4 oracle accuracy is measured against the repository's depth-limited minimax solver. That is a strong baseline, but it is not a perfect solver, so optimal-move accuracy should be interpreted as agreement with this oracle rather than proof of globally optimal play."
+    },
+    {
+      "title": "Single-model backend limitations",
+      "detail": "The completed Section 14.3 sweeps stay within the Qwen/Ollama runtime family. This isolates architecture, parameter-count, and quantization effects, but it does not establish that the same trends will transfer to other model families or hosted APIs."
+    },
+    {
+      "title": "Prompt sensitivity",
+      "detail": "The final Section 14.3 deliverables summarize runs executed with `structured_reasoning_v1`. Prompt wording materially affects legality, consistency, and strategy quality, so the reported rankings should be treated as prompt-conditional rather than universally stable."
+    },
+    {
+      "title": "Cost and runtime constraints",
+      "detail": "Mixed-team ensembles increase wall-clock runtime and local hardware demand because each move may require multiple model invocations. The benchmark records accuracy and win-rate tradeoffs, but it does not yet normalize outcomes by latency, GPU memory, or token cost."
+    }
+  ]
+}

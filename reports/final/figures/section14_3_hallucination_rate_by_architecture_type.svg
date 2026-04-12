@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="460">
+<rect width="920" height="460" fill="#fcfbf7" />
+<text x="460.0" y="28" text-anchor="middle" font-size="20" font-family="Georgia, serif">Hallucination Rate by Architecture Type</text>
+<text x="460.0" y="440" text-anchor="middle" font-size="13">Architecture type</text>
+<text x="24" y="185.0" text-anchor="middle" font-size="13" transform="rotate(-90 24 185.0)">Mean hallucination rate</text>
+<line x1="60" y1="356.0" x2="860" y2="356.0" stroke="#d8d3c8" stroke-width="1" />
+<text x="50" y="360.0" text-anchor="end" font-size="11">0.00</text>
+<line x1="60" y1="293.5" x2="860" y2="293.5" stroke="#d8d3c8" stroke-width="1" />
+<text x="50" y="297.5" text-anchor="end" font-size="11">0.00</text>
+<line x1="60" y1="231.0" x2="860" y2="231.0" stroke="#d8d3c8" stroke-width="1" />
+<text x="50" y="235.0" text-anchor="end" font-size="11">0.01</text>
+<line x1="60" y1="168.5" x2="860" y2="168.5" stroke="#d8d3c8" stroke-width="1" />
+<text x="50" y="172.5" text-anchor="end" font-size="11">0.01</text>
+<line x1="60" y1="106.0" x2="860" y2="106.0" stroke="#d8d3c8" stroke-width="1" />
+<text x="50" y="110.0" text-anchor="end" font-size="11">0.02</text>
+<rect x="60" y="106.0" width="364" height="250.0" fill="#c65f28" />
+<text x="242.0" y="98.0" text-anchor="middle" font-size="11">0.018</text>
+<text x="242.0" y="404" text-anchor="middle" font-size="11">hierarchical</text>
+<text x="860" y="48" text-anchor="end" font-size="11">lower is better</text>
+<rect x="460" y="218.54511852756306" width="364" height="137.45488147243694" fill="#1f6aa5" />
+<text x="642.0" y="210.54511852756306" text-anchor="middle" font-size="11">0.010</text>
+<text x="642.0" y="404" text-anchor="middle" font-size="11">parallel</text>
+<text x="860" y="48" text-anchor="end" font-size="11">lower is better</text>
+</svg>

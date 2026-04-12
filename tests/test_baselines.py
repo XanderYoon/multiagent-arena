@@ -1,6 +1,6 @@
 import unittest
 
-from game_engine import (
+from benchmark.game_engine import (
     Connect4Environment,
     minimax_solver,
     oracle_analysis,

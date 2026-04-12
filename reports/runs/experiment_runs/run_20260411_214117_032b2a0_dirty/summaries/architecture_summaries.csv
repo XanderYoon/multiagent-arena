@@ -1,0 +1,13 @@
+average_value_gap,blotto_nash_distance,blunder_rate,connect4_optimal_move_accuracy,consistency_accuracy_variance,consistency_nash_distance_variance,consistency_outcome_stability,consistency_per_state_agreement,consistency_variance_across_trials,experiment_group,game,hallucination_rate,invalid_attempt_rate,legality_rate,losses,matches,model,prompt_family_id,scope_id,scope_type,tie_rate,ties,win_rate,wins
+,0.14833333333333334,,,,0.0024138888888888886,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,6,mock-deterministic,structured_reasoning_v1,single,architecture,1.0,6,0.0,0
+,0.125,,,,0.004525,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,6,mock-deterministic,structured_reasoning_v1,parallel,architecture,1.0,6,0.0,0
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,connect4,0.0,0.0,1.0,0,6,mock-deterministic,structured_reasoning_v1,single,architecture,0.0,0,1.0,6
+,,,,,,0.5,1.0,0.25,internal_ai_tournament,connect4,0.0,0.0,1.0,3,6,mock-deterministic,structured_reasoning_v1,parallel,architecture,0.0,0,0.5,3
+,0.12666666666666668,,,,0.003255555555555556,1.0,,0.0,internal_ai_tournament,blotto,0.0,0.0,1.0,0,6,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,1.0,6,0.0,0
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,connect4,0.0,0.0,1.0,6,6,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,0.0,0,0.0,0
+,0.14166666666666666,,,,0.006813888888888889,0.8333333333333334,,0.1388888888888889,blotto_vs_bots,blotto,0.0,0.0,1.0,10,12,mock-deterministic,structured_reasoning_v1,single,architecture,0.0,0,0.16666666666666666,2
+,0.15916666666666668,,,,0.003557638888888889,0.5833333333333334,,0.24305555555555555,blotto_vs_bots,blotto,0.0,0.0,1.0,7,12,mock-deterministic,structured_reasoning_v1,parallel,architecture,0.0,0,0.4166666666666667,5
+,0.16333333333333333,,,,0.006622222222222222,0.75,,0.1875,blotto_vs_bots,blotto,0.0,0.0,1.0,9,12,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,0.0,0,0.25,3
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,3,3,mock-deterministic,structured_reasoning_v1,single,architecture,0.0,0,0.0,0
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,3,3,mock-deterministic,structured_reasoning_v1,parallel,architecture,0.0,0,0.0,0
+20010.8,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,3,3,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,0.0,0,0.0,0

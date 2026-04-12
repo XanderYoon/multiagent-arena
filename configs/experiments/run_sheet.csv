@@ -1,3 +1,0 @@
-run_id,stage,status,config_path,games,architectures,num_trials,purpose
-pilot_architecture_comparison,pilot,planned,configs/experiments/pilot_architecture_comparison.json,"blotto;connect4","single;parallel;hierarchical",3,"Validate logging, metrics, seeds, and failure handling before longer runs."
-final_architecture_comparison,final,planned,configs/experiments/final_architecture_comparison.json,"blotto;connect4","single;parallel;hierarchical",10,"Main architecture comparison for the currently implemented benchmark scope."

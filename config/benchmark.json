@@ -1,0 +1,13 @@
+{
+  "benchmark_name": "multi_agent_llm_game_benchmark",
+  "output_root": "reports/runs/experiment_runs",
+  "latest_results_path": "reports/runs/latest/results.txt",
+  "model_config": "config/models/ollama_qwen2_5_7b.json",
+  "prompt_config": "config/prompts/default_prompts.json",
+  "architecture_config": "config/architectures/default_architectures.json",
+  "game_configs": {
+    "blotto": "config/games/blotto.json",
+    "connect4": "config/games/connect4.json"
+  },
+  "experiment_config": "config/experiments/default_benchmark.json"
+}

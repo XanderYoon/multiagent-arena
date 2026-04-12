@@ -1,0 +1,18 @@
+{
+  "benchmark_name": "multi_agent_llm_game_benchmark_model_scale_subset",
+  "output_root": "experiments",
+  "latest_results_path": "results.txt",
+  "default_model_alias": "med",
+  "model_configs": {
+    "low": "configs/models/ollama_qwen2_5_3b.json",
+    "med": "configs/models/ollama_qwen2_5_7b.json",
+    "high": "configs/models/ollama_qwen2_5_14b.json"
+  },
+  "prompt_config": "configs/prompts/default_prompts.json",
+  "architecture_config": "configs/architectures/model_scale_architectures.json",
+  "game_configs": {
+    "blotto": "configs/games/blotto.json",
+    "connect4": "configs/games/connect4.json"
+  },
+  "experiment_config": "configs/experiments/model_scale_subset.json"
+}

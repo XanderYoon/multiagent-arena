@@ -1,0 +1,16 @@
+{
+  "run_label": "prompt_section8_smoke",
+  "num_trials": 1,
+  "global_seed": 8803,
+  "prompt_family": "legality_first_v1",
+  "architectures": [
+    "single",
+    "parallel",
+    "hierarchical"
+  ],
+  "phases": {
+    "internal_ai_tournament": false,
+    "blotto_vs_bots": false,
+    "connect4_oracle_accuracy": true
+  }
+}

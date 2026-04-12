@@ -1,0 +1,11 @@
+{
+  "run_id": "run_20260410_164625_8bf1db5_dirty",
+  "started_at": "2026-04-10T16:46:25.212104",
+  "benchmark_name": "gameenv_smoke",
+  "config_path": "/tmp/benchmark_gameenv_smoke.json",
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "prompt_family": "structured_reasoning",
+  "prompt_version": "structured_reasoning_v1",
+  "output_dir": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/experiments/run_20260410_164625_8bf1db5_dirty"
+}

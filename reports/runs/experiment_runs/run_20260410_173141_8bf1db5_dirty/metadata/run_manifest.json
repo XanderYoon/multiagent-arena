@@ -1,0 +1,651 @@
+{
+  "run_id": "run_20260410_173141_8bf1db5_dirty",
+  "started_at": "2026-04-10T21:31:41Z",
+  "benchmark_name": "multi_agent_llm_game_benchmark_mock",
+  "config_path": "/tmp/tmpu0_urnkw.json",
+  "global_seed": 8803,
+  "seed_policy": {
+    "global_seed": 8803,
+    "child_seed_strategy": "stable_seed(global_seed, *parts) using sha256(parts)[:8]"
+  },
+  "model": "mock-deterministic",
+  "backend": "mock",
+  "model_identity": {
+    "backend": "mock",
+    "configured_model_name": "mock-deterministic",
+    "configured_model_digest": null,
+    "generation": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 64
+    }
+  },
+  "code_version": {
+    "commit": "8bf1db59358906bec2372a8f2e6b5e25ae5746ac",
+    "short_commit": "8bf1db5",
+    "branch": "main",
+    "dirty": true
+  },
+  "runtime_environment": {
+    "python_version": "3.14.2 | packaged by conda-forge | (main, Dec  6 2025, 11:21:58) [GCC 14.3.0]",
+    "python_implementation": "CPython",
+    "python_executable": "/home/alexander-yoon/micromamba/bin/python3",
+    "platform": "Linux-6.17.0-20-generic-x86_64-with-glibc2.39",
+    "system": "Linux",
+    "release": "6.17.0-20-generic",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "hostname": "xander-code-machine",
+    "cpu_count": 8
+  },
+  "prompt_family_id": "structured_reasoning_v1",
+  "prompt_family": "structured_reasoning",
+  "prompt_version": "structured_reasoning_v1",
+  "internal_reasoning_storage": {
+    "mode": "full",
+    "notes": "Store internal reasoning text in full in runtime logs and summaries when the model provides it."
+  },
+  "trial_schedule": [
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2171897193,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 3963249113,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1951057160,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 488003798,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 3501346677,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1297284417,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 3,
+      "game": "connect4",
+      "seed": 1759132750,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 3,
+      "game": "connect4",
+      "seed": 3770035908,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 3,
+      "game": "connect4",
+      "seed": 4007737433,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 4,
+      "game": "connect4",
+      "seed": 2384865949,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 4,
+      "game": "connect4",
+      "seed": 3200273326,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 4,
+      "game": "connect4",
+      "seed": 3345041320,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 5,
+      "game": "connect4",
+      "seed": 3936970541,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 5,
+      "game": "connect4",
+      "seed": 1065535876,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 5,
+      "game": "connect4",
+      "seed": 2588846856,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 6,
+      "game": "connect4",
+      "seed": 3472592666,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 6,
+      "game": "connect4",
+      "seed": 402063326,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 6,
+      "game": "connect4",
+      "seed": 2672992922,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 7,
+      "game": "connect4",
+      "seed": 1882552901,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 7,
+      "game": "connect4",
+      "seed": 3467038644,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 7,
+      "game": "connect4",
+      "seed": 987842559,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 8,
+      "game": "connect4",
+      "seed": 2174386499,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 8,
+      "game": "connect4",
+      "seed": 1287286551,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 8,
+      "game": "connect4",
+      "seed": 2132477502,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 9,
+      "game": "connect4",
+      "seed": 3601688652,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 9,
+      "game": "connect4",
+      "seed": 4161486147,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 9,
+      "game": "connect4",
+      "seed": 2123479970,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 10,
+      "game": "connect4",
+      "seed": 3775066251,
+      "participants": [
+        "single",
+        "parallel"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 10,
+      "game": "connect4",
+      "seed": 378490167,
+      "participants": [
+        "single",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 10,
+      "game": "connect4",
+      "seed": 3782398091,
+      "participants": [
+        "parallel",
+        "hierarchical"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 156875254,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2375324672,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 3483479214,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 4116114781,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 3139574785,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1345141916,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 3,
+      "game": "connect4",
+      "seed": 1121513280,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 3,
+      "game": "connect4",
+      "seed": 1342232081,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 3,
+      "game": "connect4",
+      "seed": 2109253987,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 4,
+      "game": "connect4",
+      "seed": 2518746326,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 4,
+      "game": "connect4",
+      "seed": 1649480641,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 4,
+      "game": "connect4",
+      "seed": 3682493229,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 5,
+      "game": "connect4",
+      "seed": 1574959678,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 5,
+      "game": "connect4",
+      "seed": 67204114,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 5,
+      "game": "connect4",
+      "seed": 2987185909,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 6,
+      "game": "connect4",
+      "seed": 556946069,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 6,
+      "game": "connect4",
+      "seed": 2951595503,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 6,
+      "game": "connect4",
+      "seed": 1425116056,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 7,
+      "game": "connect4",
+      "seed": 4221064590,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 7,
+      "game": "connect4",
+      "seed": 1325079874,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 7,
+      "game": "connect4",
+      "seed": 2034554182,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 8,
+      "game": "connect4",
+      "seed": 1863372230,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 8,
+      "game": "connect4",
+      "seed": 941908504,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 8,
+      "game": "connect4",
+      "seed": 2050446599,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 9,
+      "game": "connect4",
+      "seed": 762369293,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 9,
+      "game": "connect4",
+      "seed": 3744706341,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 9,
+      "game": "connect4",
+      "seed": 2524061617,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 10,
+      "game": "connect4",
+      "seed": 201765263,
+      "participants": [
+        "single",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 10,
+      "game": "connect4",
+      "seed": 2999209287,
+      "participants": [
+        "parallel",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 10,
+      "game": "connect4",
+      "seed": 3194824298,
+      "participants": [
+        "hierarchical",
+        "oracle"
+      ]
+    }
+  ],
+  "output_dir": "/NAS/School/CSE8803/ASI-Agent-Architecture-Benchmark/experiments/run_20260410_173141_8bf1db5_dirty"
+}

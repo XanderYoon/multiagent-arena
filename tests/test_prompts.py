@@ -1,6 +1,6 @@
 import unittest
 
-from agents import PromptManager
+from benchmark.agents import PromptManager
 
 
 PROMPT_CATALOG = {
@@ -10,7 +10,7 @@ PROMPT_CATALOG = {
         "structured_reasoning_v1": {
             "family": "structured_reasoning",
             "version": "structured_reasoning_v1",
-            "template_root": "prompts/structured_reasoning_v1",
+            "template_root": "config/prompts/templates/structured_reasoning_v1",
             "reasoning_trace_policy": {"decision": "full"},
             "templates": {
                 "game_agent_system": "game_agent_system.txt",
@@ -28,7 +28,7 @@ PROMPT_CATALOG = {
         "minimal_v1": {
             "family": "minimal",
             "version": "minimal_v1",
-            "template_root": "prompts/minimal_v1",
+            "template_root": "config/prompts/templates/minimal_v1",
             "reasoning_trace_policy": {"decision": "full"},
             "templates": {
                 "game_agent_system": "game_agent_system.txt",

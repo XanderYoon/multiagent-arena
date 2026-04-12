@@ -1,0 +1,5 @@
+average_value_gap,blotto_nash_distance,blunder_rate,connect4_optimal_move_accuracy,consistency_accuracy_variance,consistency_nash_distance_variance,consistency_outcome_stability,consistency_per_state_agreement,consistency_variance_across_trials,experiment_group,game,hallucination_rate,invalid_attempt_rate,legality_rate,losses,matches,scope_id,scope_type,tie_rate,ties,win_rate,wins
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,blotto,1.0,1.0,0.0,0,60,structured_reasoning_v1,prompt,1.0,60,0.0,0
+,,,,,,0.5,0.48333333333333334,0.25,internal_ai_tournament,connect4,1.0,1.0,0.0,30,60,structured_reasoning_v1,prompt,0.0,0,0.5,30
+,,,,,,1.0,,0.0,blotto_vs_bots,blotto,1.0,1.0,0.0,0,48,structured_reasoning_v1,prompt,1.0,48,0.0,0
+15946.0209,,0.7236948236948237,27.631666666666668,257.4365305555555,,1.0,0.5476190476190477,0.0,connect4_oracle_accuracy,connect4,1.0,1.0,0.0,12,12,structured_reasoning_v1,prompt,0.0,0,0.0,0

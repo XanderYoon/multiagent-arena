@@ -1,0 +1,3053 @@
+
+############################################################
+PHASE 1: INTERNAL AI vs AI TOURNAMENT
+############################################################
+
+==================================================
+--- Single Agent vs Parallel Team (2) (Simultaneous Resource Game) | TRIAL 1 | SEED 2378343715 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [29, 49, 18]
+Single Agent: [33, 33, 34] (Score: 0) | Parallel Team (2): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (2) (Gravity Grid Game) | TRIAL 1 | SEED 2089763390 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 1 | SEED 3012726539 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [10, 39, 22]
+Single Agent: [33, 33, 34] (Score: 0) | Parallel Team: [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Gravity Grid Game) | TRIAL 1 | SEED 2171897193 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1 | SEED 127378619 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [22, 19, 39]
+Single Agent: [33, 33, 34] (Score: 0) | Hierarchical Team: [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Gravity Grid Game) | TRIAL 1 | SEED 3963249113 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (No Critic) (Simultaneous Resource Game) | TRIAL 1 | SEED 683222950 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [41, 16, 18]
+Single Agent: [33, 33, 34] (Score: 0) | Hierarchical Team (No Critic): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (No Critic) (Gravity Grid Game) | TRIAL 1 | SEED 685217926 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (2 Critics) (Simultaneous Resource Game) | TRIAL 1 | SEED 149801961 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [15, 46, 27]
+Single Agent: [33, 33, 34] (Score: 0) | Hierarchical Team (2 Critics): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (2 Critics) (Gravity Grid Game) | TRIAL 1 | SEED 123765546 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Deterministic mock response for local validation.
+----------------------------------------
+Single Agent executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Parallel Team (2) vs Parallel Team (Simultaneous Resource Game) | TRIAL 1 | SEED 23159646 ---
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+Board Points: [43, 15, 25]
+Parallel Team (2): [33, 33, 34] (Score: 0) | Parallel Team: [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team (2) vs Parallel Team (Gravity Grid Game) | TRIAL 1 | SEED 1938843502 ---
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team (2) <<<
+
+==================================================
+--- Parallel Team (2) vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1 | SEED 2591768369 ---
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [46, 16, 15]
+Parallel Team (2): [33, 33, 34] (Score: 0) | Hierarchical Team: [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team (2) vs Hierarchical Team (Gravity Grid Game) | TRIAL 1 | SEED 44084625 ---
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team (2) <<<
+
+==================================================
+--- Parallel Team (2) vs Hierarchical Team (No Critic) (Simultaneous Resource Game) | TRIAL 1 | SEED 1235384593 ---
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [17, 32, 20]
+Parallel Team (2): [33, 33, 34] (Score: 0) | Hierarchical Team (No Critic): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team (2) vs Hierarchical Team (No Critic) (Gravity Grid Game) | TRIAL 1 | SEED 4220917808 ---
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team (2) <<<
+
+==================================================
+--- Parallel Team (2) vs Hierarchical Team (2 Critics) (Simultaneous Resource Game) | TRIAL 1 | SEED 4070266246 ---
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [27, 18, 46]
+Parallel Team (2): [33, 33, 34] (Score: 0) | Hierarchical Team (2 Critics): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team (2) vs Hierarchical Team (2 Critics) (Gravity Grid Game) | TRIAL 1 | SEED 1405487055 ---
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Parallel Team (2) thinking...
+
+[ REASONING TRACE FOR Parallel Team (2) ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (2) executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team (2) <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1 | SEED 2312534961 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [28, 32, 28]
+Parallel Team: [33, 33, 34] (Score: 0) | Hierarchical Team: [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Gravity Grid Game) | TRIAL 1 | SEED 1951057160 ---
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (No Critic) (Simultaneous Resource Game) | TRIAL 1 | SEED 3516791510 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [35, 48, 26]
+Parallel Team: [33, 33, 34] (Score: 0) | Hierarchical Team (No Critic): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (No Critic) (Gravity Grid Game) | TRIAL 1 | SEED 2422861529 ---
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (2 Critics) (Simultaneous Resource Game) | TRIAL 1 | SEED 103909270 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [[33, 33, 34], [33, 33, 34], [33, 33, 34]]
+  -> Aggregation: majority_vote
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [35, 20, 10]
+Parallel Team: [33, 33, 34] (Score: 0) | Hierarchical Team (2 Critics): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (2 Critics) (Gravity Grid Game) | TRIAL 1 | SEED 2418257687 ---
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [0, 0, 0]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [1, 1, 1]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [2, 2, 2]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Deterministic mock response for local validation.
+  -> Votes: [3, 3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Hierarchical Team vs Hierarchical Team (No Critic) (Simultaneous Resource Game) | TRIAL 1 | SEED 4056501943 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [21, 31, 35]
+Hierarchical Team: [33, 33, 34] (Score: 0) | Hierarchical Team (No Critic): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Hierarchical Team (No Critic) (Gravity Grid Game) | TRIAL 1 | SEED 1201218268 ---
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs Hierarchical Team (2 Critics) (Simultaneous Resource Game) | TRIAL 1 | SEED 3516522269 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [11, 10, 27]
+Hierarchical Team: [33, 33, 34] (Score: 0) | Hierarchical Team (2 Critics): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team vs Hierarchical Team (2 Critics) (Gravity Grid Game) | TRIAL 1 | SEED 3995412768 ---
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team (No Critic) vs Hierarchical Team (2 Critics) (Simultaneous Resource Game) | TRIAL 1 | SEED 1307973427 ---
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Board Points: [15, 31, 27]
+Hierarchical Team (No Critic): [33, 33, 34] (Score: 0) | Hierarchical Team (2 Critics): [33, 33, 34] (Score: 0)
+>>> WINNER: TIE <<<
+
+==================================================
+--- Hierarchical Team (No Critic) vs Hierarchical Team (2 Critics) (Gravity Grid Game) | TRIAL 1 | SEED 3037838936 ---
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 0
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 0
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 1
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 1
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 2
+
+Turn 2 - Hierarchical Team (2 Critics) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (2 Critics) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Critic 1: Deterministic mock response for local validation.
+  -> Critic 2: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (2 Critics) executes move: Column 2
+
+Turn 1 - Hierarchical Team (No Critic) thinking...
+
+[ REASONING TRACE FOR Hierarchical Team (No Critic) ]
+  -> Reasoner: Deterministic mock response for local validation.
+  -> Executive: Deterministic mock response for local validation.
+----------------------------------------
+Hierarchical Team (No Critic) executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X . . . .
+     O O O . . . .
+     X X X X . . .
+>>> WINNER: Hierarchical Team (No Critic) <<<

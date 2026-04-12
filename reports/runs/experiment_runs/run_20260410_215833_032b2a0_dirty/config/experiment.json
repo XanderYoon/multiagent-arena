@@ -1,0 +1,23 @@
+{
+  "run_label": "model_scale_subset",
+  "run_type": "final",
+  "comparison_axis": "model_size_and_mixed_team_composition",
+  "model_group_id": "qwen2_5_param_count_subset",
+  "num_trials": 2,
+  "minimum_trials_required": 2,
+  "global_seed": 8803,
+  "prompt_family": "structured_reasoning_v1",
+  "architectures": [
+    "parallel_lmh",
+    "parallel_hhl",
+    "parallel_llh",
+    "hierarchical_lmh",
+    "hierarchical_hhl",
+    "hierarchical_llh"
+  ],
+  "phases": {
+    "internal_ai_tournament": true,
+    "blotto_vs_bots": true,
+    "connect4_oracle_accuracy": true
+  }
+}

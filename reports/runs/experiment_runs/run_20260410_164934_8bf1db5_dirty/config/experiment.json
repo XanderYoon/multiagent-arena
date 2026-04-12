@@ -1,0 +1,15 @@
+{
+  "run_label": "blotto_section6_smoke",
+  "num_trials": 1,
+  "global_seed": 8803,
+  "architectures": [
+    "single",
+    "parallel",
+    "hierarchical"
+  ],
+  "phases": {
+    "internal_ai_tournament": false,
+    "blotto_vs_bots": true,
+    "connect4_oracle_accuracy": false
+  }
+}

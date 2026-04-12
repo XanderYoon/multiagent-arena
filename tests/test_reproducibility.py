@@ -1,7 +1,7 @@
 import unittest
 
 from main import build_blotto_baseline_bot
-from reproducibility import (
+from benchmark.reproducibility import (
     build_trial_schedule,
     get_model_identity,
     get_runtime_environment,

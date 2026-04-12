@@ -1,0 +1,1259 @@
+{
+  "global_seed": 8803,
+  "seed_policy": "stable_seed(global_seed, *parts) using sha256(parts)[:8]",
+  "trial_schedule": [
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1766193430,
+      "participants": [
+        "parallel_qmix",
+        "parallel_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1938065180,
+      "participants": [
+        "parallel_qmix",
+        "parallel_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 958886805,
+      "participants": [
+        "parallel_qmix",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2546690943,
+      "participants": [
+        "parallel_qmix",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 23389066,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 3891188348,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1619788490,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2042160063,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 3282879321,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2643543691,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2672478768,
+      "participants": [
+        "parallel_f16f16q4",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 255492386,
+      "participants": [
+        "parallel_f16f16q4",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2731381236,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 3646194451,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2063053310,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 3017552838,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2207855158,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1305200981,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 12845695,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 23609372,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2344184928,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 4197561423,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 101751939,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1910778324,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 442593161,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1685147296,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 3647572803,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2370887330,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 720412754,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1192924284,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3937026399,
+      "participants": [
+        "parallel_qmix",
+        "parallel_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1094168576,
+      "participants": [
+        "parallel_qmix",
+        "parallel_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3876345566,
+      "participants": [
+        "parallel_qmix",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1715512383,
+      "participants": [
+        "parallel_qmix",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3242548041,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 322138892,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2816206101,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1874731379,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 1121153588,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 463788778,
+      "participants": [
+        "parallel_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2616440066,
+      "participants": [
+        "parallel_f16f16q4",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 321399451,
+      "participants": [
+        "parallel_f16f16q4",
+        "parallel_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 4263866611,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 936346726,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3851772736,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 2273584879,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3691424780,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 2482849322,
+      "participants": [
+        "parallel_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2396641830,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1016578150,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_qmix"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2780159541,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 3870324432,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2566103599,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1747434687,
+      "participants": [
+        "parallel_q4q4f16",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3525513050,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 3955116234,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_f16f16q4"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 935756036,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 4196395195,
+      "participants": [
+        "hierarchical_qmix",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3982102416,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "internal_ai_tournament",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 2886031903,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "hierarchical_q4q4f16"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 922264032,
+      "participants": [
+        "parallel_qmix",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 4178344483,
+      "participants": [
+        "parallel_qmix",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1504516544,
+      "participants": [
+        "parallel_qmix",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2813448404,
+      "participants": [
+        "parallel_qmix",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1098089843,
+      "participants": [
+        "parallel_f16f16q4",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1594082985,
+      "participants": [
+        "parallel_f16f16q4",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2015236750,
+      "participants": [
+        "parallel_f16f16q4",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 708630798,
+      "participants": [
+        "parallel_f16f16q4",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1441934285,
+      "participants": [
+        "parallel_q4q4f16",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2699991018,
+      "participants": [
+        "parallel_q4q4f16",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1055775373,
+      "participants": [
+        "parallel_q4q4f16",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2511574544,
+      "participants": [
+        "parallel_q4q4f16",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1675953017,
+      "participants": [
+        "hierarchical_qmix",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1632378271,
+      "participants": [
+        "hierarchical_qmix",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 4235108993,
+      "participants": [
+        "hierarchical_qmix",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1341478654,
+      "participants": [
+        "hierarchical_qmix",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 3391034052,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 3932934673,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 3642664761,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 3607819125,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2797416762,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1840688972,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 2338942487,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 1,
+      "game": "blotto",
+      "seed": 1750274868,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3894482508,
+      "participants": [
+        "parallel_qmix",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 1935061561,
+      "participants": [
+        "parallel_qmix",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2780838854,
+      "participants": [
+        "parallel_qmix",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3758831466,
+      "participants": [
+        "parallel_qmix",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3207146256,
+      "participants": [
+        "parallel_f16f16q4",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2043607701,
+      "participants": [
+        "parallel_f16f16q4",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3487732648,
+      "participants": [
+        "parallel_f16f16q4",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3356752043,
+      "participants": [
+        "parallel_f16f16q4",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2342926441,
+      "participants": [
+        "parallel_q4q4f16",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 1245268095,
+      "participants": [
+        "parallel_q4q4f16",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2659004045,
+      "participants": [
+        "parallel_q4q4f16",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 624193882,
+      "participants": [
+        "parallel_q4q4f16",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2792402165,
+      "participants": [
+        "hierarchical_qmix",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3734026440,
+      "participants": [
+        "hierarchical_qmix",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 522613447,
+      "participants": [
+        "hierarchical_qmix",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2233139087,
+      "participants": [
+        "hierarchical_qmix",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 1092093775,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 1565096891,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 370935012,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2861794442,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3580589123,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "uniform"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 3415209229,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "random"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 704872091,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "high_value_targeting"
+      ]
+    },
+    {
+      "phase": "blotto_vs_bots",
+      "trial": 2,
+      "game": "blotto",
+      "seed": 2441456802,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "nash_approx"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1522594180,
+      "participants": [
+        "parallel_qmix",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2610461353,
+      "participants": [
+        "parallel_f16f16q4",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1107547417,
+      "participants": [
+        "parallel_q4q4f16",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2067242523,
+      "participants": [
+        "hierarchical_qmix",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 2660896973,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 1,
+      "game": "connect4",
+      "seed": 1591798450,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1165793194,
+      "participants": [
+        "parallel_qmix",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 3592486291,
+      "participants": [
+        "parallel_f16f16q4",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 283021342,
+      "participants": [
+        "parallel_q4q4f16",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 1842489684,
+      "participants": [
+        "hierarchical_qmix",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 3815834584,
+      "participants": [
+        "hierarchical_f16f16q4",
+        "oracle"
+      ]
+    },
+    {
+      "phase": "connect4_oracle_accuracy",
+      "trial": 2,
+      "game": "connect4",
+      "seed": 2749049326,
+      "participants": [
+        "hierarchical_q4q4f16",
+        "oracle"
+      ]
+    }
+  ],
+  "code_version": {
+    "commit": "032b2a0f6a7fbf47bf4382c53806ee2421848ff3",
+    "short_commit": "032b2a0",
+    "branch": "main",
+    "dirty": true
+  },
+  "model_identity": {
+    "q4": {
+      "backend": "ollama",
+      "configured_model_name": "qwen2.5:7b-instruct-q4_0",
+      "configured_model_digest": null,
+      "generation": {
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "max_tokens": 256
+      },
+      "provider_lookup_error": "Command '['ollama', 'show', '--json', 'qwen2.5:7b-instruct-q4_0']' returned non-zero exit status 1."
+    },
+    "q8": {
+      "backend": "ollama",
+      "configured_model_name": "qwen2.5:7b-instruct-q8_0",
+      "configured_model_digest": null,
+      "generation": {
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "max_tokens": 256
+      },
+      "provider_lookup_error": "Command '['ollama', 'show', '--json', 'qwen2.5:7b-instruct-q8_0']' returned non-zero exit status 1."
+    },
+    "f16": {
+      "backend": "ollama",
+      "configured_model_name": "qwen2.5:7b-instruct-fp16",
+      "configured_model_digest": null,
+      "generation": {
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "max_tokens": 256
+      },
+      "provider_lookup_error": "Command '['ollama', 'show', '--json', 'qwen2.5:7b-instruct-fp16']' returned non-zero exit status 1."
+    }
+  },
+  "runtime_environment": {
+    "python_version": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+    "python_implementation": "CPython",
+    "python_executable": "/usr/bin/python3",
+    "platform": "Linux-6.17.0-20-generic-x86_64-with-glibc2.39",
+    "system": "Linux",
+    "release": "6.17.0-20-generic",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "hostname": "xander-code-machine",
+    "cpu_count": 8
+  }
+}

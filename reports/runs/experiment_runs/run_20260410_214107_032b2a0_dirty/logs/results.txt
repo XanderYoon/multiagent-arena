@@ -1,0 +1,73 @@
+
+############################################################
+PHASE 1: INTERNAL AI vs AI TOURNAMENT
+############################################################
+
+==================================================
+--- Parallel Team (Low+Med+High) vs Parallel Team (High+High+Low) (Simultaneous Resource Game) | TRIAL 1 | SEED 743602015 ---
+
+[ REASONING TRACE FOR Parallel Team (Low+Med+High) ]
+  -> Given the state of the zones with values 49 (Zone A), 36 (Zone B), and 40 (Zone C), I have decided to allocate resources in a way that minimizes potential future conflicts while maintaining a balanced distribution. By allocating 25 units to each zone, I aim to create a more stable equilibrium where no single zone can dominate the others significantly. This move adheres to the requirement of distributing all 100 units and ensures the sum is exactly 100.
+  -> Given the point values of each zone (Zone A: 49, Zone B: 36, Zone C: 40), a logical distribution would be to allocate more resources to Zones with higher point values. However, we must ensure that the total allocation sums exactly to 100 units. One possible valid distribution is allocating 50 units to Zone A (to maximize its value contribution), 30 units to Zone B, and 20 units to Zone C. This satisfies all constraints.
+  -> Considering the point values of each zone (Zone A: 49, Zone B: 36, Zone C: 40), a strategic approach would be to allocate more resources to higher-value zones. However, since all points are relatively close in value and we need to distribute exactly 100 units across three zones, an even distribution with slight adjustments might maximize overall gain.
+  -> Votes: [[25, 25, 50], [50, 30, 20], [49, 36, 15]]
+  -> Aggregation: tie_break_lowest_move
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team (High+High+Low) ]
+  -> Considering the point values of each zone (Zone A: 49, Zone B: 36, Zone C: 40), it's optimal to allocate more resources to Zone A due to its highest value. However, a balanced approach should also consider Zone C for its significant value and to avoid overconcentrating risk in one area.
+  -> Considering the point values of each zone (Zone A: 49, Zone B: 36, Zone C: 40), it's optimal to allocate more resources to Zone A due to its highest value. However, a balanced approach should be considered to maximize overall gain without neglecting other zones entirely.
+  -> Given the state of the zones with values 49 (Zone A), 36 (Zone B), and 40 (Zone C), I have decided to allocate resources in a way that minimizes potential future conflicts while maintaining overall stability. By allocating 25 units to Zone A, 37 units to Zone B, and 38 units to Zone C, the total sum is exactly 100 as required by the rules. This allocation strategy aims to balance the current disparities among the zones.
+  -> Votes: [[52, 18, 30], [51, 24, 25], [25, 37, 38]]
+  -> Aggregation: tie_break_lowest_move
+----------------------------------------
+Board Points: [49, 36, 40]
+Parallel Team (Low+Med+High): [25, 25, 50] (Score: 40) | Parallel Team (High+High+Low): [25, 37, 38] (Score: 36)
+>>> WINNER: Parallel Team (Low+Med+High) <<<
+
+==================================================
+--- Parallel Team (Low+Med+High) vs Parallel Team (High+High+Low) (Gravity Grid Game) | TRIAL 1 | SEED 3316948868 ---
+
+Turn 1 - Parallel Team (Low+Med+High) thinking...
+
+[ REASONING TRACE FOR Parallel Team (Low+Med+High) ]
+  -> Player 1 should aim to create a potential threat or connection that Player 2 cannot easily counter. Given the current state of the board, there are no immediate threats from Player 2. However, creating a vertical or diagonal connection is crucial for winning. Column 3 offers a good position as it can potentially form a line with future moves in columns 0 and 1. Additionally, if Player 2 tries to block this by playing in column 4, Player 1 can respond in column 5 to maintain control of the board.
+  -> Given that this is the initial state of the game, any column can be chosen. However, to set up for a potential connection in the future while also blocking opponent's possible moves, I will choose column 3. This central position allows for both horizontal and vertical connections as well as diagonal possibilities.
+  -> Given that there are no tokens on the board yet, any column chosen will not result in an immediate win or block an opponent's threat. The best strategy is to choose a central column (column 3) as it maximizes future potential connections both horizontally and vertically.
+  -> Votes: [3, 3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (Low+Med+High) executes move: Column 3
+
+Turn 2 - Parallel Team (High+High+Low) thinking...
+
+[ REASONING TRACE FOR Parallel Team (High+High+Low) ]
+  -> Analyzing the current state of the board, there are no immediate threats from Player 1 to block. The center columns (2-4) offer more strategic flexibility for forming lines in multiple directions. Column 3 is currently open and central, providing opportunities to create potential future connections horizontally, vertically, and diagonally without immediate risk.
+  -> Analyzing the current state of the board, there are no immediate threats from Player 1 to block. The center columns (column 3) have a single token from Player 1 which could potentially be part of a threat in future turns if not addressed. However, since Player 2 has no tokens on the board yet, the primary strategy should focus on establishing a strong position by creating multiple potential connections for future moves.
+  -> Player 2 should choose column 3. By placing a token in column 3, I can potentially create a vertical connection with my previous move (X) if Player 1 does not block it soon. Additionally, this move allows for future horizontal and diagonal connections.
+  -> Votes: [3, 3, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (High+High+Low) executes move: Column 3
+
+Turn 1 - Parallel Team (Low+Med+High) thinking...
+
+[ REASONING TRACE FOR Parallel Team (Low+Med+High) ]
+  -> Given the current state of the board, dropping a token into column 4 allows for potential horizontal or diagonal extensions. Dropping it into column 3 would allow for vertical or diagonal extensions if Player 2 plays in column 1 next turn. However, dropping it into column 4 provides more flexibility and can potentially lead to a winning move sooner.
+  -> The board currently has two tokens placed by Player 2 in columns 4 and 5. To prevent Player 2 from connecting four horizontally or vertically in their next turn, I should block them by placing my token in column 4. This also opens up potential future diagonal connections for me.
+  -> Analyzing the current state of the board, Player 1 should focus on blocking Player 2's potential moves while setting up a threat for future turns. Column 3 is currently occupied by both players' tokens, indicating it might be a strategic point. However, since there are no immediate threats from Player 2 to block or connections forming, Player 1 can aim to start a new line of attack. Columns 0 and 6 offer the opportunity to begin a potential vertical connection without immediate risk.
+  -> Votes: [4, 4, 3]
+  -> Aggregation: majority_vote
+----------------------------------------
+Parallel Team (Low+Med+High) executes move: Column 4
+
+Turn 2 - Parallel Team (High+High+Low) thinking...
+
+[ REASONING TRACE FOR Parallel Team (High+High+Low) ]
+  -> Analyzing the board state, column 3 is currently occupied by an opponent piece (X) at row 5 and another X at row 4. Dropping a token in column 3 would block Player 1 from forming a vertical connection there. Columns 0, 2, and 6 are open but do not present immediate threats or opportunities for connections. Column 1 has an opponent piece (O) at row 5 which could be part of a future diagonal threat if left unchallenged. Dropping in column 1 would block this potential threat and also set up a possible future diagonal connection from the bottom-left to top-right.
+  -> Analyzing the board state, column 3 is crucial as it contains an opponent's piece (X) directly above my own piece (O). Dropping a token here would block a potential vertical connection for Player 1. Additionally, this move sets up a diagonal threat from columns 2 to 4.
+  -> Player 2 should choose column 4. By placing a token in column 4, Player 2 can potentially create a vertical connection with the existing X's if Player 1 does not block it. Additionally, this move allows for future horizontal and diagonal connections.
+  -> Votes: [1, 3, 4]
+  -> Aggregation: tie_break_lowest_move
+----------------------------------------
+Parallel Team (High+High+Low) executes move: Column 1

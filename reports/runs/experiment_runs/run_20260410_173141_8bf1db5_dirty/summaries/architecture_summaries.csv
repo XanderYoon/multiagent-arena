@@ -1,0 +1,7 @@
+average_value_gap,blotto_nash_distance,blunder_rate,connect4_optimal_move_accuracy,consistency_accuracy_variance,consistency_nash_distance_variance,consistency_outcome_stability,consistency_per_state_agreement,consistency_variance_across_trials,experiment_group,game,hallucination_rate,invalid_attempt_rate,legality_rate,losses,matches,model,prompt_family_id,scope_id,scope_type,tie_rate,ties,win_rate,wins
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,connect4,0.0,0.0,1.0,0,20,mock-deterministic,structured_reasoning_v1,single,architecture,0.0,0,1.0,20
+,,,,,,0.5,1.0,0.25,internal_ai_tournament,connect4,0.0,0.0,1.0,10,20,mock-deterministic,structured_reasoning_v1,parallel,architecture,0.0,0,0.5,10
+,,,,,,1.0,1.0,0.0,internal_ai_tournament,connect4,0.0,0.0,1.0,20,20,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,0.0,0,0.0,0
+20004.0,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,10,10,mock-deterministic,structured_reasoning_v1,single,architecture,0.0,0,0.0,0
+20004.0,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,10,10,mock-deterministic,structured_reasoning_v1,parallel,architecture,0.0,0,0.0,0
+20004.0,,0.8,20.0,0.0,,1.0,1.0,0.0,connect4_oracle_accuracy,connect4,0.0,0.0,1.0,10,10,mock-deterministic,structured_reasoning_v1,hierarchical,architecture,0.0,0,0.0,0

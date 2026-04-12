@@ -4,15 +4,15 @@
   "latest_results_path": "results.txt",
   "default_model_alias": "med",
   "model_configs": {
-    "low": "config/models/ollama_qwen2_5_3b.json",
-    "med": "config/models/ollama_qwen2_5_7b.json",
-    "high": "config/models/ollama_qwen2_5_14b.json"
+    "low": "configs/models/ollama_qwen2_5_3b.json",
+    "med": "configs/models/ollama_qwen2_5_7b.json",
+    "high": "configs/models/ollama_qwen2_5_14b.json"
   },
-  "prompt_config": "config/prompts/default_prompts.json",
-  "architecture_config": "config/architectures/model_scale_architectures.json",
+  "prompt_config": "configs/prompts/default_prompts.json",
+  "architecture_config": "configs/architectures/model_scale_architectures.json",
   "game_configs": {
-    "blotto": "config/games/blotto.json",
-    "connect4": "config/games/connect4.json"
+    "blotto": "configs/games/blotto.json",
+    "connect4": "configs/games/connect4.json"
   },
-  "experiment_config": "config/experiments/model_scale_subset.json"
+  "experiment_config": "configs/experiments/model_scale_subset.json"
 }

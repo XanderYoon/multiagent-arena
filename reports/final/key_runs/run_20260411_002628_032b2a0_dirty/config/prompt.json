@@ -7,7 +7,7 @@
   "family_config": {
     "family": "structured_reasoning",
     "version": "structured_reasoning_v1",
-    "template_root": "config/prompts/templates/structured_reasoning_v1",
+    "template_root": "prompts/structured_reasoning_v1",
     "reasoning_trace_policy": {
       "decision": "full",
       "stored_model_visible_text": true,

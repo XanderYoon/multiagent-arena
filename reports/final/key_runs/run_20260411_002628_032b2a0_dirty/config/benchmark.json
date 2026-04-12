@@ -4,15 +4,15 @@
   "latest_results_path": "results.txt",
   "default_model_alias": "q4",
   "model_configs": {
-    "q4": "config/models/qwen2_5_7b_q4.json",
-    "q8": "config/models/qwen2_5_7b_q8.json",
-    "f16": "config/models/qwen2_5_7b_f16.json"
+    "q4": "configs/models/qwen2_5_7b_q4.json",
+    "q8": "configs/models/qwen2_5_7b_q8.json",
+    "f16": "configs/models/qwen2_5_7b_f16.json"
   },
-  "prompt_config": "config/prompts/default_prompts.json",
-  "architecture_config": "config/architectures/quantization_architectures.json",
+  "prompt_config": "configs/prompts/default_prompts.json",
+  "architecture_config": "configs/architectures/quantization_architectures.json",
   "game_configs": {
-    "blotto": "config/games/blotto.json",
-    "connect4": "config/games/connect4.json"
+    "blotto": "configs/games/blotto.json",
+    "connect4": "configs/games/connect4.json"
   },
-  "experiment_config": "config/experiments/quantization_subset.json"
+  "experiment_config": "configs/experiments/quantization_subset.json"
 }

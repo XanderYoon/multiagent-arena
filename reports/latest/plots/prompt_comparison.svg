@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360">
+<text x="320.0" y="24" text-anchor="middle" font-size="18">Prompt Comparison</text>
+<rect x="40" y="118.60237596086654" width="120" height="201.39762403913346" fill="#2f6db3" />
+<text x="100.0" y="336" text-anchor="middle" font-size="10">structured_reasoning_v1</text>
+<text x="100.0" y="112.60237596086654" text-anchor="middle" font-size="10">0.202</text>
+<rect x="180" y="100.0" width="120" height="220.0" fill="#2f6db3" />
+<text x="240.0" y="336" text-anchor="middle" font-size="10">minimal_v1</text>
+<text x="240.0" y="94.0" text-anchor="middle" font-size="10">0.221</text>
+<rect x="320" y="100.0" width="120" height="220.0" fill="#2f6db3" />
+<text x="380.0" y="336" text-anchor="middle" font-size="10">chain_of_thought_v1</text>
+<text x="380.0" y="94.0" text-anchor="middle" font-size="10">0.221</text>
+<rect x="460" y="100.0" width="120" height="220.0" fill="#2f6db3" />
+<text x="520.0" y="336" text-anchor="middle" font-size="10">legality_first_v1</text>
+<text x="520.0" y="94.0" text-anchor="middle" font-size="10">0.221</text>
+</svg>

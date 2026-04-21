@@ -1,0 +1,15 @@
+scope,run_id,run_label,benchmark_name,model,prompt_family_id,experiment_group,variant_name,match_count,run_count,first_win_count,second_win_count,draw_count,first_win_rate,second_win_rate,draw_rate,first_score_mean,first_score_variance,first_minus_second_win_rate
+experiment,,architecture_smoke,architecture_smoke,mock-deterministic,,internal_ai_tournament,connect4,15,1,15,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,baseline_architecture_benchmark,multi_agent_llm_game_benchmark_mock,mock-deterministic,,internal_ai_tournament,connect4,9,1,9,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,baseline_architecture_benchmark,multi_agent_llm_game_benchmark_mock,mock-deterministic,structured_reasoning_v1,internal_ai_tournament,gravity_grid_standard_v1,27,3,27,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,difficulty_connect4_wide,multi_agent_llm_game_benchmark_mock,mock-deterministic,structured_reasoning_v1,internal_ai_tournament,gravity_grid_wide_v1,30,1,30,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,final_architecture_comparison,multi_agent_llm_game_benchmark_mock,mock-deterministic,structured_reasoning_v1,internal_ai_tournament,gravity_grid_standard_v1,90,3,90,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,gameenv_smoke,gameenv_smoke,mock-deterministic,,internal_ai_tournament,connect4,3,1,3,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,metrics_section9_smoke,metrics_section9_smoke,mock-deterministic,structured_reasoning_v1,internal_ai_tournament,connect4,3,1,3,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,model_scale_subset,multi_agent_llm_game_benchmark_model_scale_subset,qwen2_5_param_count_subset,structured_reasoning_v1,internal_ai_tournament,gravity_grid_standard_v1,60,2,29,31,0,0.48333333333333334,0.5166666666666667,0.0,0.48333333333333334,0.24972222222222223,-0.03333333333333333
+experiment,,pilot_architecture_comparison,multi_agent_llm_game_benchmark_mock,mock-deterministic,structured_reasoning_v1,internal_ai_tournament,gravity_grid_standard_v1,9,1,9,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,prompt_chain_of_thought_architecture_comparison,multi_agent_llm_game_benchmark_mock,mock-deterministic,chain_of_thought_v1,internal_ai_tournament,gravity_grid_standard_v1,30,1,30,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,prompt_legality_first_architecture_comparison,multi_agent_llm_game_benchmark_mock,mock-deterministic,legality_first_v1,internal_ai_tournament,gravity_grid_standard_v1,30,1,30,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,prompt_minimal_architecture_comparison,multi_agent_llm_game_benchmark_mock,mock-deterministic,minimal_v1,internal_ai_tournament,gravity_grid_standard_v1,30,1,30,0,0,1.0,0.0,0.0,1.0,0.0,1.0
+experiment,,quantization_subset,multi_agent_llm_game_benchmark_quantization_subset,qwen2_5_7b_quantization_subset,structured_reasoning_v1,internal_ai_tournament,gravity_grid_standard_v1,60,2,32,27,1,0.5333333333333333,0.45,0.016666666666666666,0.5416666666666666,0.24409722222222222,0.08333333333333333
+experiment,,runtime_smoke,runtime_smoke,mock-deterministic,,internal_ai_tournament,connect4,3,1,3,0,0,1.0,0.0,0.0,1.0,0.0,1.0

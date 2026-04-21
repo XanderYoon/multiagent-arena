@@ -1,0 +1,12 @@
+architecture,game,invalid_moves,reason,total_turns
+hierarchical,blotto,0,valid,492
+high_value_targeting_bot,blotto,0,valid,246
+nash_approx_bot,blotto,0,valid,246
+parallel,blotto,0,valid,492
+random_bot,blotto,0,valid,246
+single,blotto,0,valid,492
+uniform_bot,blotto,0,valid,246
+hierarchical,connect4,0,valid,1886
+oracle,connect4,0,valid,1230
+parallel,connect4,0,valid,1968
+single,connect4,0,valid,2050

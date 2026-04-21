@@ -5,3 +5,4 @@ runs/experiment_runs/run_*/
 reports/latest/*
 reports/final/*
 !runs/.gitkeep
+reports/final/tables/combined_runs.json

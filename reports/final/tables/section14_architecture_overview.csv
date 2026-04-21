@@ -1,0 +1,13 @@
+architecture,experiment_group,game,mean_blotto_nash_distance,mean_connect4_optimal_move_accuracy,mean_hallucination_rate,mean_legality_rate,mean_win_rate,runs
+hierarchical,blotto_vs_bots,blotto,0.16609722222222223,,0.0,1.0,0.3020833333333333,12
+parallel,blotto_vs_bots,blotto,0.1570138888888889,,0.0,1.0,0.4388888888888889,12
+single,blotto_vs_bots,blotto,0.1411388888888889,,0.0,1.0,0.24097222222222223,12
+hierarchical,internal_ai_tournament,blotto,0.12841666666666668,,0.0,1.0,0.0,12
+parallel,internal_ai_tournament,blotto,0.12902777777777777,,0.0,1.0,0.0,12
+single,internal_ai_tournament,blotto,0.151,,0.0,1.0,0.0,12
+hierarchical,connect4_oracle_accuracy,connect4,,20.0,0.0,1.0,0.0,12
+parallel,connect4_oracle_accuracy,connect4,,20.0,0.0,1.0,0.0,12
+single,connect4_oracle_accuracy,connect4,,20.0,0.0,1.0,0.0,12
+hierarchical,internal_ai_tournament,connect4,,,0.0,1.0,0.0,12
+parallel,internal_ai_tournament,connect4,,,0.0,1.0,0.5,12
+single,internal_ai_tournament,connect4,,,0.0,1.0,1.0,12

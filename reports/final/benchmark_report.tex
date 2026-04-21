@@ -1,0 +1,570 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  urlcolor=blue!50!black,
+  citecolor=blue!50!black
+}
+
+\setlist[itemize]{leftmargin=1.2em}
+\captionsetup{font=small}
+\graphicspath{{final/figures/}{figures/}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newenvironment{traceblock}{\begin{quote}\small\ttfamily\color{black!85}}{\end{quote}}
+
+\newcommand{\figBlottoArchitecture}{architecture_comparison_blotto_blotto_vs_bots_win_rate}
+\newcommand{\figConnectFourArchitecture}{architecture_comparison_connect4_internal_ai_tournament_win_rate}
+\newcommand{\figPromptComparison}{prompt_family_blotto_blotto_vs_bots_win_rate_heatmap}
+\newcommand{\figModelScaleOracle}{model_scale_subset_connect4_connect4_oracle_accuracy_oracle_agreement}
+\newcommand{\figQuantBlotto}{quantization_subset_blotto_blotto_vs_bots_win_rate}
+\newcommand{\figOracleTradeoff}{quantization_subset_connect4_connect4_oracle_accuracy_oracle_agreement}
+\newcommand{\figBlottoArchHeatmap}{architecture_comparison_blotto_blotto_vs_bots_metric_heatmap}
+\newcommand{\figBlottoTournamentHeatmap}{architecture_comparison_blotto_internal_ai_tournament_metric_heatmap}
+\newcommand{\figConnectFourOracleHeatmap}{architecture_comparison_connect4_connect4_oracle_accuracy_metric_heatmap}
+\newcommand{\figConnectFourTournamentHeatmap}{architecture_comparison_connect4_internal_ai_tournament_metric_heatmap}
+\newcommand{\figBlottoPromptFamily}{prompt_family_blotto_blotto_vs_bots_win_rate_heatmap}
+\newcommand{\figConnectFourPromptFamily}{prompt_family_connect4_connect4_oracle_accuracy_oracle_agreement_heatmap}
+\newcommand{\figRunLabelTopline}{prompt_family_connect4_internal_ai_tournament_win_rate_heatmap}
+\newcommand{\figModelScaleBlottoHeatmap}{model_scale_subset_blotto_parallel_model_agreement_heatmap}
+\newcommand{\figModelScaleConnectFourHeatmap}{model_scale_subset_connect4_parallel_model_agreement_heatmap}
+\newcommand{\figQuantBlottoHeatmap}{quantization_subset_blotto_parallel_model_agreement_heatmap}
+\newcommand{\figQuantConnectFourHeatmap}{quantization_subset_connect4_parallel_model_agreement_heatmap}
+\newcommand{\figTurnOrder}{turn_order_first_vs_second_by_experiment}
+\newcommand{\figTrialVariance}{trial_variance_experiment_overview}
+
+\title{Multi-Agent LLM Orchestration in Adversarial Games\\\large A Benchmark Study in Colonel Blotto and Connect 4}
+\author{ASI-Agent-Architecture-Benchmark}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper reports the current state of the ASI-Agent-Architecture-Benchmark and evaluates the research objective stated in the project proposal: determine whether multi-agent large-language-model orchestration improves strategic decision-making in adversarial games, and identify when those gains depend on architecture, prompting, game difficulty, and model configuration. The benchmark implements three decision architectures (single-agent, parallel voting, and hierarchical reasoner--critic--executive teams), two games (a configurable Colonel Blotto variant and Connect 4), repeated-trial execution, structured logging, and aggregate metric reporting. The full experimental program in the repository spans baseline architecture comparisons, pilot runs, prompt-family sweeps, difficulty variants, broad reporting-validation studies, and live mixed-team studies that vary model scale and quantization under a local Ollama/Qwen runtime. Across the benchmark, three findings recur. First, orchestration is task-dependent: parallel teams are strongest on Blotto baseline exploitation, while single-agent or hierarchical teams are stronger in several Connect 4 settings. Second, legality is largely saturated across the benchmark, so measured differences are mostly strategic rather than formatting artifacts. Third, more model quality does not monotonically produce better teams; mixed compositions often outperform homogeneous ``highest-quality'' teams, and the best composition depends on whether the target is tournament win rate, oracle agreement, or equilibrium-like play in Blotto. The repository therefore supports a refined answer to the proposal's central question: multi-agent orchestration helps, but only conditionally, and useful evaluation requires multiple games and multiple metrics rather than a single headline score.
+\end{abstract}
+
+\section{Introduction}
+The project proposal framed this benchmark around a practical research question: if a language model must act inside an adversarial environment, does dividing decision-making across multiple agents improve strategic quality relative to a single decision-maker? That question matters because modern LLM systems are increasingly deployed as orchestrated agents rather than as a single prompt-response loop. A benchmark that only tests one architecture or one game cannot answer the broader design question the proposal raised.
+
+The repository now contains a working benchmark that operationalizes that objective. It supports three architecture families, two games with distinct strategic structure, repeated trials, structured logs, reasoning traces, aggregate metrics, and final reporting artifacts. The games were chosen to probe different reasoning demands. Colonel Blotto is a simultaneous resource-allocation game that stresses trade-offs between exploitation and mixed-strategy discipline. Connect 4 is a sequential gravity-grid game that stresses tactical foresight, move legality, and short-horizon search behavior under an oracle comparison.
+
+This report is written as a research paper rather than as an internal workflow memo. For that reason, the experiments are described by what they test rather than by internal section labels. The analysis covers the full experimental program preserved in the repository:
+\begin{itemize}
+  \item baseline and pilot architecture comparisons;
+  \item repeated architecture comparisons under the standard benchmark setup;
+  \item prompt-family comparisons;
+  \item difficulty-variation experiments;
+  \item live mixed-team studies that vary model scale;
+  \item live mixed-team studies that vary quantization quality.
+\end{itemize}
+
+The report also distinguishes between two evidentiary tiers. Some runs were executed with the \texttt{mock-deterministic} backend and are most valuable as benchmark-validation evidence: they show that scheduling, logging, legality checks, prompt plumbing, and reporting remain stable as the benchmark broadens. Other runs were executed with the local Ollama/Qwen stack and provide live strategic evidence about actual model behavior. Treating all runs as equally probative would overstate what the repository proves. Treating the non-live runs as irrelevant would understate what they show about benchmark validity. The goal of this paper is to integrate both.
+
+\section{Methodology}
+
+\subsection{Research Objective}
+The proposal's research objective can be stated precisely as follows:
+\begin{quote}
+How do orchestration structure, prompt strategy, task difficulty, model scale, and quantization affect the strategic quality, legality, and consistency of LLM agents in adversarial games?
+\end{quote}
+
+The benchmark answers that objective through multiple experiment families instead of a single sweep. This design is intentional. A one-shot comparison of single versus multi-agent systems can suggest a winner, but it cannot reveal whether the apparent improvement comes from architecture, prompting, model quality, runtime stability, or evaluation protocol.
+
+\subsection{Games, Architectures, and Metrics}
+The benchmark implements two game environments and three architecture families.
+
+\textbf{Games.}
+\begin{itemize}
+  \item \textbf{Colonel Blotto}: a configurable discrete resource-allocation game with fixed troop budget, configurable battlefield count, randomized or fixed payoff vectors, baseline bots, and a Nash-distance approximation metric.
+  \item \textbf{Connect 4}: a configurable gravity-grid environment with legality checks, repeated self-play, and a depth-limited minimax oracle for move-quality evaluation.
+\end{itemize}
+
+\textbf{Architectures.}
+\begin{itemize}
+  \item \textbf{Single-agent}: one model call produces the final action.
+  \item \textbf{Parallel}: three model calls act independently and aggregate by majority vote or tie-breaking.
+  \item \textbf{Hierarchical}: a reasoner proposes a move, a critic evaluates legality and strategic quality, and an executive chooses the final action.
+\end{itemize}
+
+\textbf{Primary metrics.}
+\begin{itemize}
+  \item \textbf{Win rate}: direct competitive performance in tournaments or against baseline bots.
+  \item \textbf{Legality rate / hallucination rate}: whether the action is valid for the environment.
+  \item \textbf{Connect 4 oracle agreement}: percentage of moves matching the depth-limited minimax oracle.
+  \item \textbf{Blotto Nash distance}: distance from the benchmark's equilibrium-style allocation approximation.
+  \item \textbf{Consistency}: outcome stability and per-state agreement across repeated trials.
+  \item \textbf{Blunder rate and value gap}: how far Connect 4 moves deviate from the oracle's evaluation.
+\end{itemize}
+
+\subsection{Experimental Program}
+Table~\ref{tab:program} summarizes the benchmark program covered in this report.
+
+\begin{table}[H]
+\centering
+\caption{Experimental program covered by the report.}
+\label{tab:program}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{@{}p{3.0cm}p{2.0cm}p{2.1cm}p{3.0cm}p{4.4cm}@{}}
+\toprule
+Study family & Runs & Backend & Main comparison axis & Purpose \\
+\midrule
+Baseline and pilot architecture comparisons & 5 & Mock deterministic & Single vs parallel vs hierarchical & Validate the benchmark loop and recover the original architecture framing from the proposal. \\
+Repeated architecture comparisons & 3 & Mock deterministic & Same-model architecture replication & Test whether architecture-level summaries remain stable across reruns and reporting updates. \\
+Prompt-family comparisons & 3 & Mock deterministic & Minimal vs structured reasoning vs legality-first / chain-of-thought style & Verify prompt substitution, metadata capture, and prompt-conditional reporting. \\
+Difficulty variations & 2 & Mock deterministic & Harder Blotto and wider Connect 4 variants & Check whether the pipeline remains stable when game parameters change. \\
+Mixed-team model-scale study & 2 stored runs, 1 final live run emphasized & Ollama + Qwen & Composition of lower-, medium-, and higher-capacity models & Test whether heterogeneous model-size teams outperform stronger homogeneous allocations. \\
+Mixed-team quantization study & 2 stored runs, 1 final live run emphasized & Ollama + Qwen & Composition of Q4, Q8, and F16 model variants & Test how precision allocation changes team quality under a fixed base model family. \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+Across the full repository, the generated analysis bundle reports 17 analyzed runs: 13 broad benchmark runs used mainly for coverage and stability analysis, and 4 live mixed-team runs used for the strongest direct evidence about model allocation inside multi-agent teams.
+
+\subsection{Interpretation Policy}
+Two methodological choices are important for interpreting the results.
+
+First, this report does not collapse all evaluation settings into a single notion of ``best architecture.'' Blotto-versus-bots, self-play tournaments, and Connect 4 oracle matching reward different behaviors. A team that exploits weak baselines well is not necessarily the team that best tracks oracle tactics.
+
+Second, the Connect 4 oracle is depth-limited minimax, not a perfect solver. Oracle agreement therefore means agreement with the benchmark oracle, not proof of globally optimal play. The metric is still useful because it creates a stable tactical reference point across architectures and model configurations.
+
+\section{Results}
+
+\subsection{Benchmark-Wide Architecture Patterns}
+The broadest architecture summary comes from the architecture-overview tables aggregated across 12 comparable benchmark runs. Table~\ref{tab:arch-overview} shows the clearest benchmark-wide pattern: the architecture ordering depends on the task.
+
+\begin{table}[H]
+\centering
+\caption{Architecture-level averages across the broader benchmark runs.}
+\label{tab:arch-overview}
+\begin{adjustbox}{width=0.92\textwidth}
+\begin{tabular}{@{}llllll@{}}
+\toprule
+Game & Evaluation setting & Single & Parallel & Hierarchical & Legality \\
+\midrule
+Blotto & Baseline-bot win rate & 0.241 & \textbf{0.439} & 0.302 & 1.000 for all \\
+Blotto & Internal tournament win rate & 0.000 & 0.000 & 0.000 & 1.000 for all \\
+Blotto & Mean Nash distance & \textbf{0.141} & 0.157 & 0.166 & 1.000 for all \\
+Connect 4 & Oracle agreement & 20.000 & 20.000 & 20.000 & 1.000 for all \\
+Connect 4 & Internal tournament win rate & \textbf{1.000} & 0.500 & 0.000 & 1.000 for all \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+Three conclusions follow directly from Table~\ref{tab:arch-overview}. First, parallel voting is the strongest broad architecture for exploiting fixed Blotto baselines, but it is not the closest to the equilibrium-style Blotto reference; the single-agent baseline has the lowest mean Nash distance. Second, Connect 4 self-play rewards a different policy profile: in the stored same-model comparisons, the single-agent system outperforms the parallel and hierarchical variants. Third, legality is saturated. This matters because it means the benchmark is not merely ranking systems by JSON formatting success. The strategic metrics still vary even when invalid outputs are effectively absent.
+
+Table~\ref{tab:run-bundle-overview} expands that summary to the run-bundle level. This is useful because the repository contains several experiment families with different purposes: some are repeated architecture comparisons, some are prompt sweeps, and some are difficulty checks. The table shows that the main strategic differences recur across bundles while legality stays effectively fixed.
+
+\begin{table}[H]
+\centering
+\caption{Compact run-bundle summary for the broader benchmark corpus.}
+\label{tab:run-bundle-overview}
+\footnotesize
+\begin{adjustbox}{width=0.98\textwidth}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Run bundle & Comparison axis & Blotto bot win & Connect 4 oracle & Connect 4 tournament & Legality \\
+\midrule
+Baseline architecture benchmark & Baseline / smoke & 0.278 & 20.000 & 0.500 & 1.000 \\
+Final architecture comparison & Baseline / repeated & 0.383 & 20.000 & 0.500 & 1.000 \\
+Prompt minimal & Prompt family & 0.383 & 20.000 & 0.500 & 1.000 \\
+Prompt chain-of-thought & Prompt family & 0.383 & 20.000 & 0.500 & 1.000 \\
+Prompt legality-first & Prompt family & 0.383 & 20.000 & 0.500 & 1.000 \\
+Blotto harder difficulty & Difficulty & 0.267 & --- & --- & 1.000 \\
+Connect 4 wide difficulty & Difficulty & --- & 20.000 & 0.500 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\normalsize
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{\figBlottoArchitecture}
+\caption{Architecture summary on Blotto across baseline, pilot, prompt, and difficulty-oriented runs.}
+\label{fig:blotto-architecture}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{\figConnectFourArchitecture}
+\caption{Architecture summary on Connect 4 across the broader benchmark runs.}
+\label{fig:connect4-architecture}
+\end{figure}
+
+Figures~\ref{fig:blotto-architecture} and \ref{fig:connect4-architecture} make the same point visually. The benchmark does not support a universal claim that ``multi-agent is better'' or ``hierarchy is best.'' It supports a conditional claim: architecture interacts with the game and the evaluation target.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figBlottoArchHeatmap}
+\caption{Blotto baseline-bot metric heatmap.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figBlottoTournamentHeatmap}
+\caption{Blotto internal-tournament metric heatmap.}
+\end{subfigure}
+
+\medskip
+
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figConnectFourOracleHeatmap}
+\caption{Connect 4 oracle-accuracy metric heatmap.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figConnectFourTournamentHeatmap}
+\caption{Connect 4 tournament metric heatmap.}
+\end{subfigure}
+\caption{Additional heatmap views of architecture performance across the same-model benchmark runs.}
+\label{fig:benchmark-heatmaps}
+\end{figure}
+
+\subsection{Turn Order and Trial Variance}
+The archived Connect 4 corpus makes one additional pattern visible: move order matters a great deal, but not equally in every experiment family. Using the saved per-trial summaries, head-to-head Connect 4 matches were re-aggregated by which side moved first. Across all stored runs with explicit turn order, the first player won 340 of 399 matches (85.2\%), the second player won 58 (14.5\%), and only one match was recorded as a draw. That headline number is dominated by the mock-backed architecture, prompt, and difficulty studies, where the first mover won every recorded head-to-head game. The live mixed-team studies are more balanced and therefore more informative about real model behavior: the model-scale subset slightly favored the second mover (48.3\% first-player wins versus 51.7\% second-player wins), while the quantization subset showed a narrower first-player edge (53.3\% versus 45.0\%, with one draw).
+
+\begin{table}[H]
+\centering
+\caption{Connect 4 turn-order results from the saved head-to-head runs.}
+\label{tab:turn-order}
+\begin{adjustbox}{width=0.92\textwidth}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Experiment slice & Matches & First-player win & Second-player win & Draw & Interpretation \\
+\midrule
+All saved head-to-head Connect 4 runs & 399 & 0.852 & 0.145 & 0.003 & Strong aggregate first-move advantage \\
+Final architecture comparison & 90 & 1.000 & 0.000 & 0.000 & Mock-backed, fully first-player dominated \\
+Model-scale subset live study & 60 & 0.483 & 0.517 & 0.000 & Near-balanced, slight second-player edge \\
+Quantization subset live study & 60 & 0.533 & 0.450 & 0.017 & Mild first-player edge in live runs \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.96\textwidth]{\figTurnOrder}
+\caption{Experiment-level Connect 4 first-versus-second win rates. The chart is generated from the archived run summaries and separates the strongly first-player-biased mock-backed studies from the more balanced live mixed-team studies.}
+\label{fig:turn-order}
+\end{figure}
+
+Trial-to-trial variance adds a second robustness view that is not captured by mean win rate alone. For each saved experiment slice, population variance was computed over per-trial architecture outcomes and, where applicable, over Blotto Nash distance and Connect 4 oracle-agreement metrics. Table~\ref{tab:variance-overview} highlights the most informative slices. The same-model mock-backed Connect 4 tournament runs are nearly deterministic except for the parallel architecture, which reaches an outcome-score variance of 0.25 because it alternates between wins and losses across trials. In the live studies, the outcome labels in oracle-comparison runs are stable, but oracle agreement itself varies substantially by team composition. The model-scale subset has a mean oracle-agreement variance of 165.8 across architectures, with \texttt{parallel\_llh} reaching 415.7, while the quantization subset averages 175.4 and peaks at 279.3 for \texttt{hierarchical\_q4q4f16}. Blotto baseline-play variance is lower in absolute terms, but still meaningful: outcome-score variance remains around 0.11--0.12 in both live suites, and Nash-distance variance is notably larger in the quantization study than in the model-scale study.
+
+\begin{table}[H]
+\centering
+\caption{Selected trial-to-trial variance summaries from the archived runs.}
+\label{tab:variance-overview}
+\footnotesize
+\begin{adjustbox}{width=0.98\textwidth}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Experiment slice & Metric family & Mean variance & Max variance & Example architecture & Notes \\
+\midrule
+Final architecture comparison, Connect 4 tournament & Outcome score & 0.083 & 0.250 & Parallel & Single and hierarchical are deterministic in the stored runs \\
+Model-scale subset, Connect 4 oracle study & Oracle agreement & 165.807 & 415.683 & \texttt{parallel\_llh} & Largest live variance in tactical-quality metric \\
+Quantization subset, Connect 4 oracle study & Oracle agreement & 175.399 & 279.337 & \texttt{hierarchical\_q4q4f16} & Mixed-precision teams vary strongly by trial \\
+Model-scale subset, Blotto vs bots & Outcome / Nash distance & 0.118 / 0.006 & 0.125 / 0.010 & \texttt{parallel\_hhl} / \texttt{hierarchical\_llh} & Moderate outcome variance, smaller strategy-distance variance \\
+Quantization subset, Blotto vs bots & Outcome / Nash distance & 0.107 / 0.014 & 0.109 / 0.021 & \texttt{hierarchical\_qmix} / \texttt{parallel\_qmix} & Quantization increases spread in Nash-distance behavior \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\normalsize
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.96\textwidth]{\figTrialVariance}
+\caption{Experiment-level overview of trial-to-trial variance. Darker cells indicate larger population variance in the archived per-trial metrics.}
+\label{fig:trial-variance}
+\end{figure}
+
+These two additions sharpen the interpretation of the earlier results. First, some apparent Connect 4 tournament superiority in the archived benchmark is entangled with turn order and should not be over-read as a pure architecture effect. Second, live mixed-team performance is not only about mean quality but also about stability: the best oracle-matching or baseline-exploiting team in one trial family can still exhibit large variance across seeds and repeated games.
+
+\subsection{Prompting and Difficulty Experiments}
+The prompt-family runs were designed to test whether the benchmark could support prompt sweeps, not just architecture sweeps. In the stored prompt-comparison runs, the three tested prompt families produced nearly identical aggregate metrics:
+\begin{itemize}
+  \item Blotto baseline-bot mean win rate remained at 0.383 across minimal, chain-of-thought-style, and legality-first prompts.
+  \item Connect 4 oracle agreement remained at 20.0 across those same prompt families.
+  \item Legality remained 1.000 across all prompt variants.
+\end{itemize}
+
+Those results should not be interpreted as proof that prompting never matters. The more defensible conclusion is narrower: the current prompt-study corpus mainly demonstrates benchmark capability. Prompt families are versioned, routed through the runner, preserved in metadata, and recoverable in reporting. The infrastructure worked cleanly enough that prompt substitution did not destabilize either logging or metric aggregation.
+
+\begin{table}[H]
+\centering
+\caption{Prompt-family summary across the stored prompt and structured-reasoning runs.}
+\label{tab:prompt-family-overview}
+\footnotesize
+\begin{adjustbox}{width=0.98\textwidth}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Prompt family & Blotto bot win & Connect 4 oracle & Connect 4 tournament & Runs \\
+\midrule
+Minimal v1 & 0.383 & 20.000 & 0.500 & 1 \\
+Chain-of-thought v1 & 0.383 & 20.000 & 0.500 & 1 \\
+Legality-first v1 & 0.383 & 20.000 & 0.500 & 1 \\
+Structured reasoning v1 & 0.309 & 20.000 & 0.500 & 9 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\normalsize
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{\figPromptComparison}
+\caption{Prompt-family comparison from the generated final figure bundle.}
+\label{fig:prompt-comparison}
+\end{figure}
+
+The difficulty experiments show a similar pattern. Increasing Blotto difficulty reduced the aggregate Blotto baseline-bot primary metric to 0.267, compared with 0.278 in the basic baseline architecture benchmark and 0.383 in the repeated architecture-comparison bundle, but legality remained perfect. Widening the Connect 4 board also preserved legality and left the stored mean oracle-agreement and tournament metrics at their baseline levels. These experiments therefore function as robustness checks on the benchmark itself: changing the game configuration alters the schedule and game state, but it does not break the evaluation pipeline.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figBlottoPromptFamily}
+\caption{Blotto prompt-family win-rate heatmap.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figConnectFourPromptFamily}
+\caption{Connect 4 prompt-family oracle-comparison heatmap.}
+\end{subfigure}
+
+\medskip
+
+\begin{subfigure}[t]{0.78\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figRunLabelTopline}
+\caption{Prompt-family view of Connect 4 tournament win rate across the broader benchmark.}
+\end{subfigure}
+\caption{Prompt and run-label views that add more detail beyond the architecture averages.}
+\label{fig:prompt-and-run-label}
+\end{figure}
+
+\subsection{Live Mixed-Team Studies: Model Scale and Quantization}
+The strongest live evidence in the repository comes from the mixed-team studies executed with the local Ollama/Qwen runtime. These experiments no longer ask only whether ``multi-agent'' helps. They ask how a fixed three-agent budget should be allocated when team members differ in model capacity or quantization quality.
+
+Table~\ref{tab:live-topline} summarizes the highest-performing teams in the final live studies.
+
+\begin{table}[H]
+\centering
+\caption{Best-performing teams in the final live studies.}
+\label{tab:live-topline}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{@{}lllllr@{}}
+\toprule
+Live study & Game & Evaluation setting & Best team & Primary metric & Value \\
+\midrule
+Model scale & Blotto & Baseline bots & Parallel Team (Low+Med+High) & Win rate & 0.625 \\
+Model scale & Blotto & Internal tournament & Hierarchical Team (Low$\rightarrow$High$\rightarrow$High) & Win rate & 0.800 \\
+Model scale & Connect 4 & Oracle agreement & Parallel Team (Low+Low+High) & Oracle agreement & 42.855 \\
+Model scale & Connect 4 & Internal tournament & Hierarchical Team (Low$\rightarrow$High$\rightarrow$High) & Win rate & 0.800 \\
+Quantization & Blotto & Baseline bots & Hierarchical Team (Q4$\rightarrow$Q8$\rightarrow$F16) & Win rate & 0.750 \\
+Quantization & Blotto & Internal tournament & Hierarchical Team (Q4$\rightarrow$Q4$\rightarrow$F16) & Win rate & 0.600 \\
+Quantization & Connect 4 & Oracle agreement & Hierarchical Team (Q4$\rightarrow$F16$\rightarrow$F16) & Oracle agreement & 33.335 \\
+Quantization & Connect 4 & Internal tournament & Parallel Team (F16+F16+Q4) & Win rate & 0.700 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+The main result is heterogeneity, not monotonic scaling. The best team changes with the evaluation target:
+\begin{itemize}
+  \item In the model-scale study, a balanced parallel team led Blotto baseline exploitation, but a top-heavy hierarchical team led both internal tournaments.
+  \item In the same model-scale study, the best Connect 4 oracle-matching team was not the top-heavy hierarchical system but the parallel team with two lower-capacity members and one higher-capacity member.
+  \item In the quantization study, the strongest Blotto baseline score came from a hierarchical mixed-precision team, but the strongest Connect 4 tournament score came from a parallel team with two F16 members and one Q4 member.
+\end{itemize}
+
+These results directly address the proposal's research objective. Multi-agent quality depends not only on architecture but also on role allocation and component quality. More model quality in every slot is not the same as a better team.
+
+Tables~\ref{tab:model-scale-leaderboard} and \ref{tab:quantization-leaderboard} provide more granularity than the single topline table. To keep the paper readable on A4, the team names are abbreviated to their composition signatures and only the highest-signal metrics are shown.
+The tables should be read as best-observed run summaries for the selected live-study runs. By contrast, the line figures below summarize averaged metrics when multiple stored runs share the same run label and team composition. That distinction matters for Connect 4 oracle agreement because a figure may show a cross-run mean while the table highlights the strongest single observed run.
+
+\begin{table}[H]
+\centering
+\caption{Model-scale live-study leaders by evaluation setting.}
+\label{tab:model-scale-leaderboard}
+\footnotesize
+\begin{adjustbox}{width=0.98\textwidth}
+\begin{tabular}{@{}lllrrrr@{}}
+\toprule
+Game & Evaluation & Team signature & Primary metric & Hallucination & Legality & Secondary metric \\
+\midrule
+Blotto & Baseline bots & Parallel low+med+high & 0.625 & 0.000 & 1.000 & Nash 0.144 \\
+Blotto & Internal tournament & Hierarchical low$\rightarrow$high$\rightarrow$high & 0.800 & 0.000 & 1.000 & Nash 0.071 \\
+Connect 4 & Oracle agreement & Parallel low+low+high & 42.855 & 0.000 & 1.000 & --- \\
+Connect 4 & Internal tournament & Hierarchical low$\rightarrow$high$\rightarrow$high & 0.800 & 0.000 & 1.000 & --- \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\normalsize
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Quantization live-study leaders by evaluation setting.}
+\label{tab:quantization-leaderboard}
+\footnotesize
+\begin{adjustbox}{width=0.98\textwidth}
+\begin{tabular}{@{}lllrrrr@{}}
+\toprule
+Game & Evaluation & Team signature & Primary metric & Hallucination & Legality & Secondary metric \\
+\midrule
+Blotto & Baseline bots & Parallel q4+q4+f16 / Hierarchical q4$\rightarrow$q8$\rightarrow$f16 & 0.750 & 0.000 & 1.000 & Nash 0.065 / 0.280 \\
+Blotto & Internal tournament & Hierarchical q4$\rightarrow$q4$\rightarrow$f16 & 0.600 & 0.000 & 1.000 & Nash 0.157 \\
+Connect 4 & Oracle agreement & Hierarchical q4$\rightarrow$f16$\rightarrow$f16 & 33.335 & 0.050 & 0.950 & --- \\
+Connect 4 & Internal tournament & Parallel f16+f16+q4 & 0.700 & 0.000 & 1.000 & --- \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\normalsize
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{\figModelScaleOracle}
+\caption{Connect 4 oracle-agreement progression in the live model-scale study. Each point is the mean oracle-agreement value for a team composition after averaging stored runs with the same run label and architecture identifier; this figure therefore captures cross-run averages, not necessarily the best single-run value reported in Table~\ref{tab:model-scale-leaderboard}.}
+\label{fig:model-scale-oracle}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{\figQuantBlotto}
+\caption{Blotto baseline-bot performance in the live quantization study. As with Figure~\ref{fig:model-scale-oracle}, plotted points summarize mean values across stored runs that share the same run label and team composition.}
+\label{fig:quantization-blotto}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{\figOracleTradeoff}
+\caption{Trade-off view of Connect 4 oracle quality across the live quantization study.}
+\label{fig:oracle-tradeoff}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figModelScaleBlottoHeatmap}
+\caption{Model-scale Blotto parallel-team agreement heatmap.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figModelScaleConnectFourHeatmap}
+\caption{Model-scale Connect 4 parallel-team agreement heatmap.}
+\end{subfigure}
+
+\medskip
+
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figQuantBlottoHeatmap}
+\caption{Quantization Blotto parallel-team agreement heatmap.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{\figQuantConnectFourHeatmap}
+\caption{Quantization Connect 4 parallel-team agreement heatmap.}
+\end{subfigure}
+\caption{Head-to-head views of the live mixed-team studies. These panels expose pairwise structure that topline win-rate tables hide.}
+\label{fig:live-heatmaps}
+\end{figure}
+
+The live studies also show why multiple metrics are necessary. In the quantization study, \texttt{parallel\_q4q4f16} matched the best Blotto baseline-bot win rate at 0.750 while also achieving a much lower Blotto Nash distance (0.065) than the hierarchical mixed-precision team that also reached 0.750 win rate. Conversely, \texttt{hierarchical\_f16f16q4} achieved the best Connect 4 oracle agreement at 33.335 but still recorded a nonzero hallucination rate of 0.05, reminding us that tactical quality and runtime stability do not always move together.
+
+\subsection{Reasoning Traces as Behavioral Evidence}
+The benchmark stores reasoning traces for every architecture, which makes it possible to connect aggregate patterns to observed decision behavior. These traces are not treated as privileged access to internal cognition. They are used as behavioral evidence about how the orchestration protocol changed the final action.
+
+One recurring strength of the hierarchical architecture is legality repair. In a live Blotto run, the reasoner produced an invalid allocation and the critic explicitly caught the arithmetic violation before the executive repaired it:
+
+\begin{traceblock}
+Reasoner: ... The initial proposal was revised to [7, 90, 3] ...
+
+Critic 1: The suggested move does not allocate all 100 units ... [7, 90, 3] do not add up to 100 ...
+
+Executive: ... The Critic's feedback provided a valid move that sums to 100: [40, 36, 24].
+\end{traceblock}
+
+This trace matters because it demonstrates the intended value of the hierarchical design: critique is not decorative. It can convert an invalid intermediate proposal into a legal final action without discarding the full decision episode.
+
+Parallel teams expose a different behavioral signature. In the live model-scale Connect 4 study, one parallel team produced three distinct tactical proposals:
+
+\begin{traceblock}
+Votes: [5, 4, 3]
+
+Aggregation: tie\_break\_lowest\_move
+\end{traceblock}
+
+That trace illustrates both the strength and the risk of voting. Parallel deliberation increases diversity, but the final action can be driven by the aggregation rule when there is no consensus. This helps explain why parallel teams can excel in some settings yet remain sensitive to tie-breaking and role composition.
+
+\subsection{Synthesis}
+Taken together, the results support four paper-level claims.
+\begin{enumerate}[leftmargin=1.4em]
+  \item \textbf{Architecture matters, but not uniformly.} Parallel voting is strong for Blotto exploitation, while hierarchical or single-agent systems can be stronger in Connect 4 or in direct tournaments.
+  \item \textbf{The benchmark is measuring strategy, not only syntax.} Legality is almost always saturated in the broad runs, so score differences primarily reflect decision quality.
+  \item \textbf{Model allocation inside a team matters.} Mixed model-size and mixed-precision teams can outperform naive ``best model everywhere'' assumptions.
+  \item \textbf{Multiple metrics are necessary.} Win rate, Nash distance, oracle agreement, and hallucination rate do not collapse into one ranking.
+\end{enumerate}
+
+\section{Conclusion}
+The benchmark now provides a coherent answer to the proposal's research objective. Multi-agent LLM orchestration can improve strategic decision-making in adversarial games, but the gains are conditional rather than universal. The architecture that exploits weak Blotto baselines is not necessarily the one that best matches a Connect 4 oracle, and the best live team often mixes weaker and stronger components rather than concentrating quality uniformly across all roles.
+
+The repository also contributes more than a set of final scores. It includes a reusable evaluation framework with configurable games, architecture registries, prompt families, reproducibility metadata, per-turn logs, and aggregate reporting. That infrastructure matters because it turns the project from a one-off prototype into a benchmark that can be rerun, extended, and audited.
+
+The central conclusion is therefore twofold. Empirically, orchestration helps in specific, measurable ways. Methodologically, the benchmark demonstrates that those gains must be evaluated across multiple games and metrics to avoid misleading claims about a single ``best'' architecture.
+
+\section{Limitations and Future Work}
+The benchmark is substantial, but it is not a complete realization of every proposal ambition.
+
+\textbf{Current limitations.}
+\begin{itemize}
+  \item \textbf{Two implemented games, not three.} The proposal discussed a broader adversarial-game scope, but the implemented benchmark currently provides strong support only for Colonel Blotto and Connect 4.
+  \item \textbf{Depth-limited oracle.} Connect 4 oracle agreement is measured against the benchmark's depth-limited minimax solver rather than a perfect solver.
+  \item \textbf{Backend concentration.} The strongest live evidence comes from local Ollama/Qwen runs, so cross-model generalization remains untested.
+  \item \textbf{Mixed evidence tiers.} Several broader runs are primarily benchmark-validation artifacts executed with a deterministic mock backend; they validate the pipeline, but they are not a substitute for live-model comparisons.
+  \item \textbf{Runtime stability remains relevant.} Some live study logs include request failures, fallback paths, or no-valid-vote episodes, which means orchestration quality must still be interpreted alongside systems reliability.
+\end{itemize}
+
+\textbf{Future work.}
+\begin{itemize}
+  \item add additional games that stress longer-horizon planning and richer state spaces;
+  \item rerun the broad architecture, prompt, and difficulty studies with live backends to replace benchmark-validation evidence with stronger strategic evidence;
+  \item extend the model-comparison axis beyond the Qwen family;
+  \item add latency, memory, and token-cost normalization so that quality can be evaluated against resource use;
+  \item strengthen solver baselines and, where possible, replace depth-limited oracles with stronger reference policies;
+  \item study alternative aggregation rules, critic multiplicity, and adaptive team composition rather than fixed three-agent teams.
+\end{itemize}
+
+These extensions would not merely enlarge the benchmark. They would directly sharpen the proposal's central claim by clarifying when orchestration gains persist, when they vanish, and what they cost.
+
+\end{document}

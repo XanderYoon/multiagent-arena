@@ -1,0 +1,242 @@
+[
+  {
+    "claim": "hierarchical achieved mean win rate 0.151 on blotto.",
+    "metric": "win_rate",
+    "game": "blotto",
+    "architecture": "hierarchical",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173140_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "hierarchical achieved mean legality rate 1.0 on blotto.",
+    "metric": "legality_rate",
+    "game": "blotto",
+    "architecture": "hierarchical",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173140_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "parallel achieved mean win rate 0.2194 on blotto.",
+    "metric": "win_rate",
+    "game": "blotto",
+    "architecture": "parallel",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173140_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "parallel achieved mean legality rate 1.0 on blotto.",
+    "metric": "legality_rate",
+    "game": "blotto",
+    "architecture": "parallel",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173140_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "single achieved mean win rate 0.1205 on blotto.",
+    "metric": "win_rate",
+    "game": "blotto",
+    "architecture": "single",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173140_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "single achieved mean legality rate 1.0 on blotto.",
+    "metric": "legality_rate",
+    "game": "blotto",
+    "architecture": "single",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173140_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "hierarchical achieved mean win rate 0.0 on connect4.",
+    "metric": "win_rate",
+    "game": "connect4",
+    "architecture": "hierarchical",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173141_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "hierarchical achieved mean legality rate 1.0 on connect4.",
+    "metric": "legality_rate",
+    "game": "connect4",
+    "architecture": "hierarchical",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173141_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "parallel achieved mean win rate 0.25 on connect4.",
+    "metric": "win_rate",
+    "game": "connect4",
+    "architecture": "parallel",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173141_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "parallel achieved mean legality rate 1.0 on connect4.",
+    "metric": "legality_rate",
+    "game": "connect4",
+    "architecture": "parallel",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173141_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "single achieved mean win rate 0.5 on connect4.",
+    "metric": "win_rate",
+    "game": "connect4",
+    "architecture": "single",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173141_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  },
+  {
+    "claim": "single achieved mean legality rate 1.0 on connect4.",
+    "metric": "legality_rate",
+    "game": "connect4",
+    "architecture": "single",
+    "run_ids": [
+      "run_20260410_170138_8bf1db5_dirty",
+      "run_20260410_172912_8bf1db5_dirty",
+      "run_20260410_172920_8bf1db5_dirty",
+      "run_20260410_172948_8bf1db5_dirty",
+      "run_20260410_173015_8bf1db5_dirty",
+      "run_20260410_173043_8bf1db5_dirty",
+      "run_20260410_173111_8bf1db5_dirty",
+      "run_20260410_173141_8bf1db5_dirty",
+      "run_20260410_173224_8bf1db5_dirty",
+      "run_20260411_213908_032b2a0_dirty",
+      "run_20260411_214117_032b2a0_dirty",
+      "run_20260411_214609_032b2a0_dirty"
+    ]
+  }
+]

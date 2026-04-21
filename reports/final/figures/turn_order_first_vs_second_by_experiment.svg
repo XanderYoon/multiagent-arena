@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1010" height="600" viewBox="0 0 1010 600">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2933} .small{font-size:12px} .label{font-size:13px} .title{font-size:18px;font-weight:bold} .mono{font-family:monospace;font-size:11px}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="28" class="title">Connect4 first-vs-second win rate by experiment</text>
+<text x="24" y="46" class="small">Only head-to-head sequential matches with recorded turn order. Green=first player, gray=draw, orange=second player.</text>
+<text x="24" y="80" class="label">ALL_EXPERIMENTS | ALL_VARIANTS</text>
+<rect x="320" y="66" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="66" width="443.11" height="18" fill="#2a9d8f"/>
+<rect x="763.1077694235589" y="66" width="1.30" height="18" fill="#bfc5cc"/>
+<rect x="764.4110275689223" y="66" width="75.59" height="18" fill="#e76f51"/>
+<text x="854" y="80" class="mono">n=399  first=0.852  second=0.145  draw=0.003</text>
+<text x="24" y="114" class="label">architecture_smoke | connect4</text>
+<rect x="320" y="100" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="100" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="114" class="mono">n=15  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="148" class="label">baseline_architecture_benchmark | connect4</text>
+<rect x="320" y="134" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="134" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="148" class="mono">n=9  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="182" class="label">baseline_architecture_benchmark | gravity_grid_standard_v1</text>
+<rect x="320" y="168" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="168" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="182" class="mono">n=27  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="216" class="label">difficulty_connect4_wide | gravity_grid_wide_v1</text>
+<rect x="320" y="202" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="202" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="216" class="mono">n=30  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="250" class="label">final_architecture_comparison | gravity_grid_standard_v1</text>
+<rect x="320" y="236" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="236" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="250" class="mono">n=90  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="284" class="label">gameenv_smoke | connect4</text>
+<rect x="320" y="270" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="270" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="284" class="mono">n=3  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="318" class="label">metrics_section9_smoke | connect4</text>
+<rect x="320" y="304" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="304" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="318" class="mono">n=3  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="352" class="label">model_scale_subset | gravity_grid_standard_v1</text>
+<rect x="320" y="338" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="338" width="251.33" height="18" fill="#2a9d8f"/>
+<rect x="571.3333333333334" y="338" width="268.67" height="18" fill="#e76f51"/>
+<text x="854" y="352" class="mono">n=60  first=0.483  second=0.517  draw=0.000</text>
+<text x="24" y="386" class="label">pilot_architecture_comparison | gravity_grid_standard_v1</text>
+<rect x="320" y="372" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="372" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="386" class="mono">n=9  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="420" class="label">prompt_chain_of_thought_architecture_comparison | gravity_grid_standard_v1</text>
+<rect x="320" y="406" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="406" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="420" class="mono">n=30  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="454" class="label">prompt_legality_first_architecture_comparison | gravity_grid_standard_v1</text>
+<rect x="320" y="440" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="440" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="454" class="mono">n=30  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="488" class="label">prompt_minimal_architecture_comparison | gravity_grid_standard_v1</text>
+<rect x="320" y="474" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="474" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="488" class="mono">n=30  first=1.000  second=0.000  draw=0.000</text>
+<text x="24" y="522" class="label">quantization_subset | gravity_grid_standard_v1</text>
+<rect x="320" y="508" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="508" width="277.33" height="18" fill="#2a9d8f"/>
+<rect x="597.3333333333333" y="508" width="8.67" height="18" fill="#bfc5cc"/>
+<rect x="605.9999999999999" y="508" width="234.00" height="18" fill="#e76f51"/>
+<text x="854" y="522" class="mono">n=60  first=0.533  second=0.450  draw=0.017</text>
+<text x="24" y="556" class="label">runtime_smoke | connect4</text>
+<rect x="320" y="542" width="520" height="18" fill="#f3f4f6" stroke="#d1d5db"/>
+<rect x="320" y="542" width="520.00" height="18" fill="#2a9d8f"/>
+<text x="854" y="556" class="mono">n=3  first=1.000  second=0.000  draw=0.000</text>
+<rect x="24" y="578" width="12" height="12" fill="#2a9d8f"/>
+<text x="42" y="588" class="small">First player win</text>
+<rect x="150" y="578" width="12" height="12" fill="#bfc5cc"/>
+<text x="168" y="588" class="small">Draw</text>
+<rect x="228" y="578" width="12" height="12" fill="#e76f51"/>
+<text x="246" y="588" class="small">Second player win</text>
+</svg>

@@ -1,0 +1,23 @@
+[
+  {
+    "scope": "overall",
+    "run_id": null,
+    "run_label": "ALL_EXPERIMENTS",
+    "benchmark_name": "ALL_EXPERIMENTS",
+    "model": "ALL_MODELS",
+    "prompt_family_id": "ALL_PROMPTS",
+    "experiment_group": "ALL_PHASES",
+    "variant_name": "ALL_VARIANTS",
+    "match_count": 399,
+    "run_count": 20,
+    "first_win_count": 340,
+    "second_win_count": 58,
+    "draw_count": 1,
+    "first_win_rate": 0.8521303258145363,
+    "second_win_rate": 0.14536340852130325,
+    "draw_rate": 0.002506265664160401,
+    "first_score_mean": 0.8533834586466166,
+    "first_score_variance": 0.12449356473891496,
+    "first_minus_second_win_rate": 0.706766917293233
+  }
+]

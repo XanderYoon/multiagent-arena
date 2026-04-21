@@ -1,0 +1,9 @@
+suite,game,experiment_group,primary_metric,best_architecture_id,best_architecture_name,best_composition_label,best_primary_metric_value,best_win_rate,best_hallucination_rate,best_connect4_optimal_move_accuracy,best_blotto_nash_distance
+model_scale,blotto,blotto_vs_bots,win_rate,parallel_lmh,Parallel Team (Low+Med+High),low+med+high,0.625,0.625,0.0,,0.14375
+model_scale,blotto,internal_ai_tournament,win_rate,hierarchical_hhl,Hierarchical Team (Low->High->High),reasoner:low -> critic:high -> executive:high,0.8,0.8,0.0,,0.071
+model_scale,connect4,connect4_oracle_accuracy,connect4_optimal_move_accuracy,parallel_llh,Parallel Team (Low+Low+High),low+low+high,42.855000000000004,0.0,0.0,42.855000000000004,
+model_scale,connect4,internal_ai_tournament,win_rate,hierarchical_hhl,Hierarchical Team (Low->High->High),reasoner:low -> critic:high -> executive:high,0.8,0.8,0.0,,
+quantization,blotto,blotto_vs_bots,win_rate,hierarchical_qmix,Hierarchical Team (Q4->Q8->F16),reasoner:q4 -> critic:q8 -> executive:f16,0.75,0.75,0.0,,0.28
+quantization,blotto,internal_ai_tournament,win_rate,hierarchical_q4q4f16,Hierarchical Team (Q4->Q4->F16),reasoner:q4 -> critic:q4 -> executive:f16,0.6,0.6,0.0,,0.157
+quantization,connect4,connect4_oracle_accuracy,connect4_optimal_move_accuracy,hierarchical_f16f16q4,Hierarchical Team (Q4->F16->F16),reasoner:q4 -> critic:f16 -> executive:f16,33.335,0.0,0.05,33.335,
+quantization,connect4,internal_ai_tournament,win_rate,parallel_f16f16q4,Parallel Team (F16+F16+Q4),f16+f16+q4,0.7,0.7,0.0,,

@@ -1,0 +1,17 @@
+suite,game,experiment_group,architecture_type,primary_metric,best_architecture_id,best_architecture_name,best_composition_label,best_primary_metric_value
+model_scale,blotto,blotto_vs_bots,hierarchical,win_rate,hierarchical_llh,Hierarchical Team (Low->Low->High),reasoner:low -> critic:low -> executive:high,0.5
+model_scale,blotto,blotto_vs_bots,parallel,win_rate,parallel_lmh,Parallel Team (Low+Med+High),low+med+high,0.625
+model_scale,blotto,internal_ai_tournament,hierarchical,win_rate,hierarchical_hhl,Hierarchical Team (Low->High->High),reasoner:low -> critic:high -> executive:high,0.8
+model_scale,blotto,internal_ai_tournament,parallel,win_rate,parallel_llh,Parallel Team (Low+Low+High),low+low+high,0.5
+model_scale,connect4,connect4_oracle_accuracy,hierarchical,connect4_optimal_move_accuracy,hierarchical_llh,Hierarchical Team (Low->Low->High),reasoner:low -> critic:low -> executive:high,54.2
+model_scale,connect4,connect4_oracle_accuracy,parallel,connect4_optimal_move_accuracy,parallel_llh,Parallel Team (Low+Low+High),low+low+high,42.855000000000004
+model_scale,connect4,internal_ai_tournament,hierarchical,win_rate,hierarchical_hhl,Hierarchical Team (Low->High->High),reasoner:low -> critic:high -> executive:high,0.8
+model_scale,connect4,internal_ai_tournament,parallel,win_rate,parallel_lmh,Parallel Team (Low+Med+High),low+med+high,0.8
+quantization,blotto,blotto_vs_bots,hierarchical,win_rate,hierarchical_qmix,Hierarchical Team (Q4->Q8->F16),reasoner:q4 -> critic:q8 -> executive:f16,0.75
+quantization,blotto,blotto_vs_bots,parallel,win_rate,parallel_q4q4f16,Parallel Team (Q4+Q4+F16),q4+q4+f16,0.75
+quantization,blotto,internal_ai_tournament,hierarchical,win_rate,hierarchical_q4q4f16,Hierarchical Team (Q4->Q4->F16),reasoner:q4 -> critic:q4 -> executive:f16,0.6
+quantization,blotto,internal_ai_tournament,parallel,win_rate,parallel_qmix,Parallel Team (Q4+Q8+F16),q4+q8+f16,0.5
+quantization,connect4,connect4_oracle_accuracy,hierarchical,connect4_optimal_move_accuracy,hierarchical_f16f16q4,Hierarchical Team (Q4->F16->F16),reasoner:q4 -> critic:f16 -> executive:f16,60.985
+quantization,connect4,connect4_oracle_accuracy,parallel,connect4_optimal_move_accuracy,parallel_qmix,Parallel Team (Q4+Q8+F16),q4+q8+f16,33.075
+quantization,connect4,internal_ai_tournament,hierarchical,win_rate,hierarchical_qmix,Hierarchical Team (Q4->Q8->F16),reasoner:q4 -> critic:q8 -> executive:f16,0.6
+quantization,connect4,internal_ai_tournament,parallel,win_rate,parallel_q4q4f16,Parallel Team (Q4+Q4+F16),q4+q4+f16,0.8

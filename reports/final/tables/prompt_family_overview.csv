@@ -1,0 +1,17 @@
+experiment_group,game,mean_connect4_optimal_move_accuracy,mean_legality_rate,mean_win_rate,prompt_family_id,runs
+blotto_vs_bots,blotto,,1.0,0.3833333333333333,chain_of_thought_v1,1
+internal_ai_tournament,blotto,,1.0,0.0,chain_of_thought_v1,1
+connect4_oracle_accuracy,connect4,20.0,1.0,0.0,chain_of_thought_v1,1
+internal_ai_tournament,connect4,,1.0,0.5,chain_of_thought_v1,1
+blotto_vs_bots,blotto,,1.0,0.3833333333333333,legality_first_v1,1
+internal_ai_tournament,blotto,,1.0,0.0,legality_first_v1,1
+connect4_oracle_accuracy,connect4,20.0,1.0,0.0,legality_first_v1,1
+internal_ai_tournament,connect4,,1.0,0.5,legality_first_v1,1
+blotto_vs_bots,blotto,,1.0,0.3833333333333333,minimal_v1,1
+internal_ai_tournament,blotto,,1.0,0.0,minimal_v1,1
+connect4_oracle_accuracy,connect4,20.0,1.0,0.0,minimal_v1,1
+internal_ai_tournament,connect4,,1.0,0.5,minimal_v1,1
+blotto_vs_bots,blotto,,1.0,0.308641975308642,structured_reasoning_v1,9
+internal_ai_tournament,blotto,,1.0,0.0,structured_reasoning_v1,9
+connect4_oracle_accuracy,connect4,20.0,1.0,0.0,structured_reasoning_v1,9
+internal_ai_tournament,connect4,,1.0,0.5,structured_reasoning_v1,9

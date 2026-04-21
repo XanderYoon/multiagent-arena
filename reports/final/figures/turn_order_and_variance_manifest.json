@@ -1,0 +1,23 @@
+{
+  "analysis": "turn_order_and_trial_variance",
+  "notes": [
+    "First-vs-second win rates are computed only for head-to-head Connect4 records with explicit turn order.",
+    "Simultaneous Blotto records and Connect4 oracle-comparison records are excluded from first/second calculations.",
+    "Trial metric variance is computed from per-trial architecture performance values recorded in the saved run summaries.",
+    "Population variance is used, matching the repository metrics module convention."
+  ],
+  "run_count": 25,
+  "connect4_head_to_head_match_count": 399,
+  "performance_trial_rows": 3156,
+  "files": [
+    "first_vs_second_winrate_by_run.csv",
+    "first_vs_second_winrate_by_experiment.csv",
+    "first_vs_second_winrate_overall.json",
+    "trial_metric_variance_by_run.csv",
+    "trial_metric_variance_by_experiment.csv",
+    "trial_metric_variance_overall.json",
+    "turn_order_first_vs_second_by_experiment.svg",
+    "trial_variance_experiment_overview.svg",
+    "turn_order_and_variance_manifest.json"
+  ]
+}

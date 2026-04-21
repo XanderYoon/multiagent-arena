@@ -1,0 +1,566 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1630" viewBox="0 0 820 1630">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2933} .small{font-size:12px} .cell{font-size:12px} .title{font-size:18px;font-weight:bold} .head{font-size:12px;font-weight:bold}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" class="title">Trial-to-trial variance overview by experiment</text>
+<text x="20" y="46" class="small">Cells show the mean population variance across architectures within each experiment/game slice.</text>
+<rect x="20" y="40" width="320" height="22" fill="#e5e7eb" stroke="#cbd5e1"/>
+<text x="26" y="55" class="head">Experiment</text>
+<rect x="340" y="40" width="110" height="22" fill="#e5e7eb" stroke="#cbd5e1"/>
+<text x="346" y="55" class="head">Outcome var</text>
+<rect x="450" y="40" width="110" height="22" fill="#e5e7eb" stroke="#cbd5e1"/>
+<text x="456" y="55" class="head">Invalid var</text>
+<rect x="560" y="40" width="120" height="22" fill="#e5e7eb" stroke="#cbd5e1"/>
+<text x="566" y="55" class="head">Oracle acc var</text>
+<rect x="680" y="40" width="120" height="22" fill="#e5e7eb" stroke="#cbd5e1"/>
+<text x="686" y="55" class="head">Nash dist var</text>
+<rect x="20" y="62" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="80" class="cell">architecture_smoke | blotto | blotto</text>
+<rect x="340" y="62" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="80" class="cell">0.0000</text>
+<rect x="450" y="62" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="80" class="cell">0.0000</text>
+<rect x="560" y="62" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="80" class="cell">n/a</text>
+<rect x="680" y="62" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="80" class="cell">n/a</text>
+<rect x="20" y="90" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="108" class="cell">architecture_smoke | connect4 | connect4</text>
+<rect x="340" y="90" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="108" class="cell">0.1333</text>
+<rect x="450" y="90" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="108" class="cell">0.0000</text>
+<rect x="560" y="90" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="108" class="cell">n/a</text>
+<rect x="680" y="90" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="108" class="cell">n/a</text>
+<rect x="20" y="118" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="136" class="cell">baseline_architecture_benchmark | blotto | blotto</text>
+<rect x="340" y="118" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="136" class="cell">0.0943</text>
+<rect x="450" y="118" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="136" class="cell">0.0000</text>
+<rect x="560" y="118" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="136" class="cell">n/a</text>
+<rect x="680" y="118" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="136" class="cell">n/a</text>
+<rect x="20" y="146" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="164" class="cell">baseline_architecture_benchmark | blotto | discrete_blotto_v1</text>
+<rect x="340" y="146" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="164" class="cell">0.1898</text>
+<rect x="450" y="146" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="164" class="cell">0.0000</text>
+<rect x="560" y="146" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="164" class="cell">n/a</text>
+<rect x="680" y="146" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="164" class="cell">0.0057</text>
+<rect x="20" y="174" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="192" class="cell">baseline_architecture_benchmark | blotto | blotto</text>
+<rect x="340" y="174" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="192" class="cell">0.0000</text>
+<rect x="450" y="174" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="192" class="cell">0.0000</text>
+<rect x="560" y="174" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="192" class="cell">n/a</text>
+<rect x="680" y="174" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="192" class="cell">n/a</text>
+<rect x="20" y="202" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="220" class="cell">baseline_architecture_benchmark | blotto | discrete_blotto_v1</text>
+<rect x="340" y="202" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="220" class="cell">0.0000</text>
+<rect x="450" y="202" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="220" class="cell">0.0000</text>
+<rect x="560" y="202" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="220" class="cell">n/a</text>
+<rect x="680" y="202" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="220" class="cell">0.0034</text>
+<rect x="20" y="230" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="248" class="cell">baseline_architecture_benchmark | connect4 | connect4</text>
+<rect x="340" y="230" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="248" class="cell">0.0000</text>
+<rect x="450" y="230" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="248" class="cell">0.0000</text>
+<rect x="560" y="230" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="248" class="cell">0.0000</text>
+<rect x="680" y="230" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="248" class="cell">n/a</text>
+<rect x="20" y="258" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="276" class="cell">baseline_architecture_benchmark | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="258" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="276" class="cell">0.0000</text>
+<rect x="450" y="258" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="276" class="cell">0.0000</text>
+<rect x="560" y="258" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="276" class="cell">0.0000</text>
+<rect x="680" y="258" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="276" class="cell">n/a</text>
+<rect x="20" y="286" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="304" class="cell">baseline_architecture_benchmark | connect4 | connect4</text>
+<rect x="340" y="286" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="304" class="cell">0.0833</text>
+<rect x="450" y="286" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="304" class="cell">0.0000</text>
+<rect x="560" y="286" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="304" class="cell">n/a</text>
+<rect x="680" y="286" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="304" class="cell">n/a</text>
+<rect x="20" y="314" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="332" class="cell">baseline_architecture_benchmark | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="314" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="332" class="cell">0.0833</text>
+<rect x="450" y="314" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="332" class="cell">0.0000</text>
+<rect x="560" y="314" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="332" class="cell">n/a</text>
+<rect x="680" y="314" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="332" class="cell">n/a</text>
+<rect x="20" y="342" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="360" class="cell">blotto_section6_smoke | blotto | discrete_blotto_v1</text>
+<rect x="340" y="342" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="360" class="cell">0.1875</text>
+<rect x="450" y="342" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="360" class="cell">0.0000</text>
+<rect x="560" y="342" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="360" class="cell">n/a</text>
+<rect x="680" y="342" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="360" class="cell">0.0032</text>
+<rect x="20" y="370" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="388" class="cell">connect4_section7_smoke | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="370" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="388" class="cell">0.0000</text>
+<rect x="450" y="370" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="388" class="cell">0.0000</text>
+<rect x="560" y="370" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="388" class="cell">0.0000</text>
+<rect x="680" y="370" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="388" class="cell">n/a</text>
+<rect x="20" y="398" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="416" class="cell">difficulty_blotto_harder | blotto | discrete_blotto_harder_v1</text>
+<rect x="340" y="398" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="416" class="cell">0.1731</text>
+<rect x="450" y="398" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="416" class="cell">0.0000</text>
+<rect x="560" y="398" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="416" class="cell">n/a</text>
+<rect x="680" y="398" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="416" class="cell">0.0036</text>
+<rect x="20" y="426" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="444" class="cell">difficulty_blotto_harder | blotto | discrete_blotto_harder_v1</text>
+<rect x="340" y="426" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="444" class="cell">0.0000</text>
+<rect x="450" y="426" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="444" class="cell">0.0000</text>
+<rect x="560" y="426" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="444" class="cell">n/a</text>
+<rect x="680" y="426" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="444" class="cell">0.0026</text>
+<rect x="20" y="454" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="472" class="cell">difficulty_connect4_wide | connect4 | gravity_grid_wide_v1</text>
+<rect x="340" y="454" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="472" class="cell">0.0000</text>
+<rect x="450" y="454" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="472" class="cell">0.0000</text>
+<rect x="560" y="454" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="472" class="cell">0.0000</text>
+<rect x="680" y="454" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="472" class="cell">n/a</text>
+<rect x="20" y="482" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="500" class="cell">difficulty_connect4_wide | connect4 | gravity_grid_wide_v1</text>
+<rect x="340" y="482" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="500" class="cell">0.0833</text>
+<rect x="450" y="482" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="500" class="cell">0.0000</text>
+<rect x="560" y="482" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="500" class="cell">n/a</text>
+<rect x="680" y="482" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="500" class="cell">n/a</text>
+<rect x="20" y="510" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="528" class="cell">final_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="510" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="528" class="cell">0.2248</text>
+<rect x="450" y="510" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="528" class="cell">0.0000</text>
+<rect x="560" y="510" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="528" class="cell">n/a</text>
+<rect x="680" y="510" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="528" class="cell">0.0047</text>
+<rect x="20" y="538" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="556" class="cell">final_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="538" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="556" class="cell">0.0000</text>
+<rect x="450" y="538" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="556" class="cell">0.0000</text>
+<rect x="560" y="538" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="556" class="cell">n/a</text>
+<rect x="680" y="538" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="556" class="cell">0.0026</text>
+<rect x="20" y="566" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="584" class="cell">final_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="566" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="584" class="cell">0.0000</text>
+<rect x="450" y="566" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="584" class="cell">0.0000</text>
+<rect x="560" y="566" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="584" class="cell">0.0000</text>
+<rect x="680" y="566" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="584" class="cell">n/a</text>
+<rect x="20" y="594" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="612" class="cell">final_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="594" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="612" class="cell">0.0833</text>
+<rect x="450" y="594" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="612" class="cell">0.0000</text>
+<rect x="560" y="594" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="612" class="cell">n/a</text>
+<rect x="680" y="594" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="612" class="cell">n/a</text>
+<rect x="20" y="622" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="640" class="cell">gameenv_smoke | blotto | blotto</text>
+<rect x="340" y="622" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="640" class="cell">0.0625</text>
+<rect x="450" y="622" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="640" class="cell">0.0000</text>
+<rect x="560" y="622" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="640" class="cell">n/a</text>
+<rect x="680" y="622" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="640" class="cell">n/a</text>
+<rect x="20" y="650" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="668" class="cell">gameenv_smoke | blotto | blotto</text>
+<rect x="340" y="650" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="668" class="cell">0.0000</text>
+<rect x="450" y="650" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="668" class="cell">0.0000</text>
+<rect x="560" y="650" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="668" class="cell">n/a</text>
+<rect x="680" y="650" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="668" class="cell">n/a</text>
+<rect x="20" y="678" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="696" class="cell">gameenv_smoke | connect4 | connect4</text>
+<rect x="340" y="678" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="696" class="cell">0.0000</text>
+<rect x="450" y="678" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="696" class="cell">0.0000</text>
+<rect x="560" y="678" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="696" class="cell">0.0000</text>
+<rect x="680" y="678" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="696" class="cell">n/a</text>
+<rect x="20" y="706" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="724" class="cell">gameenv_smoke | connect4 | connect4</text>
+<rect x="340" y="706" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="724" class="cell">0.0833</text>
+<rect x="450" y="706" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="724" class="cell">0.0000</text>
+<rect x="560" y="706" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="724" class="cell">n/a</text>
+<rect x="680" y="706" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="724" class="cell">n/a</text>
+<rect x="20" y="734" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="752" class="cell">metrics_section9_smoke | blotto | discrete_blotto_v1</text>
+<rect x="340" y="734" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="752" class="cell">0.1875</text>
+<rect x="450" y="734" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="752" class="cell">0.0000</text>
+<rect x="560" y="734" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="752" class="cell">n/a</text>
+<rect x="680" y="734" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="752" class="cell">0.0032</text>
+<rect x="20" y="762" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="780" class="cell">metrics_section9_smoke | blotto | discrete_blotto_v1</text>
+<rect x="340" y="762" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="780" class="cell">0.0000</text>
+<rect x="450" y="762" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="780" class="cell">0.0000</text>
+<rect x="560" y="762" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="780" class="cell">n/a</text>
+<rect x="680" y="762" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="780" class="cell">0.0046</text>
+<rect x="20" y="790" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="808" class="cell">metrics_section9_smoke | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="790" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="808" class="cell">0.0000</text>
+<rect x="450" y="790" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="808" class="cell">0.0000</text>
+<rect x="560" y="790" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="808" class="cell">0.0000</text>
+<rect x="680" y="790" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="808" class="cell">n/a</text>
+<rect x="20" y="818" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="836" class="cell">metrics_section9_smoke | connect4 | connect4</text>
+<rect x="340" y="818" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="836" class="cell">0.0833</text>
+<rect x="450" y="818" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="836" class="cell">0.0000</text>
+<rect x="560" y="818" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="836" class="cell">n/a</text>
+<rect x="680" y="818" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="836" class="cell">n/a</text>
+<rect x="20" y="846" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="864" class="cell">model_scale_subset | blotto | discrete_blotto_v1</text>
+<rect x="340" y="846" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="864" class="cell">0.1182</text>
+<rect x="450" y="846" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="864" class="cell">0.2500</text>
+<rect x="560" y="846" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="864" class="cell">n/a</text>
+<rect x="680" y="846" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="864" class="cell">0.0064</text>
+<rect x="20" y="874" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="892" class="cell">model_scale_subset | blotto | discrete_blotto_v1</text>
+<rect x="340" y="874" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="892" class="cell">0.1094</text>
+<rect x="450" y="874" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="892" class="cell">0.2496</text>
+<rect x="560" y="874" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="892" class="cell">n/a</text>
+<rect x="680" y="874" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="892" class="cell">0.0036</text>
+<rect x="20" y="902" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="920" class="cell">model_scale_subset | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="902" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="920" class="cell">0.0000</text>
+<rect x="450" y="902" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="920" class="cell">0.2500</text>
+<rect x="560" y="902" width="120" height="28" fill="rgb(255,136,136)" stroke="#e5e7eb"/>
+<text x="566" y="920" class="cell">165.8074</text>
+<rect x="680" y="902" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="920" class="cell">n/a</text>
+<rect x="20" y="930" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="948" class="cell">model_scale_subset | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="930" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="948" class="cell">0.2358</text>
+<rect x="450" y="930" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="948" class="cell">0.2500</text>
+<rect x="560" y="930" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="948" class="cell">n/a</text>
+<rect x="680" y="930" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="948" class="cell">n/a</text>
+<rect x="20" y="958" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="976" class="cell">pilot_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="958" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="976" class="cell">0.1898</text>
+<rect x="450" y="958" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="976" class="cell">0.0000</text>
+<rect x="560" y="958" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="976" class="cell">n/a</text>
+<rect x="680" y="958" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="976" class="cell">0.0057</text>
+<rect x="20" y="986" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1004" class="cell">pilot_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="986" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1004" class="cell">0.0000</text>
+<rect x="450" y="986" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1004" class="cell">0.0000</text>
+<rect x="560" y="986" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1004" class="cell">n/a</text>
+<rect x="680" y="986" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1004" class="cell">0.0034</text>
+<rect x="20" y="1014" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1032" class="cell">pilot_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1014" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1032" class="cell">0.0000</text>
+<rect x="450" y="1014" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1032" class="cell">0.0000</text>
+<rect x="560" y="1014" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="1032" class="cell">0.0000</text>
+<rect x="680" y="1014" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1032" class="cell">n/a</text>
+<rect x="20" y="1042" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1060" class="cell">pilot_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1042" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1060" class="cell">0.0833</text>
+<rect x="450" y="1042" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1060" class="cell">0.0000</text>
+<rect x="560" y="1042" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1060" class="cell">n/a</text>
+<rect x="680" y="1042" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1060" class="cell">n/a</text>
+<rect x="20" y="1070" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1088" class="cell">prompt_chain_of_thought_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1070" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1088" class="cell">0.2248</text>
+<rect x="450" y="1070" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1088" class="cell">0.0000</text>
+<rect x="560" y="1070" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1088" class="cell">n/a</text>
+<rect x="680" y="1070" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1088" class="cell">0.0047</text>
+<rect x="20" y="1098" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1116" class="cell">prompt_chain_of_thought_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1098" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1116" class="cell">0.0000</text>
+<rect x="450" y="1098" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1116" class="cell">0.0000</text>
+<rect x="560" y="1098" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1116" class="cell">n/a</text>
+<rect x="680" y="1098" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1116" class="cell">0.0026</text>
+<rect x="20" y="1126" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1144" class="cell">prompt_chain_of_thought_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1126" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1144" class="cell">0.0000</text>
+<rect x="450" y="1126" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1144" class="cell">0.0000</text>
+<rect x="560" y="1126" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="1144" class="cell">0.0000</text>
+<rect x="680" y="1126" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1144" class="cell">n/a</text>
+<rect x="20" y="1154" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1172" class="cell">prompt_chain_of_thought_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1154" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1172" class="cell">0.0833</text>
+<rect x="450" y="1154" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1172" class="cell">0.0000</text>
+<rect x="560" y="1154" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1172" class="cell">n/a</text>
+<rect x="680" y="1154" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1172" class="cell">n/a</text>
+<rect x="20" y="1182" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1200" class="cell">prompt_legality_first_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1182" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1200" class="cell">0.2248</text>
+<rect x="450" y="1182" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1200" class="cell">0.0000</text>
+<rect x="560" y="1182" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1200" class="cell">n/a</text>
+<rect x="680" y="1182" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1200" class="cell">0.0047</text>
+<rect x="20" y="1210" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1228" class="cell">prompt_legality_first_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1210" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1228" class="cell">0.0000</text>
+<rect x="450" y="1210" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1228" class="cell">0.0000</text>
+<rect x="560" y="1210" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1228" class="cell">n/a</text>
+<rect x="680" y="1210" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1228" class="cell">0.0026</text>
+<rect x="20" y="1238" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1256" class="cell">prompt_legality_first_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1238" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1256" class="cell">0.0000</text>
+<rect x="450" y="1238" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1256" class="cell">0.0000</text>
+<rect x="560" y="1238" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="1256" class="cell">0.0000</text>
+<rect x="680" y="1238" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1256" class="cell">n/a</text>
+<rect x="20" y="1266" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1284" class="cell">prompt_legality_first_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1266" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1284" class="cell">0.0833</text>
+<rect x="450" y="1266" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1284" class="cell">0.0000</text>
+<rect x="560" y="1266" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1284" class="cell">n/a</text>
+<rect x="680" y="1266" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1284" class="cell">n/a</text>
+<rect x="20" y="1294" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1312" class="cell">prompt_minimal_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1294" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1312" class="cell">0.2248</text>
+<rect x="450" y="1294" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1312" class="cell">0.0000</text>
+<rect x="560" y="1294" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1312" class="cell">n/a</text>
+<rect x="680" y="1294" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1312" class="cell">0.0047</text>
+<rect x="20" y="1322" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1340" class="cell">prompt_minimal_architecture_comparison | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1322" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1340" class="cell">0.0000</text>
+<rect x="450" y="1322" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1340" class="cell">0.0000</text>
+<rect x="560" y="1322" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1340" class="cell">n/a</text>
+<rect x="680" y="1322" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1340" class="cell">0.0026</text>
+<rect x="20" y="1350" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1368" class="cell">prompt_minimal_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1350" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1368" class="cell">0.0000</text>
+<rect x="450" y="1350" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1368" class="cell">0.0000</text>
+<rect x="560" y="1350" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="1368" class="cell">0.0000</text>
+<rect x="680" y="1350" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1368" class="cell">n/a</text>
+<rect x="20" y="1378" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1396" class="cell">prompt_minimal_architecture_comparison | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1378" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1396" class="cell">0.0833</text>
+<rect x="450" y="1378" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1396" class="cell">0.0000</text>
+<rect x="560" y="1378" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1396" class="cell">n/a</text>
+<rect x="680" y="1378" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1396" class="cell">n/a</text>
+<rect x="20" y="1406" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1424" class="cell">prompt_section8_smoke | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1406" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1424" class="cell">0.0000</text>
+<rect x="450" y="1406" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1424" class="cell">0.0000</text>
+<rect x="560" y="1406" width="120" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="566" y="1424" class="cell">0.0000</text>
+<rect x="680" y="1406" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1424" class="cell">n/a</text>
+<rect x="20" y="1434" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1452" class="cell">quantization_subset | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1434" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1452" class="cell">0.1074</text>
+<rect x="450" y="1434" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="1452" class="cell">0.2500</text>
+<rect x="560" y="1434" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1452" class="cell">n/a</text>
+<rect x="680" y="1434" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1452" class="cell">0.0145</text>
+<rect x="20" y="1462" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1480" class="cell">quantization_subset | blotto | discrete_blotto_v1</text>
+<rect x="340" y="1462" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1480" class="cell">0.0977</text>
+<rect x="450" y="1462" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="1480" class="cell">0.2492</text>
+<rect x="560" y="1462" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1480" class="cell">n/a</text>
+<rect x="680" y="1462" width="120" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="686" y="1480" class="cell">0.0129</text>
+<rect x="20" y="1490" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1508" class="cell">quantization_subset | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1490" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1508" class="cell">0.0000</text>
+<rect x="450" y="1490" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="1508" class="cell">0.2467</text>
+<rect x="560" y="1490" width="120" height="28" fill="rgb(255,130,130)" stroke="#e5e7eb"/>
+<text x="566" y="1508" class="cell">175.3985</text>
+<rect x="680" y="1490" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1508" class="cell">n/a</text>
+<rect x="20" y="1518" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1536" class="cell">quantization_subset | connect4 | gravity_grid_standard_v1</text>
+<rect x="340" y="1518" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1536" class="cell">0.2381</text>
+<rect x="450" y="1518" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="456" y="1536" class="cell">0.2459</text>
+<rect x="560" y="1518" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1536" class="cell">n/a</text>
+<rect x="680" y="1518" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1536" class="cell">n/a</text>
+<rect x="20" y="1546" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1564" class="cell">runtime_smoke | blotto | blotto</text>
+<rect x="340" y="1546" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="346" y="1564" class="cell">0.0000</text>
+<rect x="450" y="1546" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1564" class="cell">0.0000</text>
+<rect x="560" y="1546" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1564" class="cell">n/a</text>
+<rect x="680" y="1546" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1564" class="cell">n/a</text>
+<rect x="20" y="1574" width="320" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="26" y="1592" class="cell">runtime_smoke | connect4 | connect4</text>
+<rect x="340" y="1574" width="110" height="28" fill="rgb(255,254,254)" stroke="#e5e7eb"/>
+<text x="346" y="1592" class="cell">0.0833</text>
+<rect x="450" y="1574" width="110" height="28" fill="rgb(255,255,255)" stroke="#e5e7eb"/>
+<text x="456" y="1592" class="cell">0.0000</text>
+<rect x="560" y="1574" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="566" y="1592" class="cell">n/a</text>
+<rect x="680" y="1574" width="120" height="28" fill="#f8fafc" stroke="#e5e7eb"/>
+<text x="686" y="1592" class="cell">n/a</text>
+</svg>

@@ -44,6 +44,8 @@ Those results matter because they show that a hierarchy can outperform other mix
 
 At the same time, the best model-scale team was not the same for every task. In Blotto against baseline bots, the top win-rate system was `parallel_lmh` at `0.625`, not the hierarchy that dominated internal play. In Connect 4 oracle evaluation, the best system was `parallel_llh`, which reached `42.855%` optimal-move agreement, outperforming all model-scale hierarchies and even the more high-heavy parallel team `parallel_hhl` at `33.635%`. This is a strong example of why the proposal's metric design was necessary. Tournament strength, strategic equilibrium quality, and oracle agreement are related but not interchangeable.
 
+The live-study tables in this summary report best observed run-level results for the selected runs. The quality-progression figures use a different aggregation rule: they average metrics across stored runs that share the same `run_label` and architecture identifier. As a result, a plotted value can be lower than the best single-run value quoted in the text.
+
 The detailed model-scale results are:
 
 | Setting | Best architecture | Value |
@@ -59,7 +61,7 @@ Two additional patterns stand out.
 
 First, more model quality did not produce monotonic gains. `parallel_llh`, whose mean team quality score was `1.67`, outperformed `parallel_hhl` and all hierarchies on Connect 4 oracle agreement despite using fewer high-capacity components. Second, consistency and win rate were related but not identical. `parallel_hhl` posted the highest Connect 4 internal per-state agreement in the model-scale suite at `0.8611`, while `hierarchical_hhl` won more games at `0.800`. This suggests that stable local decision-making does not always translate directly to the strongest match outcomes.
 
-The model-scale figures make these tradeoffs visible. The head-to-head heatmaps show that `hierarchical_hhl` was broadly dominant in internal tournaments, while the quality-progression chart for Connect 4 oracle evaluation shows that higher average team quality did not cleanly map onto higher oracle agreement. The best point on that curve is the low-heavy parallel team, not the high-heavy alternatives.
+The model-scale figures make these tradeoffs visible. The head-to-head heatmaps show that `hierarchical_hhl` was broadly dominant in internal tournaments, while the quality-progression chart for Connect 4 oracle evaluation shows that higher average team quality did not cleanly map onto higher oracle agreement. That chart should be interpreted as a cross-run average by composition rather than a best-run leaderboard. The best point on that curve is therefore the strongest averaged low-heavy parallel result, not necessarily the same number quoted above for the best individual stored run.
 
 ## 2. Quantization Results
 

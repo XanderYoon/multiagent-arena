@@ -96,9 +96,8 @@ Model mapping:
 - `baseline`: `qwen2.5:7b`
 - `model-scale`: `qwen2.5:3b`, `qwen2.5:7b`, `qwen2.5:14b`
 - `quantization`: `qwen2.5:7b-instruct-q4_0`, `qwen2.5:7b-instruct-q8_0`, `qwen2.5:7b-instruct-fp16`
-- `section14_3`: all models required for both Section 14.3 suites
 
-Recommended hardware interpretation for the Section 14.3 sweeps:
+Recommended hardware interpretation for the Parameter Count/Quanitzation sweeps:
 
 - `qwen2.5:7b` is the medium model and matches the project baseline.
 - `qwen2.5:3b` is the smaller variant for the model-scale suite.
@@ -134,14 +133,14 @@ Section 14 experiment and reporting tooling:
 - Batch runner: `python3 tools/execute_experiment_plan.py --dry-run`
 - Analysis bundle generator: `python3 tools/generate_analysis_report.py`
 
-Section 14.3 Qwen ensemble sweeps:
+Qwen ensemble sweeps:
 
 - Model-scale suite: `python3 tools/run_benchmark.py --config config/benchmark_model_scale.json`
 - Quantization suite: `python3 tools/run_benchmark.py --config config/benchmark_quantization.json`
 - Smaller model-scale suite: `python3 tools/run_benchmark.py --config config/benchmark_model_scale_subset.json`
 - Smaller quantization suite: `python3 tools/run_benchmark.py --config config/benchmark_quantization_subset.json`
 - One-command subset runner: `bash tools/run_section14_3_subset.sh`
-- Section 14.3 summary report: `python3 tools/generate_section14_3_report.py`
+- Parameter Count/Quantization summary report: `python3 tools/generate_section14_3_report.py`
 - Section 15 final deliverables bundle: `python3 tools/generate_final_deliverables.py`
 
 The subset configs intentionally keep only six architectures per suite:
@@ -153,7 +152,7 @@ The subset configs intentionally keep only six architectures per suite:
 
 ## Final Deliverables
 
-After completing the Section 14.3 runs, generate the final handoff bundle with:
+Generate the final handoff bundle with:
 
 ```bash
 python3 tools/generate_final_deliverables.py
@@ -163,7 +162,7 @@ This writes a self-contained package under `reports/final/` containing:
 
 - `FINAL_REPORT.md` with a proposal-aligned writeup of objectives, results, and limitations
 - `RUN_INSTRUCTIONS.md` with reproducible rerun commands
-- `tables/` with Section 14.3 summary and topline CSV/JSON outputs
+- `tables/` with summary and topline CSV/JSON outputs
 - `figures/` with SVG result charts
 - `key_runs/` with copied configs, metadata, summaries, and readable logs for the selected final runs
 
